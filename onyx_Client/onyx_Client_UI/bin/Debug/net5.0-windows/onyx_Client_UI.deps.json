@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "onyx_Client_UI/1.0.0": {
+        "runtime": {
+          "onyx_Client_UI.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "onyx_Client_UI/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

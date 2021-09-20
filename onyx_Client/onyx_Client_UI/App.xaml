@@ -4,6 +4,15 @@
              xmlns:local="clr-namespace:onyx_Client_UI"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-         
+        <SolidColorBrush x:Key="appcolor_1"
+                         Color="#131416"/>
+        <SolidColorBrush x:Key="appcolor_2"
+                         Color="#0F0F11"/>
+        <SolidColorBrush x:Key="appcolor_3"
+                         Color="#1727AB"/>
+        <SolidColorBrush x:Key="appcolor_4"
+                         Color="#AAACB9"/>
+        <SolidColorBrush x:Key="appcolor_5"
+                         Color="#FFFFFF"/>
     </Application.Resources>
 </Application>

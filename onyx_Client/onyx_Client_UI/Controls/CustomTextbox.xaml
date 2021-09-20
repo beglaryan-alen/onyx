@@ -1,0 +1,62 @@
+﻿<UserControl x:Class="onyx_Client_UI.Controls.CustomTextBox"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d"
+             Padding="5"
+             Height="37"
+             d:DesignHeight="450" d:DesignWidth="800"
+             x:Name="customTextBox">
+    <Border CornerRadius="{Binding CornerRadius, ElementName=customTextBox}"
+            Background="{StaticResource appcolor_2}">
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            
+            <Label Grid.Column="0"
+                   Content="{Binding Placeholder, ElementName=customTextBox}"
+                   Foreground="{StaticResource appcolor_4}"
+                   FontSize="10"
+                   VerticalContentAlignment="Center"
+                   FontWeight="Bold"/>
+
+            <TextBox Grid.Column="0"
+                     VerticalContentAlignment="Center"
+                     GotFocus="TextBox_GotFocus"
+                     LostFocus="TextBox_LostFocus"
+                     Grid.ColumnSpan="2"
+                     Text="{Binding Text, IsAsync=True, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay, ElementName=customTextBox}"
+                     Foreground="White"
+                     Background="Transparent"
+                     BorderBrush="Transparent"/>
+
+            <Button Height="15"
+                    Foreground="Transparent"
+                    Background="Transparent"
+                    HorizontalAlignment="Right"
+                    BorderBrush="Transparent"
+                    Grid.Column="1">
+                <Button.Style>
+                    <Style TargetType="Button">
+                        <Setter Property="Visibility"
+                                Value="Hidden"/>
+                        <Style.Triggers>
+                            <DataTrigger Binding="{Binding HasRightIcon, ElementName=customTextBox}"
+                                         Value="True">
+                                <Setter Property="Visibility"
+                                        Value="Visible"/>
+                            </DataTrigger>
+                        </Style.Triggers>
+                    </Style>
+                </Button.Style>
+                <Image Source="{Binding RightIconImageSource, ElementName=customTextBox}"
+                       VerticalAlignment="Center"
+                       Height="17"/>
+            </Button>
+        </Grid>
+    </Border>
+        
+</UserControl>

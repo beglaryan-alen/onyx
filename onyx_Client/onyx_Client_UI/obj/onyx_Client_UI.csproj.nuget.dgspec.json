@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Alen\\Source\\Repos\\onyx\\onyx_Client\\onyx_Client_UI\\onyx_Client_UI.csproj": {}
+    "C:\\Users\\Alen\\source\\repos\\onyx\\onyx_Client\\onyx_Client_UI\\onyx_Client_UI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Alen\\Source\\Repos\\onyx\\onyx_Client\\onyx_Client_UI\\onyx_Client_UI.csproj": {
+    "C:\\Users\\Alen\\source\\repos\\onyx\\onyx_Client\\onyx_Client_UI\\onyx_Client_UI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Alen\\Source\\Repos\\onyx\\onyx_Client\\onyx_Client_UI\\onyx_Client_UI.csproj",
+        "projectUniqueName": "C:\\Users\\Alen\\source\\repos\\onyx\\onyx_Client\\onyx_Client_UI\\onyx_Client_UI.csproj",
         "projectName": "onyx_Client_UI",
-        "projectPath": "C:\\Users\\Alen\\Source\\Repos\\onyx\\onyx_Client\\onyx_Client_UI\\onyx_Client_UI.csproj",
+        "projectPath": "C:\\Users\\Alen\\source\\repos\\onyx\\onyx_Client\\onyx_Client_UI\\onyx_Client_UI.csproj",
         "packagesPath": "C:\\Users\\Alen\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Alen\\Source\\Repos\\onyx\\onyx_Client\\onyx_Client_UI\\obj\\",
+        "outputPath": "C:\\Users\\Alen\\source\\repos\\onyx\\onyx_Client\\onyx_Client_UI\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"

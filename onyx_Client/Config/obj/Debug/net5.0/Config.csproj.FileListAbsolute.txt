@@ -1,0 +1,16 @@
+D:\Projects\Onyx\onyx\onyx_Client\Config\obj\Debug\net5.0\Config.csproj.AssemblyReference.cache
+D:\Projects\Onyx\onyx\onyx_Client\Config\obj\Debug\net5.0\Config.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projects\Onyx\onyx\onyx_Client\Config\obj\Debug\net5.0\Config.AssemblyInfoInputs.cache
+D:\Projects\Onyx\onyx\onyx_Client\Config\obj\Debug\net5.0\Config.AssemblyInfo.cs
+D:\Projects\Onyx\onyx\onyx_Client\Config\obj\Debug\net5.0\Config.csproj.CoreCompileInputs.cache
+D:\Projects\Onyx\onyx\onyx_Client\Config\bin\Debug\net5.0\Config.deps.json
+D:\Projects\Onyx\onyx\onyx_Client\Config\bin\Debug\net5.0\Config.dll
+D:\Projects\Onyx\onyx\onyx_Client\Config\bin\Debug\net5.0\ref\Config.dll
+D:\Projects\Onyx\onyx\onyx_Client\Config\bin\Debug\net5.0\Config.pdb
+D:\Projects\Onyx\onyx\onyx_Client\Config\bin\Debug\net5.0\Crypto.dll
+D:\Projects\Onyx\onyx\onyx_Client\Config\bin\Debug\net5.0\IO.dll
+D:\Projects\Onyx\onyx\onyx_Client\Config\bin\Debug\net5.0\IO.pdb
+D:\Projects\Onyx\onyx\onyx_Client\Config\bin\Debug\net5.0\Crypto.pdb
+D:\Projects\Onyx\onyx\onyx_Client\Config\obj\Debug\net5.0\Config.dll
+D:\Projects\Onyx\onyx\onyx_Client\Config\obj\Debug\net5.0\ref\Config.dll
+D:\Projects\Onyx\onyx\onyx_Client\Config\obj\Debug\net5.0\Config.pdb

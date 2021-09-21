@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "R4caUGIF4zyQMKkES5J3oKon0pp10ziGWQtHQAyildu9rZVbAqxU52sWjatq6NoATl3Ogk3S83Yw15ipcyVWBQ==",
+  "dgSpecHash": "41yzNPh2EFdsEsohl1HT86s4RNkGgDcVixby2pmD/ahpPmitah+1pVK93WldYu2YrRQF9Be5Lt0VIhSCShboAQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Alen\\source\\repos\\onyx\\onyx_Client\\onyx_Client_UI\\onyx_Client_UI.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "D:\\Projects\\Onyx\\onyx\\onyx_Client\\onyx_Client_UI\\onyx_Client_UI.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Gladun\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
+  ],
   "logs": []
 }

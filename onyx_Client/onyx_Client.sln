@@ -1,9 +1,17 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.31515.178
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31710.8
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "onyx_Client_UI", "onyx_Client_UI\onyx_Client_UI.csproj", "{BFA216ED-E6C0-4EB3-A3F4-9EA979D78F3A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "onyx_Client_UI", "onyx_Client_UI\onyx_Client_UI.csproj", "{BFA216ED-E6C0-4EB3-A3F4-9EA979D78F3A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HttpBroker", "HttpBroker\HttpBroker.csproj", "{C06F9232-96B1-4BF4-8847-DD6EB8A8C49B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Crypto", "Crypto\Crypto.csproj", "{EA83A4A3-6F77-4D0F-A7E4-C2A3ABAEBEC6}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Config", "Config\Config.csproj", "{410232C7-79EF-4EB6-B703-F84B41E0A06C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IO", "IO\IO.csproj", "{5E03268F-7CE1-4B79-9615-F9AE0285946B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +23,22 @@ Global
 		{BFA216ED-E6C0-4EB3-A3F4-9EA979D78F3A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BFA216ED-E6C0-4EB3-A3F4-9EA979D78F3A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BFA216ED-E6C0-4EB3-A3F4-9EA979D78F3A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C06F9232-96B1-4BF4-8847-DD6EB8A8C49B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C06F9232-96B1-4BF4-8847-DD6EB8A8C49B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C06F9232-96B1-4BF4-8847-DD6EB8A8C49B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C06F9232-96B1-4BF4-8847-DD6EB8A8C49B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EA83A4A3-6F77-4D0F-A7E4-C2A3ABAEBEC6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA83A4A3-6F77-4D0F-A7E4-C2A3ABAEBEC6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA83A4A3-6F77-4D0F-A7E4-C2A3ABAEBEC6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA83A4A3-6F77-4D0F-A7E4-C2A3ABAEBEC6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{410232C7-79EF-4EB6-B703-F84B41E0A06C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{410232C7-79EF-4EB6-B703-F84B41E0A06C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{410232C7-79EF-4EB6-B703-F84B41E0A06C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{410232C7-79EF-4EB6-B703-F84B41E0A06C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5E03268F-7CE1-4B79-9615-F9AE0285946B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E03268F-7CE1-4B79-9615-F9AE0285946B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E03268F-7CE1-4B79-9615-F9AE0285946B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E03268F-7CE1-4B79-9615-F9AE0285946B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

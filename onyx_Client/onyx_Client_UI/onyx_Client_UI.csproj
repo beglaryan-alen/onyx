@@ -11,6 +11,11 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Config\Config.csproj" />
+    <ProjectReference Include="..\HttpBroker\HttpBroker.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Resource Include="Resources\Images\remove_red_eye.png" />
   </ItemGroup>
 

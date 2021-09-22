@@ -10,3 +10,15 @@ D:\Projects\Onyx\onyx\onyx_Client\Crypto\bin\Debug\net5.0\Crypto.pdb
 D:\Projects\Onyx\onyx\onyx_Client\Crypto\obj\Debug\net5.0\Crypto.dll
 D:\Projects\Onyx\onyx\onyx_Client\Crypto\obj\Debug\net5.0\ref\Crypto.dll
 D:\Projects\Onyx\onyx\onyx_Client\Crypto\obj\Debug\net5.0\Crypto.pdb
+C:\Users\Alen\source\repos\onyx\onyx_Client\Crypto\bin\Debug\net5.0\Crypto.deps.json
+C:\Users\Alen\source\repos\onyx\onyx_Client\Crypto\bin\Debug\net5.0\Crypto.dll
+C:\Users\Alen\source\repos\onyx\onyx_Client\Crypto\bin\Debug\net5.0\ref\Crypto.dll
+C:\Users\Alen\source\repos\onyx\onyx_Client\Crypto\bin\Debug\net5.0\Crypto.pdb
+C:\Users\Alen\source\repos\onyx\onyx_Client\Crypto\obj\Debug\net5.0\Crypto.csproj.AssemblyReference.cache
+C:\Users\Alen\source\repos\onyx\onyx_Client\Crypto\obj\Debug\net5.0\Crypto.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Alen\source\repos\onyx\onyx_Client\Crypto\obj\Debug\net5.0\Crypto.AssemblyInfoInputs.cache
+C:\Users\Alen\source\repos\onyx\onyx_Client\Crypto\obj\Debug\net5.0\Crypto.AssemblyInfo.cs
+C:\Users\Alen\source\repos\onyx\onyx_Client\Crypto\obj\Debug\net5.0\Crypto.csproj.CoreCompileInputs.cache
+C:\Users\Alen\source\repos\onyx\onyx_Client\Crypto\obj\Debug\net5.0\Crypto.dll
+C:\Users\Alen\source\repos\onyx\onyx_Client\Crypto\obj\Debug\net5.0\ref\Crypto.dll
+C:\Users\Alen\source\repos\onyx\onyx_Client\Crypto\obj\Debug\net5.0\Crypto.pdb

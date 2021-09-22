@@ -6,9 +6,8 @@
       "version": "5.0.0"
     },
     "additionalProbingPaths": [
-      "C:\\Users\\Gladun\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\Gladun\\.nuget\\packages",
-      "D:\\VisualStudio\\Shared\\NuGetPackages",
+      "C:\\Users\\Alen\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\Alen\\.nuget\\packages",
       "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet"
     ],
     "configProperties": {

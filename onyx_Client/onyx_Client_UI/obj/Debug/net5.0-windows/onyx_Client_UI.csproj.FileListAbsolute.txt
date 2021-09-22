@@ -59,3 +59,14 @@ D:\Projects\Onyx\onyx\onyx_Client\onyx_Client_UI\bin\Debug\net5.0-windows\IO.dll
 D:\Projects\Onyx\onyx\onyx_Client\onyx_Client_UI\bin\Debug\net5.0-windows\Config.pdb
 D:\Projects\Onyx\onyx\onyx_Client\onyx_Client_UI\bin\Debug\net5.0-windows\Crypto.pdb
 D:\Projects\Onyx\onyx\onyx_Client\onyx_Client_UI\bin\Debug\net5.0-windows\IO.pdb
+C:\Users\Alen\source\repos\onyx\onyx_Client\onyx_Client_UI\obj\Debug\net5.0-windows\onyx_Client_UI.csproj.AssemblyReference.cache
+C:\Users\Alen\source\repos\onyx\onyx_Client\onyx_Client_UI\bin\Debug\net5.0-windows\Newtonsoft.Json.dll
+C:\Users\Alen\source\repos\onyx\onyx_Client\onyx_Client_UI\bin\Debug\net5.0-windows\Config.dll
+C:\Users\Alen\source\repos\onyx\onyx_Client\onyx_Client_UI\bin\Debug\net5.0-windows\Crypto.dll
+C:\Users\Alen\source\repos\onyx\onyx_Client\onyx_Client_UI\bin\Debug\net5.0-windows\HttpBroker.dll
+C:\Users\Alen\source\repos\onyx\onyx_Client\onyx_Client_UI\bin\Debug\net5.0-windows\IO.dll
+C:\Users\Alen\source\repos\onyx\onyx_Client\onyx_Client_UI\bin\Debug\net5.0-windows\Config.pdb
+C:\Users\Alen\source\repos\onyx\onyx_Client\onyx_Client_UI\bin\Debug\net5.0-windows\HttpBroker.pdb
+C:\Users\Alen\source\repos\onyx\onyx_Client\onyx_Client_UI\bin\Debug\net5.0-windows\Crypto.pdb
+C:\Users\Alen\source\repos\onyx\onyx_Client\onyx_Client_UI\bin\Debug\net5.0-windows\IO.pdb
+C:\Users\Alen\source\repos\onyx\onyx_Client\onyx_Client_UI\obj\Debug\net5.0-windows\onyx_Client_UI.csproj.CopyComplete

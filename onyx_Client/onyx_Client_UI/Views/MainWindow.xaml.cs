@@ -1,6 +1,6 @@
 ﻿using System.Windows;
 
-namespace onyx_Client_UI
+namespace onyx_Client_UI.Views
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml

@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET5_0;NETCOREAPP
 C:\Users\Alen\source\repos\onyx\onyx_Client\onyx_Client_UI\App.xaml
-22140468013
+3-1720487190
 
-91953755725
+11-552075837
 1981567637393
-Controls\CustomTextbox.xaml;MainWindow.xaml;
+Controls\CustomTextbox.xaml;Resources\Styles\DefaultResources.xaml;Views\MainWindow.xaml;
 
 False
 

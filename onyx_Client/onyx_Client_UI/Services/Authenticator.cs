@@ -1,5 +1,6 @@
 ﻿using HttpBroker.Models;
 using onyx_Client_UI.Models;
+using System;
 using System.Threading.Tasks;
 
 namespace onyx_Client_UI.Services
@@ -15,8 +16,9 @@ namespace onyx_Client_UI.Services
         /// </summary>
         /// <param name="User">User to register.</param>
         /// <returns>Register result</returns>
-        public Task<Response> Register(User User)
+        public Task<Response> Register(User user)
         {
+            //TODO: Realize method correctly.
             throw new System.NotImplementedException();
         }
 
@@ -25,10 +27,26 @@ namespace onyx_Client_UI.Services
         /// </summary>
         /// <param name="username">username</param>
         /// <param name="password">password</param>
-        /// <returns>If can logged in.</returns>
+        /// <returns>If user exists.</returns>
         public async Task<bool> Login(string username, string password)
         {
-            throw new System.NotImplementedException();
+            //TODO: Realize method correctly.
+            var user = new User()
+            {
+                Email = username,
+                Password = password,
+                Id = 123456,
+                DateOfBirth = DateTime.Now,
+                Gender = Gender.Man,
+                IdentificationNumber = "Id223322",
+                IDNumber = "IDD232323",
+                Name = "Имя",
+                Patronymic = "Отчество",
+                SurName = "Фамилия",
+                PhoneNumber = "+37477221409",
+            };
+            CurrentUser = user;
+            return true;
         }
 
         public Task Logout()

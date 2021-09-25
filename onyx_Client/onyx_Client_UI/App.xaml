@@ -1,18 +1,11 @@
 ﻿<Application x:Class="onyx_Client_UI.App"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:local="clr-namespace:onyx_Client_UI"
-             StartupUri="MainWindow.xaml">
+             xmlns:styles="clr-namespace:onyx_Client_UI.Resources.Styles"
+             StartupUri="Views/MainWindow.xaml">
     <Application.Resources>
-        <SolidColorBrush x:Key="appcolor_1"
-                         Color="#131416"/>
-        <SolidColorBrush x:Key="appcolor_2"
-                         Color="#0F0F11"/>
-        <SolidColorBrush x:Key="appcolor_3"
-                         Color="#1727AB"/>
-        <SolidColorBrush x:Key="appcolor_4"
-                         Color="#AAACB9"/>
-        <SolidColorBrush x:Key="appcolor_5"
-                         Color="#FFFFFF"/>
+        
+        <styles:DefaultResources/>
+        
     </Application.Resources>
 </Application>

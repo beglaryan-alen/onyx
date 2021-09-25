@@ -1,0 +1,27 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:sys="clr-namespace:System;assembly=mscorlib"
+                    x:Class="onyx_Client_UI.Resources.Styles.DefaultResources">
+
+    <SolidColorBrush x:Key="appcolor_1"
+                     Color="#131416"/>
+    
+    <SolidColorBrush x:Key="appcolor_2"
+                     Color="#0F0F11"/>
+    
+    <SolidColorBrush x:Key="appcolor_3"
+                     Color="#1727AB"/>
+    
+    <SolidColorBrush x:Key="appcolor_4"
+                     Color="#AAACB9"/>
+    
+    <SolidColorBrush x:Key="appcolor_5"
+                     Color="#FFFFFF"/>
+
+
+    <sys:Double x:Key="tsize_i1">45</sys:Double>
+    <sys:Double x:Key="tsize_i2">20</sys:Double>
+    <sys:Double x:Key="tsize_i3">16</sys:Double>
+    <sys:Double x:Key="tsize_i4">11</sys:Double>
+    
+</ResourceDictionary>

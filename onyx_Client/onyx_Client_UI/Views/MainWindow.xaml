@@ -1,0 +1,120 @@
+﻿<Window x:Class="onyx_Client_UI.Views.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        xmlns:controls="clr-namespace:onyx_Client_UI.Controls"
+        xmlns:loc="clr-namespace:onyx_Client_UI.Resources.Strings"
+        Background="{StaticResource appcolor_1}"
+        Title="MainWindow" Height="450" Width="800">
+    
+    <Grid Margin="5">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Label Grid.Row="0"
+               Content="{x:Static loc:Strings.Standart75}"
+               Margin="10,0"
+               FontSize="{StaticResource tsize_i2}"
+               FontWeight="Bold"
+               Foreground="{StaticResource appcolor_5}"/>
+        <Grid Grid.Row="1">
+            
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="3*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            
+            <StackPanel Grid.Column="1"
+                        Margin="20"
+                        VerticalAlignment="Center">
+                
+                <Label Content="{x:Static loc:Strings.ONYX}"
+                       HorizontalAlignment="Center"
+                       Foreground="{StaticResource appcolor_5}"
+                       FontSize="{StaticResource tsize_i1}"
+                       FontWeight="Bold"/>
+                <Label Content="{x:Static loc:Strings.Welcomeback}"
+                       Foreground="{StaticResource appcolor_5}"
+                       FontSize="{StaticResource tsize_i2}"
+                       FontWeight="Bold"/>
+                <Label Content="{x:Static loc:Strings.Signintocontinue}"
+                       Foreground="{StaticResource appcolor_4}"
+                       FontSize="{StaticResource tsize_i4}"
+                       FontWeight="Bold"/>
+
+                <controls:CustomTextBox CornerRadius="12"
+                                        Placeholder="{x:Static loc:Strings.ID}"/>
+
+                <controls:CustomTextBox CornerRadius="12"
+                                        Placeholder="{x:Static loc:Strings.Password}"
+                                        HasRightIcon="True"
+                                        IsPassword="True"
+                                        RightIconImageSource="/Resources/Images/remove_red_eye.png" />
+                <StackPanel Margin="5, 10">
+                    
+                    <StackPanel Orientation="Horizontal">
+                        
+                        <CheckBox Margin="0, 5"/>
+
+                        <Label Content="{x:Static loc:Strings.Iagreewiththerules}"
+                               Foreground="{StaticResource appcolor_4}"
+                               VerticalContentAlignment="Center"
+                               FontSize="{StaticResource tsize_i4}"/>
+                        
+                    </StackPanel>
+
+                    <StackPanel Orientation="Horizontal">
+                        
+                        <CheckBox Margin="0, 5"/>
+
+                        <Label Content="{x:Static loc:Strings.Iagreewiththerules}"
+                               Foreground="{StaticResource appcolor_4}"
+                               VerticalContentAlignment="Center"
+                               FontSize="{StaticResource tsize_i4}"/>
+                        
+                    </StackPanel>
+                    
+                </StackPanel>
+
+                <Border Background="{StaticResource appcolor_3}"
+                        Height="60"
+                        Margin="10"
+                        CornerRadius="30">
+                    
+                    <Label Content="{x:Static loc:Strings.Login}"
+                           VerticalAlignment="Center"
+                           HorizontalAlignment="Center"
+                           FontSize="{StaticResource tsize_i2}"
+                           Foreground="{StaticResource appcolor_5}"
+                           FontWeight="bold"/>
+                </Border>
+
+                <Label HorizontalAlignment="Center"
+                       VerticalAlignment="Center"
+                       Margin="10"
+                       FontWeight="Bold"
+                       FontSize="{StaticResource tsize_i2}"
+                       Foreground="{StaticResource appcolor_5}"
+                       Content="{x:Static loc:Strings.Or}"/>
+
+                <Border Background="Transparent"
+                        Height="60"
+                        BorderThickness="1"
+                        BorderBrush="{StaticResource appcolor_3}"
+                        Margin="10"
+                        CornerRadius="30">
+
+                    <Label Content="{x:Static loc:Strings.Registration}"
+                           VerticalAlignment="Center"
+                           HorizontalAlignment="Center"
+                           FontSize="{StaticResource tsize_i2}"
+                           Foreground="{StaticResource appcolor_5}"
+                           FontWeight="bold"/>
+                </Border>
+            </StackPanel>
+        </Grid>
+    </Grid>
+</Window>

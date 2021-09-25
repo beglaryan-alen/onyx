@@ -7,13 +7,11 @@ C:\Users\Alen\source\repos\onyx\onyx_Client\onyx_Client_UI\bin\Debug\net5.0-wind
 C:\Users\Alen\source\repos\onyx\onyx_Client\onyx_Client_UI\bin\Debug\net5.0-windows\onyx_Client_UI.pdb
 C:\Users\Alen\source\repos\onyx\onyx_Client\onyx_Client_UI\obj\Debug\net5.0-windows\Controls\CustomTextbox.baml
 C:\Users\Alen\source\repos\onyx\onyx_Client\onyx_Client_UI\obj\Debug\net5.0-windows\Controls\CustomTextbox.g.cs
-C:\Users\Alen\source\repos\onyx\onyx_Client\onyx_Client_UI\obj\Debug\net5.0-windows\MainWindow.g.cs
 C:\Users\Alen\source\repos\onyx\onyx_Client\onyx_Client_UI\obj\Debug\net5.0-windows\App.g.cs
 C:\Users\Alen\source\repos\onyx\onyx_Client\onyx_Client_UI\obj\Debug\net5.0-windows\GeneratedInternalTypeHelper.g.cs
 C:\Users\Alen\source\repos\onyx\onyx_Client\onyx_Client_UI\obj\Debug\net5.0-windows\onyx_Client_UI_MarkupCompile.cache
 C:\Users\Alen\source\repos\onyx\onyx_Client\onyx_Client_UI\obj\Debug\net5.0-windows\onyx_Client_UI_MarkupCompile.lref
 C:\Users\Alen\source\repos\onyx\onyx_Client\onyx_Client_UI\obj\Debug\net5.0-windows\App.baml
-C:\Users\Alen\source\repos\onyx\onyx_Client\onyx_Client_UI\obj\Debug\net5.0-windows\MainWindow.baml
 C:\Users\Alen\source\repos\onyx\onyx_Client\onyx_Client_UI\obj\Debug\net5.0-windows\onyx_Client_UI.g.resources
 C:\Users\Alen\source\repos\onyx\onyx_Client\onyx_Client_UI\obj\Debug\net5.0-windows\onyx_Client_UI.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\Alen\source\repos\onyx\onyx_Client\onyx_Client_UI\obj\Debug\net5.0-windows\onyx_Client_UI.AssemblyInfoInputs.cache
@@ -70,3 +68,9 @@ C:\Users\Alen\source\repos\onyx\onyx_Client\onyx_Client_UI\bin\Debug\net5.0-wind
 C:\Users\Alen\source\repos\onyx\onyx_Client\onyx_Client_UI\bin\Debug\net5.0-windows\Crypto.pdb
 C:\Users\Alen\source\repos\onyx\onyx_Client\onyx_Client_UI\bin\Debug\net5.0-windows\IO.pdb
 C:\Users\Alen\source\repos\onyx\onyx_Client\onyx_Client_UI\obj\Debug\net5.0-windows\onyx_Client_UI.csproj.CopyComplete
+C:\Users\Alen\source\repos\onyx\onyx_Client\onyx_Client_UI\obj\Debug\net5.0-windows\Views\MainWindow.g.cs
+C:\Users\Alen\source\repos\onyx\onyx_Client\onyx_Client_UI\obj\Debug\net5.0-windows\Views\MainWindow.baml
+C:\Users\Alen\source\repos\onyx\onyx_Client\onyx_Client_UI\obj\Debug\net5.0-windows\Resources\Styles\DefaultResources.baml
+C:\Users\Alen\source\repos\onyx\onyx_Client\onyx_Client_UI\obj\Debug\net5.0-windows\Resources\Styles\DefaultResources.g.cs
+C:\Users\Alen\source\repos\onyx\onyx_Client\onyx_Client_UI\obj\Debug\net5.0-windows\onyx_Client_UI.Resources.Strings.Strings.resources
+C:\Users\Alen\source\repos\onyx\onyx_Client\onyx_Client_UI\obj\Debug\net5.0-windows\onyx_Client_UI.csproj.GenerateResource.cache

@@ -5,7 +5,7 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              mc:Ignorable="d"
              Padding="5"
-             Height="37"
+             Height="60"
              d:DesignHeight="450" d:DesignWidth="800"
              x:Name="customTextBox">
     <Border CornerRadius="{Binding CornerRadius, ElementName=customTextBox}"
@@ -19,11 +19,12 @@
             <Label Grid.Column="0"
                    Content="{Binding Placeholder, ElementName=customTextBox}"
                    Foreground="{StaticResource appcolor_4}"
-                   FontSize="10"
+                   FontSize="{StaticResource tsize_i3}"
                    VerticalContentAlignment="Center"
                    FontWeight="Bold"/>
 
             <TextBox Grid.Column="0"
+                     FontSize="{StaticResource tsize_i3}"
                      VerticalContentAlignment="Center"
                      GotFocus="TextBox_GotFocus"
                      LostFocus="TextBox_LostFocus"
@@ -36,6 +37,7 @@
             <Button Height="15"
                     Foreground="Transparent"
                     Background="Transparent"
+                    Focusable="False"
                     HorizontalAlignment="Right"
                     BorderBrush="Transparent"
                     Grid.Column="1">
@@ -54,7 +56,8 @@
                 </Button.Style>
                 <Image Source="{Binding RightIconImageSource, ElementName=customTextBox}"
                        VerticalAlignment="Center"
-                       Height="17"/>
+                       Height="20"
+                       Margin="10, 0"/>
             </Button>
         </Grid>
     </Border>

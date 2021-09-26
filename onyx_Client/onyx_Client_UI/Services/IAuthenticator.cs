@@ -12,7 +12,7 @@ namespace onyx_Client_UI.Services
         
         Task<Response> Register(User User);
         
-        Task<bool> Login(string username, string password);
+        Task<Response> Login(string username, string password);
 
         Task Logout();
     }

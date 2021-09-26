@@ -8,6 +8,10 @@ namespace onyx_Client_UI
     /// </summary>
     public partial class App : Application
     {
-        Config config = Config.getConfig();
+        public static Config config;
+        public App()
+        {
+            config = Config.getConfig();
+        }
     }
 }

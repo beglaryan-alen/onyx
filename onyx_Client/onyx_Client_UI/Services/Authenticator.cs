@@ -1,5 +1,6 @@
 ﻿using HttpBroker.Models;
 using onyx_Client_UI.Models;
+using onyx_Client_UI.Models.Auth;
 using System;
 using System.Threading.Tasks;
 
@@ -18,8 +19,7 @@ namespace onyx_Client_UI.Services
         /// <returns>Register result</returns>
         public Task<Response> Register(User user)
         {
-            //TODO: Realize method correctly.
-            throw new System.NotImplementedException();
+            return Task.Run(() =>HttpBroker.Client.Post<User, Response>(user, $"{App.config.BaseUrl}/authorize/register"));
         }
 
         /// <summary>
@@ -28,25 +28,12 @@ namespace onyx_Client_UI.Services
         /// <param name="username">username</param>
         /// <param name="password">password</param>
         /// <returns>If user exists.</returns>
-        public async Task<bool> Login(string username, string password)
+        public async Task<Response> Login(string username, string password)
         {
-            //TODO: Realize method correctly.
-            var user = new User()
-            {
-                Email = username,
-                Password = password,
-                Id = 123456,
-                DateOfBirth = DateTime.Now,
-                Gender = Gender.Man,
-                IdentificationNumber = "Id223322",
-                IDNumber = "IDD232323",
-                Name = "Имя",
-                Patronymic = "Отчество",
-                SurName = "Фамилия",
-                PhoneNumber = "+37477221409",
-            };
-            CurrentUser = user;
-            return true;
+            var response = HttpBroker.Client.Post<LoginRequest, DataResponse<LoginResponse>>(new LoginRequest() { Login = username, Password = password },$"{App.config.BaseUrl}/authorize/login");
+            if (response.IsOk)
+                CurrentUser = response.Data.User;
+            return response;
         }
 
         public Task Logout()

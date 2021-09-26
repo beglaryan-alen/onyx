@@ -1,17 +1,21 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 17
-VisualStudioVersion = 17.0.31710.8
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31205.134
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "onyx_Client_UI", "onyx_Client_UI\onyx_Client_UI.csproj", "{BFA216ED-E6C0-4EB3-A3F4-9EA979D78F3A}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HttpBroker", "HttpBroker\HttpBroker.csproj", "{C06F9232-96B1-4BF4-8847-DD6EB8A8C49B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Crypto", "Crypto\Crypto.csproj", "{EA83A4A3-6F77-4D0F-A7E4-C2A3ABAEBEC6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Crypto", "Crypto\Crypto.csproj", "{EA83A4A3-6F77-4D0F-A7E4-C2A3ABAEBEC6}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Config", "Config\Config.csproj", "{410232C7-79EF-4EB6-B703-F84B41E0A06C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IO", "IO\IO.csproj", "{5E03268F-7CE1-4B79-9615-F9AE0285946B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IO", "IO\IO.csproj", "{5E03268F-7CE1-4B79-9615-F9AE0285946B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Locker", "Locker\Locker.csproj", "{2FCC99CD-6493-43E2-A0EC-644333A89F86}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestServer", "TestServer\TestServer.csproj", "{11B73083-B8B5-40AD-ACE0-2143E83F0238}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +43,14 @@ Global
 		{5E03268F-7CE1-4B79-9615-F9AE0285946B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5E03268F-7CE1-4B79-9615-F9AE0285946B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5E03268F-7CE1-4B79-9615-F9AE0285946B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2FCC99CD-6493-43E2-A0EC-644333A89F86}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2FCC99CD-6493-43E2-A0EC-644333A89F86}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2FCC99CD-6493-43E2-A0EC-644333A89F86}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2FCC99CD-6493-43E2-A0EC-644333A89F86}.Release|Any CPU.Build.0 = Release|Any CPU
+		{11B73083-B8B5-40AD-ACE0-2143E83F0238}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{11B73083-B8B5-40AD-ACE0-2143E83F0238}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{11B73083-B8B5-40AD-ACE0-2143E83F0238}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{11B73083-B8B5-40AD-ACE0-2143E83F0238}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

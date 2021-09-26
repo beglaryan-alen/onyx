@@ -1,25 +1,21 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Alen\\source\\repos\\onyx\\onyx_Client\\onyx_Client_UI\\onyx_Client_UI.csproj": {}
+    "D:\\Projects\\onyx\\onyx\\onyx_Client\\onyx_Client_UI\\onyx_Client_UI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Alen\\source\\repos\\onyx\\onyx_Client\\Config\\Config.csproj": {
+    "D:\\Projects\\onyx\\onyx\\onyx_Client\\Config\\Config.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Alen\\source\\repos\\onyx\\onyx_Client\\Config\\Config.csproj",
+        "projectUniqueName": "D:\\Projects\\onyx\\onyx\\onyx_Client\\Config\\Config.csproj",
         "projectName": "Config",
-        "projectPath": "C:\\Users\\Alen\\source\\repos\\onyx\\onyx_Client\\Config\\Config.csproj",
-        "packagesPath": "C:\\Users\\Alen\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Alen\\source\\repos\\onyx\\onyx_Client\\Config\\obj\\",
+        "projectPath": "D:\\Projects\\onyx\\onyx\\onyx_Client\\Config\\Config.csproj",
+        "packagesPath": "C:\\Users\\any2k\\.nuget\\packages\\",
+        "outputPath": "D:\\Projects\\onyx\\onyx\\onyx_Client\\Config\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Alen\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\any2k\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
@@ -32,8 +28,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\Alen\\source\\repos\\onyx\\onyx_Client\\IO\\IO.csproj": {
-                "projectPath": "C:\\Users\\Alen\\source\\repos\\onyx\\onyx_Client\\IO\\IO.csproj"
+              "D:\\Projects\\onyx\\onyx\\onyx_Client\\IO\\IO.csproj": {
+                "projectPath": "D:\\Projects\\onyx\\onyx\\onyx_Client\\IO\\IO.csproj"
               }
             }
           }
@@ -62,26 +58,22 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.302\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Alen\\source\\repos\\onyx\\onyx_Client\\Crypto\\Crypto.csproj": {
+    "D:\\Projects\\onyx\\onyx\\onyx_Client\\Crypto\\Crypto.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Alen\\source\\repos\\onyx\\onyx_Client\\Crypto\\Crypto.csproj",
+        "projectUniqueName": "D:\\Projects\\onyx\\onyx\\onyx_Client\\Crypto\\Crypto.csproj",
         "projectName": "Crypto",
-        "projectPath": "C:\\Users\\Alen\\source\\repos\\onyx\\onyx_Client\\Crypto\\Crypto.csproj",
-        "packagesPath": "C:\\Users\\Alen\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Alen\\source\\repos\\onyx\\onyx_Client\\Crypto\\obj\\",
+        "projectPath": "D:\\Projects\\onyx\\onyx\\onyx_Client\\Crypto\\Crypto.csproj",
+        "packagesPath": "C:\\Users\\any2k\\.nuget\\packages\\",
+        "outputPath": "D:\\Projects\\onyx\\onyx\\onyx_Client\\Crypto\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Alen\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\any2k\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
@@ -120,26 +112,22 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.302\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Alen\\source\\repos\\onyx\\onyx_Client\\HttpBroker\\HttpBroker.csproj": {
+    "D:\\Projects\\onyx\\onyx\\onyx_Client\\HttpBroker\\HttpBroker.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Alen\\source\\repos\\onyx\\onyx_Client\\HttpBroker\\HttpBroker.csproj",
+        "projectUniqueName": "D:\\Projects\\onyx\\onyx\\onyx_Client\\HttpBroker\\HttpBroker.csproj",
         "projectName": "HttpBroker",
-        "projectPath": "C:\\Users\\Alen\\source\\repos\\onyx\\onyx_Client\\HttpBroker\\HttpBroker.csproj",
-        "packagesPath": "C:\\Users\\Alen\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Alen\\source\\repos\\onyx\\onyx_Client\\HttpBroker\\obj\\",
+        "projectPath": "D:\\Projects\\onyx\\onyx\\onyx_Client\\HttpBroker\\HttpBroker.csproj",
+        "packagesPath": "C:\\Users\\any2k\\.nuget\\packages\\",
+        "outputPath": "D:\\Projects\\onyx\\onyx\\onyx_Client\\HttpBroker\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Alen\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\any2k\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
@@ -184,26 +172,22 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.302\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Alen\\source\\repos\\onyx\\onyx_Client\\IO\\IO.csproj": {
+    "D:\\Projects\\onyx\\onyx\\onyx_Client\\IO\\IO.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Alen\\source\\repos\\onyx\\onyx_Client\\IO\\IO.csproj",
+        "projectUniqueName": "D:\\Projects\\onyx\\onyx\\onyx_Client\\IO\\IO.csproj",
         "projectName": "IO",
-        "projectPath": "C:\\Users\\Alen\\source\\repos\\onyx\\onyx_Client\\IO\\IO.csproj",
-        "packagesPath": "C:\\Users\\Alen\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Alen\\source\\repos\\onyx\\onyx_Client\\IO\\obj\\",
+        "projectPath": "D:\\Projects\\onyx\\onyx\\onyx_Client\\IO\\IO.csproj",
+        "packagesPath": "C:\\Users\\any2k\\.nuget\\packages\\",
+        "outputPath": "D:\\Projects\\onyx\\onyx\\onyx_Client\\IO\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Alen\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\any2k\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
@@ -216,8 +200,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\Alen\\source\\repos\\onyx\\onyx_Client\\Crypto\\Crypto.csproj": {
-                "projectPath": "C:\\Users\\Alen\\source\\repos\\onyx\\onyx_Client\\Crypto\\Crypto.csproj"
+              "D:\\Projects\\onyx\\onyx\\onyx_Client\\Crypto\\Crypto.csproj": {
+                "projectPath": "D:\\Projects\\onyx\\onyx\\onyx_Client\\Crypto\\Crypto.csproj"
               }
             }
           }
@@ -246,26 +230,22 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.302\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Alen\\source\\repos\\onyx\\onyx_Client\\onyx_Client_UI\\onyx_Client_UI.csproj": {
+    "D:\\Projects\\onyx\\onyx\\onyx_Client\\onyx_Client_UI\\onyx_Client_UI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Alen\\source\\repos\\onyx\\onyx_Client\\onyx_Client_UI\\onyx_Client_UI.csproj",
+        "projectUniqueName": "D:\\Projects\\onyx\\onyx\\onyx_Client\\onyx_Client_UI\\onyx_Client_UI.csproj",
         "projectName": "onyx_Client_UI",
-        "projectPath": "C:\\Users\\Alen\\source\\repos\\onyx\\onyx_Client\\onyx_Client_UI\\onyx_Client_UI.csproj",
-        "packagesPath": "C:\\Users\\Alen\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Alen\\source\\repos\\onyx\\onyx_Client\\onyx_Client_UI\\obj\\",
+        "projectPath": "D:\\Projects\\onyx\\onyx\\onyx_Client\\onyx_Client_UI\\onyx_Client_UI.csproj",
+        "packagesPath": "C:\\Users\\any2k\\.nuget\\packages\\",
+        "outputPath": "D:\\Projects\\onyx\\onyx\\onyx_Client\\onyx_Client_UI\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Alen\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\any2k\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0-windows7.0"
@@ -278,11 +258,11 @@
           "net5.0-windows7.0": {
             "targetAlias": "net5.0-windows",
             "projectReferences": {
-              "C:\\Users\\Alen\\source\\repos\\onyx\\onyx_Client\\Config\\Config.csproj": {
-                "projectPath": "C:\\Users\\Alen\\source\\repos\\onyx\\onyx_Client\\Config\\Config.csproj"
+              "D:\\Projects\\onyx\\onyx\\onyx_Client\\Config\\Config.csproj": {
+                "projectPath": "D:\\Projects\\onyx\\onyx\\onyx_Client\\Config\\Config.csproj"
               },
-              "C:\\Users\\Alen\\source\\repos\\onyx\\onyx_Client\\HttpBroker\\HttpBroker.csproj": {
-                "projectPath": "C:\\Users\\Alen\\source\\repos\\onyx\\onyx_Client\\HttpBroker\\HttpBroker.csproj"
+              "D:\\Projects\\onyx\\onyx\\onyx_Client\\HttpBroker\\HttpBroker.csproj": {
+                "projectPath": "D:\\Projects\\onyx\\onyx\\onyx_Client\\HttpBroker\\HttpBroker.csproj"
               }
             }
           }
@@ -314,7 +294,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.302\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     }

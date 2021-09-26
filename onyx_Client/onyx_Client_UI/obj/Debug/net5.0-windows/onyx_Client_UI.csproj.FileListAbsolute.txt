@@ -65,8 +65,6 @@ C:\Users\Alen\source\repos\onyx\onyx_Client\onyx_Client_UI\bin\Debug\net5.0-wind
 C:\Users\Alen\source\repos\onyx\onyx_Client\onyx_Client_UI\bin\Debug\net5.0-windows\Crypto.pdb
 C:\Users\Alen\source\repos\onyx\onyx_Client\onyx_Client_UI\bin\Debug\net5.0-windows\IO.pdb
 C:\Users\Alen\source\repos\onyx\onyx_Client\onyx_Client_UI\obj\Debug\net5.0-windows\onyx_Client_UI.csproj.CopyComplete
-C:\Users\Alen\source\repos\onyx\onyx_Client\onyx_Client_UI\obj\Debug\net5.0-windows\Views\MainWindow.g.cs
-C:\Users\Alen\source\repos\onyx\onyx_Client\onyx_Client_UI\obj\Debug\net5.0-windows\Views\MainWindow.baml
 C:\Users\Alen\source\repos\onyx\onyx_Client\onyx_Client_UI\obj\Debug\net5.0-windows\Resources\Styles\DefaultResources.baml
 C:\Users\Alen\source\repos\onyx\onyx_Client\onyx_Client_UI\obj\Debug\net5.0-windows\Resources\Styles\DefaultResources.g.cs
 C:\Users\Alen\source\repos\onyx\onyx_Client\onyx_Client_UI\obj\Debug\net5.0-windows\onyx_Client_UI.Resources.Strings.Strings.resources
@@ -78,3 +76,6 @@ D:\Projects\onyx\onyx\onyx_Client\onyx_Client_UI\obj\Debug\net5.0-windows\Views\
 D:\Projects\onyx\onyx\onyx_Client\onyx_Client_UI\obj\Debug\net5.0-windows\Views\MainWindow.baml
 D:\Projects\onyx\onyx\onyx_Client\onyx_Client_UI\obj\Debug\net5.0-windows\onyx_Client_UI.Resources.Strings.Strings.resources
 D:\Projects\onyx\onyx\onyx_Client\onyx_Client_UI\obj\Debug\net5.0-windows\onyx_Client_UI.csproj.GenerateResource.cache
+C:\Users\Alen\Source\Repos\onyx\onyx_Client\onyx_Client_UI\bin\Debug\net5.0-windows\MvvmHelpers.dll
+C:\Users\Alen\Source\Repos\onyx\onyx_Client\onyx_Client_UI\obj\Debug\net5.0-windows\Views\LoginView.g.cs
+C:\Users\Alen\Source\Repos\onyx\onyx_Client\onyx_Client_UI\obj\Debug\net5.0-windows\Views\LoginView.baml

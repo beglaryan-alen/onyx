@@ -10,11 +10,11 @@ none
 false
 TRACE;RELEASE;NET;NET5_0;NETCOREAPP
 C:\Users\Alen\Source\Repos\onyx\onyx_Client\onyx_Client_UI\App.xaml
-3-1720487190
+3245072539
 
-15-368676620
-195-2033815211
-Controls\CustomTextbox.xaml;Resources\Styles\DefaultResources.xaml;Views\MainWindow.xaml;
+17-915089931
+199-1144679431
+Controls\CustomTextbox.xaml;Resources\Styles\DefaultResources.xaml;Views\LoginView.xaml;
 
 True
 

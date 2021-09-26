@@ -1,13 +1,13 @@
-﻿<Window x:Class="onyx_Client_UI.Views.MainWindow"
+﻿<Window x:Class="onyx_Client_UI.Views.LoginView"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        mc:Ignorable="d"
         xmlns:controls="clr-namespace:onyx_Client_UI.Controls"
         xmlns:loc="clr-namespace:onyx_Client_UI.Resources.Strings"
+        mc:Ignorable="d"
         Background="{StaticResource appcolor_1}"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="1080" Width="1920">
     
     <Grid Margin="5">
         <Grid.RowDefinitions>

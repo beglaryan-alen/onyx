@@ -74,6 +74,15 @@ namespace onyx_Client_UI
 			}
 		}
 
+		protected void SetPropertyChanged<T>(string propertyName, ref T field, T newValue)
+		{
+			if (!EqualityComparer<T>.Default.Equals(field, newValue))
+			{
+				field = newValue;
+				PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+			}
+		}
+
 		public event PropertyChangedEventHandler PropertyChanged;
 	}
 }

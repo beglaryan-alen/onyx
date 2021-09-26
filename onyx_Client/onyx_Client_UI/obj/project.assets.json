@@ -11,6 +11,27 @@
           "lib/netstandard2.0/Newtonsoft.Json.dll": {}
         }
       },
+      "Refractored.MvvmHelpers/1.6.2": {
+        "type": "package",
+        "dependencies": {
+          "System.ValueTuple": "4.5.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/MvvmHelpers.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/MvvmHelpers.dll": {}
+        }
+      },
+      "System.ValueTuple/4.5.0": {
+        "type": "package",
+        "compile": {
+          "ref/netcoreapp2.0/_._": {}
+        },
+        "runtime": {
+          "lib/netcoreapp2.0/_._": {}
+        }
+      },
       "Config/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
@@ -90,6 +111,71 @@
         "packageIcon.png"
       ]
     },
+    "Refractored.MvvmHelpers/1.6.2": {
+      "sha512": "pXiyT0ad3QI7IzZSSjVNliyhyyAe7lmNPdfAEgSrtjhF9twrYoKbBlTd58IJc67Fw8QmHEur8F9eBA4rj+BZAg==",
+      "type": "package",
+      "path": "refractored.mvvmhelpers/1.6.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "lib/net461/MvvmHelpers.dll",
+        "lib/net461/MvvmHelpers.pdb",
+        "lib/net461/MvvmHelpers.xml",
+        "lib/netstandard1.0/MvvmHelpers.dll",
+        "lib/netstandard1.0/MvvmHelpers.pdb",
+        "lib/netstandard1.0/MvvmHelpers.xml",
+        "lib/netstandard2.0/MvvmHelpers.dll",
+        "lib/netstandard2.0/MvvmHelpers.pdb",
+        "lib/netstandard2.0/MvvmHelpers.xml",
+        "refractored.mvvmhelpers.1.6.2.nupkg.sha512",
+        "refractored.mvvmhelpers.nuspec"
+      ]
+    },
+    "System.ValueTuple/4.5.0": {
+      "sha512": "okurQJO6NRE/apDIP23ajJ0hpiNmJ+f0BwOlB/cSqTLQlw5upkf+5+96+iG2Jw40G1fCVCyPz/FhIABUjMR+RQ==",
+      "type": "package",
+      "path": "system.valuetuple/4.5.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net461/System.ValueTuple.dll",
+        "lib/net461/System.ValueTuple.xml",
+        "lib/net47/System.ValueTuple.dll",
+        "lib/net47/System.ValueTuple.xml",
+        "lib/netcoreapp2.0/_._",
+        "lib/netstandard1.0/System.ValueTuple.dll",
+        "lib/netstandard1.0/System.ValueTuple.xml",
+        "lib/netstandard2.0/_._",
+        "lib/portable-net40+sl4+win8+wp8/System.ValueTuple.dll",
+        "lib/portable-net40+sl4+win8+wp8/System.ValueTuple.xml",
+        "lib/uap10.0.16299/_._",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "ref/MonoAndroid10/_._",
+        "ref/MonoTouch10/_._",
+        "ref/net461/System.ValueTuple.dll",
+        "ref/net47/System.ValueTuple.dll",
+        "ref/netcoreapp2.0/_._",
+        "ref/netstandard2.0/_._",
+        "ref/portable-net40+sl4+win8+wp8/System.ValueTuple.dll",
+        "ref/uap10.0.16299/_._",
+        "ref/xamarinios10/_._",
+        "ref/xamarinmac20/_._",
+        "ref/xamarintvos10/_._",
+        "ref/xamarinwatchos10/_._",
+        "system.valuetuple.4.5.0.nupkg.sha512",
+        "system.valuetuple.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
     "Config/1.0.0": {
       "type": "project",
       "path": "../Config/Config.csproj",
@@ -114,24 +200,30 @@
   "projectFileDependencyGroups": {
     "net5.0-windows7.0": [
       "Config >= 1.0.0",
-      "HttpBroker >= 1.0.0"
+      "HttpBroker >= 1.0.0",
+      "Refractored.MvvmHelpers >= 1.6.2"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\any2k\\.nuget\\packages\\": {}
+    "C:\\Users\\Alen\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Projects\\onyx\\onyx\\onyx_Client\\onyx_Client_UI\\onyx_Client_UI.csproj",
+      "projectUniqueName": "C:\\Users\\Alen\\Source\\Repos\\onyx\\onyx_Client\\onyx_Client_UI\\onyx_Client_UI.csproj",
       "projectName": "onyx_Client_UI",
-      "projectPath": "D:\\Projects\\onyx\\onyx\\onyx_Client\\onyx_Client_UI\\onyx_Client_UI.csproj",
-      "packagesPath": "C:\\Users\\any2k\\.nuget\\packages\\",
-      "outputPath": "D:\\Projects\\onyx\\onyx\\onyx_Client\\onyx_Client_UI\\obj\\",
+      "projectPath": "C:\\Users\\Alen\\Source\\Repos\\onyx\\onyx_Client\\onyx_Client_UI\\onyx_Client_UI.csproj",
+      "packagesPath": "C:\\Users\\Alen\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Alen\\Source\\Repos\\onyx\\onyx_Client\\onyx_Client_UI\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+      ],
       "configFilePaths": [
-        "C:\\Users\\any2k\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\Alen\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net5.0-windows7.0"
@@ -144,11 +236,11 @@
         "net5.0-windows7.0": {
           "targetAlias": "net5.0-windows",
           "projectReferences": {
-            "D:\\Projects\\onyx\\onyx\\onyx_Client\\Config\\Config.csproj": {
-              "projectPath": "D:\\Projects\\onyx\\onyx\\onyx_Client\\Config\\Config.csproj"
+            "C:\\Users\\Alen\\Source\\Repos\\onyx\\onyx_Client\\Config\\Config.csproj": {
+              "projectPath": "C:\\Users\\Alen\\Source\\Repos\\onyx\\onyx_Client\\Config\\Config.csproj"
             },
-            "D:\\Projects\\onyx\\onyx\\onyx_Client\\HttpBroker\\HttpBroker.csproj": {
-              "projectPath": "D:\\Projects\\onyx\\onyx\\onyx_Client\\HttpBroker\\HttpBroker.csproj"
+            "C:\\Users\\Alen\\Source\\Repos\\onyx\\onyx_Client\\HttpBroker\\HttpBroker.csproj": {
+              "projectPath": "C:\\Users\\Alen\\Source\\Repos\\onyx\\onyx_Client\\HttpBroker\\HttpBroker.csproj"
             }
           }
         }
@@ -162,6 +254,12 @@
     "frameworks": {
       "net5.0-windows7.0": {
         "targetAlias": "net5.0-windows",
+        "dependencies": {
+          "Refractored.MvvmHelpers": {
+            "target": "Package",
+            "version": "[1.6.2, )"
+          }
+        },
         "imports": [
           "net461",
           "net462",
@@ -180,7 +278,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.302\\RuntimeIdentifierGraph.json"
       }
     }
   }

@@ -10,6 +10,10 @@ namespace onyx_Client_UI.Views
         public MainWindow()
         {
             InitializeComponent();
+            this.WindowStartupLocation = System.Windows.WindowStartupLocation.CenterScreen;
+            this.WindowState = WindowState.Maximized;
+            this.WindowStyle = WindowStyle.None;
+
         }
     }
 }

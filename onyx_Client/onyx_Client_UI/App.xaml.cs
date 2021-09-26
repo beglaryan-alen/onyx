@@ -11,7 +11,9 @@ namespace onyx_Client_UI
         public static Config config;
         public App()
         {
-            config = Config.getConfig();
+            config = Config.getConfig();           
         }
+
+        
     }
 }

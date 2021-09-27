@@ -1,7 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\onyx_Client",
+    "\\onyx_Client\\onyx_Client_UI",
+    "\\onyx_Client\\onyx_Client_UI\\Views"
   ],
-  "SelectedNode": "\\C:\\Users\\Alen\\Source\\Repos\\onyx",
+  "SelectedNode": "\\onyx_Client\\onyx_Client_UI\\Views\\LoginView.xaml",
   "PreviewInSolutionExplorer": false
 }

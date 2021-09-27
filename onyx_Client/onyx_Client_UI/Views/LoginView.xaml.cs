@@ -1,21 +1,15 @@
-﻿using onyx_Client_UI.ViewModel;
-using System.Windows;
+﻿using System.Windows.Controls;
 
 namespace onyx_Client_UI.Views
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
-    public partial class LoginView : Window
+    public partial class LoginView : UserControl
     {
         public LoginView()
         {
             InitializeComponent();
-            DataContext = new LoginViewModel();
-            this.WindowStartupLocation = System.Windows.WindowStartupLocation.CenterScreen;
-            this.WindowState = WindowState.Maximized;
-            this.WindowStyle = WindowStyle.None;
-
         }
     }
 }

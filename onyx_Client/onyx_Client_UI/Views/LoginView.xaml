@@ -1,15 +1,19 @@
-﻿<Window x:Class="onyx_Client_UI.Views.LoginView"
-        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:controls="clr-namespace:onyx_Client_UI.Controls"
-        xmlns:loc="clr-namespace:onyx_Client_UI.Resources.Strings"
-        mc:Ignorable="d"
-        Background="{StaticResource appcolor_1}"
-        Title="MainWindow" Height="1080" Width="1920">
+﻿<UserControl x:Class="onyx_Client_UI.Views.LoginView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:controls="clr-namespace:onyx_Client_UI.Controls"
+             xmlns:resources="clr-namespace:onyx_Client_UI.Resources.Styles"
+             xmlns:loc="clr-namespace:onyx_Client_UI.Resources.Strings"
+             mc:Ignorable="d"
+             >
+
+    <UserControl.Resources>
+        <resources:DefaultResources/>
+    </UserControl.Resources>
     
-    <Grid Margin="5">
+    <Grid Background="{StaticResource appcolor_1}">
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
@@ -83,13 +87,18 @@
                         Height="60"
                         Margin="10"
                         CornerRadius="30">
-                    
+
+                    <Border.InputBindings>
+                        <MouseBinding MouseAction="LeftClick" Command="{Binding LoginCommand}"/>
+                    </Border.InputBindings>
+
                     <Label Content="{x:Static loc:Strings.Login}"
                            VerticalAlignment="Center"
                            HorizontalAlignment="Center"
                            FontSize="{StaticResource tsize_i2}"
                            Foreground="{StaticResource appcolor_5}"
                            FontWeight="bold"/>
+                    
                 </Border>
 
                 <Label HorizontalAlignment="Center"
@@ -117,4 +126,4 @@
             </StackPanel>
         </Grid>
     </Grid>
-</Window>
+</UserControl>

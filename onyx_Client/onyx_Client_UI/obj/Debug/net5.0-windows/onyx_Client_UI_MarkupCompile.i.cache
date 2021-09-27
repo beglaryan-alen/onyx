@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\Alen\Source\Repos\onyx\onyx_Client\onyx_Client_UI\obj\Debug\net5.0-windows\
+C:\Users\Alen\source\repos\onyx\onyx_Client\onyx_Client_UI\obj\Debug\net5.0-windows\
 onyx_Client_UI
 none
 false
 TRACE;DEBUG;NET;NET5_0;NETCOREAPP
-C:\Users\Alen\Source\Repos\onyx\onyx_Client\onyx_Client_UI\App.xaml
-3245072539
+C:\Users\Alen\source\repos\onyx\onyx_Client\onyx_Client_UI\App.xaml
+52029517237
 
-18-2043264951
-199360661705
-Controls\CustomTextbox.xaml;Resources\Styles\DefaultResources.xaml;Views\LoginView.xaml;
+351538942826
+199572849833
+Controls\CustomTextbox.xaml;Resources\Styles\DefaultResources.xaml;Views\HomeView.xaml;Views\LoginView.xaml;Views\MainWindow.xaml;
 
 True
 

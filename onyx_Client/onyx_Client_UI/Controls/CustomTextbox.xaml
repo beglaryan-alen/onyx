@@ -7,7 +7,6 @@
              mc:Ignorable="d"
              Padding="5"
              Height="60"
-             d:DesignHeight="450" d:DesignWidth="800"
              x:Name="customTextBox">
 
     <UserControl.Resources>
@@ -15,21 +14,42 @@
     </UserControl.Resources>
 
     <Border CornerRadius="{Binding CornerRadius, ElementName=customTextBox}"
-            Background="{StaticResource appcolor_2}">
+            Background="{Binding BackgroundColor, ElementName=customTextBox}">
         <Grid>
             <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
                 <ColumnDefinition Width="*"/>
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
-            
-            <Label Grid.Column="0"
+
+            <Image Source="{Binding LeftIconImageSource, ElementName=customTextBox}"
+                   Grid.Column="0"
+                   VerticalAlignment="Bottom"
+                   Height="20">
+                <Image.Style>
+                    <Style TargetType="Image">
+                        <Setter Property="Visibility"
+                                Value="Hidden"/>
+                        <Style.Triggers>
+                            <DataTrigger Binding="{Binding HasLeftIcon, ElementName=customTextBox}"
+                                         Value="True">
+                                <Setter Property="Visibility"
+                                        Value="Visible"/>
+                            </DataTrigger>
+                        </Style.Triggers>
+                    </Style>
+
+                </Image.Style>
+            </Image>
+
+            <Label Grid.Column="1"
                    Content="{Binding Placeholder, ElementName=customTextBox}"
                    Foreground="{StaticResource appcolor_4}"
                    FontSize="{StaticResource tsize_i3}"
                    VerticalContentAlignment="Center"
                    FontWeight="Bold"/>
 
-            <TextBox Grid.Column="0"
+            <TextBox Grid.Column="1"
                      FontSize="{StaticResource tsize_i3}"
                      VerticalContentAlignment="Center"
                      GotFocus="TextBox_GotFocus"
@@ -46,7 +66,7 @@
                     Focusable="False"
                     HorizontalAlignment="Right"
                     BorderBrush="Transparent"
-                    Grid.Column="1">
+                    Grid.Column="2">
                 <Button.Style>
                     <Style TargetType="Button">
                         <Setter Property="Visibility"

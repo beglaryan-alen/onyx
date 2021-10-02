@@ -10,9 +10,15 @@
     <Compile Update="Controls\CustomTextBox.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Controls\NavigationBar.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Page Update="Controls\CustomTextBox.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Controls\NavigationBar.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Resources\Styles\DefaultResources.xaml">

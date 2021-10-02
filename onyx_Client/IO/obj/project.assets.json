@@ -33,11 +33,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Alen\\Source\\Repos\\onyx\\onyx_Client\\IO\\IO.csproj",
+      "projectUniqueName": "C:\\Users\\Alen\\source\\repos\\onyx\\onyx_Client\\IO\\IO.csproj",
       "projectName": "IO",
-      "projectPath": "C:\\Users\\Alen\\Source\\Repos\\onyx\\onyx_Client\\IO\\IO.csproj",
+      "projectPath": "C:\\Users\\Alen\\source\\repos\\onyx\\onyx_Client\\IO\\IO.csproj",
       "packagesPath": "C:\\Users\\Alen\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Alen\\Source\\Repos\\onyx\\onyx_Client\\IO\\obj\\",
+      "outputPath": "C:\\Users\\Alen\\source\\repos\\onyx\\onyx_Client\\IO\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
@@ -58,8 +58,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Users\\Alen\\Source\\Repos\\onyx\\onyx_Client\\Crypto\\Crypto.csproj": {
-              "projectPath": "C:\\Users\\Alen\\Source\\Repos\\onyx\\onyx_Client\\Crypto\\Crypto.csproj"
+            "C:\\Users\\Alen\\source\\repos\\onyx\\onyx_Client\\Crypto\\Crypto.csproj": {
+              "projectPath": "C:\\Users\\Alen\\source\\repos\\onyx\\onyx_Client\\Crypto\\Crypto.csproj"
             }
           }
         }

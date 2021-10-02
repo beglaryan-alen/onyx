@@ -15,6 +15,7 @@
 
   <ItemGroup>
     <None Remove="Resources\Images\remove_red_eye.png" />
+    <None Remove="Resources\Images\search.png" />
   </ItemGroup>
 
   <ItemGroup>
@@ -28,6 +29,7 @@
 
   <ItemGroup>
     <Resource Include="Resources\Images\remove_red_eye.png" />
+    <Resource Include="Resources\Images\search.png" />
   </ItemGroup>
 
   <ItemGroup>

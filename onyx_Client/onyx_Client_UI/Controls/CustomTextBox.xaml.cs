@@ -1,5 +1,6 @@
 ﻿using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Media;
 
 namespace onyx_Client_UI.Controls
 {
@@ -57,12 +58,36 @@ namespace onyx_Client_UI.Controls
             set { SetValue(RightIconImageSourceProperty, value); }
         }
 
+        public static readonly DependencyProperty HasLeftIconProperty =
+            DependencyProperty.Register(nameof(HasLeftIcon), typeof(bool), typeof(CustomTextBox));
+        public bool HasLeftIcon
+        {
+            get { return (bool)GetValue(HasLeftIconProperty); }
+            set { SetValue(HasLeftIconProperty, value); }
+        }
+
+        public static readonly DependencyProperty LeftIconImageSourceProperty =
+            DependencyProperty.Register(nameof(LeftIconImageSource), typeof(string), typeof(CustomTextBox));
+        public string LeftIconImageSource
+        {
+            get { return (string)GetValue(LeftIconImageSourceProperty); }
+            set { SetValue(LeftIconImageSourceProperty, value); }
+        }
+
         public static readonly DependencyProperty IsPasswordProperty =
             DependencyProperty.Register(nameof(IsPassword), typeof(bool), typeof(CustomTextBox));
         public bool IsPassword
         {
             get { return (bool)GetValue(IsPasswordProperty); }
             set { SetValue(IsPasswordProperty, value); }
+        }
+
+        public static readonly DependencyProperty BackgroundColorProperty =
+            DependencyProperty.Register(nameof(BackgroundColor), typeof(SolidColorBrush), typeof(CustomTextBox));
+        public SolidColorBrush BackgroundColor
+        {
+            get { return (SolidColorBrush)GetValue(BackgroundColorProperty); }
+            set { SetValue(BackgroundColorProperty, value); }
         }
         #endregion
 

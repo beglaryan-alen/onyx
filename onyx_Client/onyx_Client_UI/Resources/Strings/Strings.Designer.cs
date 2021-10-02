@@ -70,6 +70,15 @@ namespace onyx_Client_UI.Resources.Strings {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Bar.
+        /// </summary>
+        public static string Bar {
+            get {
+                return ResourceManager.GetString("Bar", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to BIND.
         /// </summary>
         public static string Bind {
@@ -133,6 +142,15 @@ namespace onyx_Client_UI.Resources.Strings {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Cybershoke.
+        /// </summary>
+        public static string Cybershoke {
+            get {
+                return ResourceManager.GetString("Cybershoke", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Don&apos;t forget it!.
         /// </summary>
         public static string Don_tforgetit {
@@ -165,6 +183,15 @@ namespace onyx_Client_UI.Resources.Strings {
         public static string Female {
             get {
                 return ResourceManager.GetString("Female", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Games.
+        /// </summary>
+        public static string Games {
+            get {
+                return ResourceManager.GetString("Games", resourceCulture);
             }
         }
         
@@ -349,6 +376,15 @@ namespace onyx_Client_UI.Resources.Strings {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Promocode.
+        /// </summary>
+        public static string Promocode {
+            get {
+                return ResourceManager.GetString("Promocode", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Register to get started.
         /// </summary>
         public static string Registertogetstarted {
@@ -367,6 +403,15 @@ namespace onyx_Client_UI.Resources.Strings {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Reservation.
+        /// </summary>
+        public static string Reservation {
+            get {
+                return ResourceManager.GetString("Reservation", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Sign in to continue.
         /// </summary>
         public static string Signintocontinue {
@@ -381,6 +426,15 @@ namespace onyx_Client_UI.Resources.Strings {
         public static string Signup {
             get {
                 return ResourceManager.GetString("Signup", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Soft.
+        /// </summary>
+        public static string Soft {
+            get {
+                return ResourceManager.GetString("Soft", resourceCulture);
             }
         }
         

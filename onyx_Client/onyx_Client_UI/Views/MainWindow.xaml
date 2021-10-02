@@ -6,6 +6,8 @@
         xmlns:views="clr-namespace:onyx_Client_UI.Views"
         xmlns:viewmodels="clr-namespace:onyx_Client_UI.ViewModel"
         mc:Ignorable="d"
+        Height="900"
+        Width="1440"
         >
     <ContentControl Content="{Binding CurrentViewModel}">
         <ContentControl.Resources>

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "9ye1GFtFXod8LW65MKLSFYrQjgd8IEyRX5M7Js1XoEzcDrdC9znKaVLgirhZAsFwgaOw3ZrUoxHVsbCF5NGHcg==",
+  "dgSpecHash": "FrI1UvYGJhnurYIJt5cjWCQogyn/TQComrxOtMrjqmqHfMm7a6PCS5EJTzh35MLXTjbJKKCBGzejoTGg0oqMuw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Alen\\Source\\Repos\\onyx\\onyx_Client\\onyx_Client_UI\\onyx_Client_UI.csproj",
+  "projectFilePath": "C:\\Users\\Alen\\source\\repos\\onyx\\onyx_Client\\onyx_Client_UI\\onyx_Client_UI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Alen\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
     "C:\\Users\\Alen\\.nuget\\packages\\refractored.mvvmhelpers\\1.6.2\\refractored.mvvmhelpers.1.6.2.nupkg.sha512",

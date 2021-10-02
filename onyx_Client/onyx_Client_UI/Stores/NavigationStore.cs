@@ -5,7 +5,6 @@ namespace onyx_Client_UI.Stores
 {
     public class NavigationStore
     {
-
         public event Action CurrentViewModelChanged;
 
         private ViewModelBase _currentViewModel;

@@ -4,10 +4,10 @@
                     x:Class="onyx_Client_UI.Resources.Styles.DefaultResources">
 
     <SolidColorBrush x:Key="appcolor_1"
-                     Color="#131416"/>
+                     Color="#15181D"/>
     
     <SolidColorBrush x:Key="appcolor_2"
-                     Color="#0F0F11"/>
+                     Color="#1E2127"/>
     
     <SolidColorBrush x:Key="appcolor_3"
                      Color="#1727AB"/>

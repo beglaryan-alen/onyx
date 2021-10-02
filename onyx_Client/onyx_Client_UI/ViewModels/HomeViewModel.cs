@@ -10,7 +10,7 @@ namespace onyx_Client_UI.ViewModel
 
         public HomeViewModel(NavigationStore navigationStore)
         {
-            LogoutCommand = new NavigateLoginCommand(navigationStore);
+            LogoutCommand = new NavigateCommand<LoginViewModel>(navigationStore, () => new LoginViewModel(navigationStore));
         }
     }
 }

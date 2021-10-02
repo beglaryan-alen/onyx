@@ -2,9 +2,8 @@
   "ExpandedNodes": [
     "",
     "\\onyx_Client",
-    "\\onyx_Client\\onyx_Client_UI",
-    "\\onyx_Client\\onyx_Client_UI\\Views"
+    "\\onyx_Client\\onyx_Client_UI"
   ],
-  "SelectedNode": "\\onyx_Client\\onyx_Client_UI\\Views\\LoginView.xaml",
+  "SelectedNode": "\\onyx_Client\\onyx_Client_UI\\ViewModels",
   "PreviewInSolutionExplorer": false
 }

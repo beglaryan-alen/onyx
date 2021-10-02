@@ -1,0 +1,48 @@
+﻿<UserControl x:Class="onyx_Client_UI.Controls.NavigationBar"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:loc="clr-namespace:onyx_Client_UI.Resources.Strings"
+             xmlns:resources="clr-namespace:onyx_Client_UI.Resources.Styles"
+             mc:Ignorable="d">
+
+    <UserControl.Resources>
+        <resources:DefaultResources/>
+    </UserControl.Resources>
+
+    <Grid>
+        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="Auto"/>
+        </Grid.ColumnDefinitions>
+        <RadioButton Grid.Column="0"
+                     Content="{x:Static loc:Strings.Games}"
+                     Foreground="{StaticResource appcolor_5}"/>
+
+        <RadioButton Grid.Column="1"
+                     Content="{x:Static loc:Strings.Soft}"
+                     Foreground="{StaticResource appcolor_5}"/>
+
+        <RadioButton Grid.Column="2"
+                     Content="{x:Static loc:Strings.Promocode}"
+                     Foreground="{StaticResource appcolor_5}"/>
+
+        <RadioButton Grid.Column="3"
+                     Content="{x:Static loc:Strings.Bar}"
+                     Foreground="{StaticResource appcolor_5}"/>
+
+        <RadioButton Grid.Column="4"
+                     Content="{x:Static loc:Strings.Reservation}"
+                     Foreground="{StaticResource appcolor_5}"/>
+
+        <RadioButton Grid.Column="5"
+                     Content="{x:Static loc:Strings.Cybershoke}"
+                     Foreground="{StaticResource appcolor_5}"/>
+    </Grid>
+</UserControl>

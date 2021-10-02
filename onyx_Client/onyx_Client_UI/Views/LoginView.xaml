@@ -50,13 +50,16 @@
                        FontWeight="Bold"/>
 
                 <controls:CustomTextBox CornerRadius="12"
-                                        Placeholder="{x:Static loc:Strings.ID}"/>
+                                        Placeholder="{x:Static loc:Strings.ID}"
+                                        BackgroundColor="{StaticResource appcolor_2}"/>
 
                 <controls:CustomTextBox CornerRadius="12"
                                         Placeholder="{x:Static loc:Strings.Password}"
                                         HasRightIcon="True"
                                         IsPassword="True"
-                                        RightIconImageSource="/Resources/Images/remove_red_eye.png" />
+                                        RightIconImageSource="/Resources/Images/remove_red_eye.png"
+                                        BackgroundColor="{StaticResource appcolor_2}"/>
+                
                 <StackPanel Margin="5, 10">
                     
                     <StackPanel Orientation="Horizontal">

@@ -42,3 +42,5 @@ C:\Users\Alen\Source\Repos\onyx\onyx_Client\onyx_Client_UI\obj\Debug\net5.0-wind
 C:\Users\Alen\Source\Repos\onyx\onyx_Client\onyx_Client_UI\obj\Debug\net5.0-windows\ref\onyx_Client_UI.dll
 C:\Users\Alen\Source\Repos\onyx\onyx_Client\onyx_Client_UI\obj\Debug\net5.0-windows\onyx_Client_UI.pdb
 C:\Users\Alen\Source\Repos\onyx\onyx_Client\onyx_Client_UI\obj\Debug\net5.0-windows\onyx_Client_UI.genruntimeconfig.cache
+C:\Users\Alen\source\repos\onyx\onyx_Client\onyx_Client_UI\obj\Debug\net5.0-windows\Controls\NavigationBar.g.cs
+C:\Users\Alen\source\repos\onyx\onyx_Client\onyx_Client_UI\obj\Debug\net5.0-windows\Controls\NavigationBar.baml

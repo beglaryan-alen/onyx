@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET5_0;NETCOREAPP
 C:\Users\Alen\source\repos\onyx\onyx_Client\onyx_Client_UI\App.xaml
-6-1206541714
+10-1343487072
 
-38-95091553
-199572849833
-Controls\CustomTextbox.xaml;Controls\NavigationBar.xaml;Resources\Styles\DefaultResources.xaml;Views\HomeView.xaml;Views\LoginView.xaml;Views\MainWindow.xaml;
+37-489513473
+201-184259519
+Controls\CustomSearchBox.xaml;Controls\CustomTextbox.xaml;Controls\NavigationBar.xaml;Resources\Styles\DefaultResources.xaml;Views\GamesView.xaml;Views\HomeView.xaml;Views\LoginView.xaml;Views\MainWindow.xaml;Views\PromocodeView.xaml;Views\SoftView.xaml;
 
 True
 

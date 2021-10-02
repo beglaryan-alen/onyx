@@ -7,14 +7,29 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
+    <Compile Update="Controls\CustomSearchBox.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Controls\CustomTextBox.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="Controls\NavigationBar.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Views\GamesView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\PromocodeView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\SoftView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Page Update="Controls\CustomSearchBox.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="Controls\CustomTextBox.xaml">
       <SubType>Designer</SubType>
     </Page>
@@ -24,7 +39,16 @@
     <Page Update="Resources\Styles\DefaultResources.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Update="Views\GamesView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="Views\LoginView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\PromocodeView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\SoftView.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

@@ -44,3 +44,13 @@ C:\Users\Alen\Source\Repos\onyx\onyx_Client\onyx_Client_UI\obj\Debug\net5.0-wind
 C:\Users\Alen\Source\Repos\onyx\onyx_Client\onyx_Client_UI\obj\Debug\net5.0-windows\onyx_Client_UI.genruntimeconfig.cache
 C:\Users\Alen\source\repos\onyx\onyx_Client\onyx_Client_UI\obj\Debug\net5.0-windows\Controls\NavigationBar.g.cs
 C:\Users\Alen\source\repos\onyx\onyx_Client\onyx_Client_UI\obj\Debug\net5.0-windows\Controls\NavigationBar.baml
+C:\Users\Alen\source\repos\onyx\onyx_Client\onyx_Client_UI\bin\Debug\net5.0-windows\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\Alen\source\repos\onyx\onyx_Client\onyx_Client_UI\bin\Debug\net5.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\Alen\source\repos\onyx\onyx_Client\onyx_Client_UI\obj\Debug\net5.0-windows\Views\GamesView.baml
+C:\Users\Alen\source\repos\onyx\onyx_Client\onyx_Client_UI\obj\Debug\net5.0-windows\Views\GamesView.g.cs
+C:\Users\Alen\source\repos\onyx\onyx_Client\onyx_Client_UI\obj\Debug\net5.0-windows\Controls\CustomSearchBox.baml
+C:\Users\Alen\source\repos\onyx\onyx_Client\onyx_Client_UI\obj\Debug\net5.0-windows\Controls\CustomSearchBox.g.cs
+C:\Users\Alen\source\repos\onyx\onyx_Client\onyx_Client_UI\obj\Debug\net5.0-windows\Views\SoftView.baml
+C:\Users\Alen\source\repos\onyx\onyx_Client\onyx_Client_UI\obj\Debug\net5.0-windows\Views\SoftView.g.cs
+C:\Users\Alen\source\repos\onyx\onyx_Client\onyx_Client_UI\obj\Debug\net5.0-windows\Views\PromocodeView.g.cs
+C:\Users\Alen\source\repos\onyx\onyx_Client\onyx_Client_UI\obj\Debug\net5.0-windows\Views\PromocodeView.baml

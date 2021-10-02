@@ -24,5 +24,12 @@ namespace onyx_Client_UI.Controls
         {
             InitializeComponent();
         }
+        public static readonly DependencyProperty MenuCommandProperty =
+            DependencyProperty.Register(nameof(MenuCommand), typeof(ICommand), typeof(NavigationBar));
+        public ICommand MenuCommand
+        {
+            get { return (ICommand)GetValue(MenuCommandProperty); }
+            set { SetValue(MenuCommandProperty, value); }
+        }
     }
 }

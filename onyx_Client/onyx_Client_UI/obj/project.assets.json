@@ -2,6 +2,27 @@
   "version": 3,
   "targets": {
     "net5.0-windows7.0": {
+      "Microsoft.Extensions.DependencyInjection/5.0.2": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "5.0.0"
+        },
+        "compile": {
+          "lib/net5.0/Microsoft.Extensions.DependencyInjection.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0/Microsoft.Extensions.DependencyInjection.dll": {}
+        }
+      },
+      "Microsoft.Extensions.DependencyInjection.Abstractions/5.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {}
+        }
+      },
       "Newtonsoft.Json/13.0.1": {
         "type": "package",
         "compile": {
@@ -84,6 +105,50 @@
     }
   },
   "libraries": {
+    "Microsoft.Extensions.DependencyInjection/5.0.2": {
+      "sha512": "xzFW00AZEvOXM1OX+0+AYH5op/Hf3u//e6wszBd/rK72sypD+jx5CtsHxM4BVuFBEs8SajfO4QzSJtrQaHDr4A==",
+      "type": "package",
+      "path": "microsoft.extensions.dependencyinjection/5.0.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/Microsoft.Extensions.DependencyInjection.dll",
+        "lib/net461/Microsoft.Extensions.DependencyInjection.xml",
+        "lib/net5.0/Microsoft.Extensions.DependencyInjection.dll",
+        "lib/net5.0/Microsoft.Extensions.DependencyInjection.xml",
+        "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.xml",
+        "lib/netstandard2.1/Microsoft.Extensions.DependencyInjection.dll",
+        "lib/netstandard2.1/Microsoft.Extensions.DependencyInjection.xml",
+        "microsoft.extensions.dependencyinjection.5.0.2.nupkg.sha512",
+        "microsoft.extensions.dependencyinjection.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "Microsoft.Extensions.DependencyInjection.Abstractions/5.0.0": {
+      "sha512": "ORj7Zh81gC69TyvmcUm9tSzytcy8AVousi+IVRAI8nLieQjOFryRusSFh7+aLk16FN9pQNqJAiMd7BTKINK0kA==",
+      "type": "package",
+      "path": "microsoft.extensions.dependencyinjection.abstractions/5.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
+        "lib/net461/Microsoft.Extensions.DependencyInjection.Abstractions.xml",
+        "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.xml",
+        "microsoft.extensions.dependencyinjection.abstractions.5.0.0.nupkg.sha512",
+        "microsoft.extensions.dependencyinjection.abstractions.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
     "Newtonsoft.Json/13.0.1": {
       "sha512": "ppPFpBcvxdsfUonNcvITKqLl3bqxWbDCZIzDWHzjpdAHRFfZe0Dw9HmA0+za13IdyrgJwpkDTDA9fHaxOrt20A==",
       "type": "package",
@@ -201,32 +266,30 @@
     "net5.0-windows7.0": [
       "Config >= 1.0.0",
       "HttpBroker >= 1.0.0",
+      "Microsoft.Extensions.DependencyInjection >= 5.0.2",
       "Refractored.MvvmHelpers >= 1.6.2"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\any2k\\.nuget\\packages\\": {}
+    "C:\\Users\\Alen\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-<<<<<<< HEAD
       "projectUniqueName": "C:\\Users\\Alen\\source\\repos\\onyx\\onyx_Client\\onyx_Client_UI\\onyx_Client_UI.csproj",
       "projectName": "onyx_Client_UI",
       "projectPath": "C:\\Users\\Alen\\source\\repos\\onyx\\onyx_Client\\onyx_Client_UI\\onyx_Client_UI.csproj",
       "packagesPath": "C:\\Users\\Alen\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\Alen\\source\\repos\\onyx\\onyx_Client\\onyx_Client_UI\\obj\\",
-=======
-      "projectUniqueName": "D:\\Projects\\onyx\\onyx\\onyx_Client\\onyx_Client_UI\\onyx_Client_UI.csproj",
-      "projectName": "onyx_Client_UI",
-      "projectPath": "D:\\Projects\\onyx\\onyx\\onyx_Client\\onyx_Client_UI\\onyx_Client_UI.csproj",
-      "packagesPath": "C:\\Users\\any2k\\.nuget\\packages\\",
-      "outputPath": "D:\\Projects\\onyx\\onyx\\onyx_Client\\onyx_Client_UI\\obj\\",
->>>>>>> 54721a52c7003510781a6af808f132208ec2456c
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+      ],
       "configFilePaths": [
-        "C:\\Users\\any2k\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\Alen\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net5.0-windows7.0"
@@ -239,19 +302,11 @@
         "net5.0-windows7.0": {
           "targetAlias": "net5.0-windows",
           "projectReferences": {
-<<<<<<< HEAD
             "C:\\Users\\Alen\\source\\repos\\onyx\\onyx_Client\\Config\\Config.csproj": {
               "projectPath": "C:\\Users\\Alen\\source\\repos\\onyx\\onyx_Client\\Config\\Config.csproj"
             },
             "C:\\Users\\Alen\\source\\repos\\onyx\\onyx_Client\\HttpBroker\\HttpBroker.csproj": {
               "projectPath": "C:\\Users\\Alen\\source\\repos\\onyx\\onyx_Client\\HttpBroker\\HttpBroker.csproj"
-=======
-            "D:\\Projects\\onyx\\onyx\\onyx_Client\\Config\\Config.csproj": {
-              "projectPath": "D:\\Projects\\onyx\\onyx\\onyx_Client\\Config\\Config.csproj"
-            },
-            "D:\\Projects\\onyx\\onyx\\onyx_Client\\HttpBroker\\HttpBroker.csproj": {
-              "projectPath": "D:\\Projects\\onyx\\onyx\\onyx_Client\\HttpBroker\\HttpBroker.csproj"
->>>>>>> 54721a52c7003510781a6af808f132208ec2456c
             }
           }
         }
@@ -266,6 +321,10 @@
       "net5.0-windows7.0": {
         "targetAlias": "net5.0-windows",
         "dependencies": {
+          "Microsoft.Extensions.DependencyInjection": {
+            "target": "Package",
+            "version": "[5.0.2, )"
+          },
           "Refractored.MvvmHelpers": {
             "target": "Package",
             "version": "[1.6.2, )"
@@ -289,7 +348,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.302\\RuntimeIdentifierGraph.json"
       }
     }
   }

@@ -16,7 +16,7 @@ namespace onyx_Client_UI.State.Authenticators
         /// </summary>
         /// <param name="User">User to register.</param>
         /// <returns>Register result</returns>
-        public Task<Response> Register(User user)
+        public Task<Response> RegisterAsync(User user)
         {
             return Task.Run(() => App.HttpClient.Post<User, Response>(user, $"{App.Config.BaseUrl}/authorize/register"));
         }
@@ -27,7 +27,7 @@ namespace onyx_Client_UI.State.Authenticators
         /// <param name="username">username</param>
         /// <param name="password">password</param>
         /// <returns>If user exists.</returns>
-        public async Task<Response> Login(string username, string password)
+        public async Task<Response> LoginAsync(string username, string password)
         {
             var response = App.HttpClient.Post<LoginRequest, DataResponse<LoginResponse>>(new LoginRequest() { Login = username, Password = password }, $"{App.Config.BaseUrl}/authorize/login");
             if (response.IsOk)

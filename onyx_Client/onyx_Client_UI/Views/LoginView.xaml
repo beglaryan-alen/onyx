@@ -40,25 +40,25 @@
                        Foreground="{StaticResource appcolor_5}"
                        FontSize="{StaticResource tsize_i1}"
                        FontWeight="Bold"/>
-                <Label Content="{x:Static loc:Strings.Welcomeback}"
+                <Label Content="{x:Static loc:Strings.WelcomeBack}"
                        Foreground="{StaticResource appcolor_5}"
                        FontSize="{StaticResource tsize_i2}"
                        FontWeight="Bold"/>
-                <Label Content="{x:Static loc:Strings.Signintocontinue}"
+                <Label Content="{x:Static loc:Strings.SigninToContinue}"
                        Foreground="{StaticResource appcolor_4}"
                        FontSize="{StaticResource tsize_i4}"
                        FontWeight="Bold"/>
 
                 <controls:CustomTextBox CornerRadius="12"
                                         Placeholder="{x:Static loc:Strings.ID}"
-                                        BackgroundColor="{StaticResource appcolor_2}"/>
+                                        Text="{Binding Id, Mode=TwoWay}"/>
 
                 <controls:CustomTextBox CornerRadius="12"
                                         Placeholder="{x:Static loc:Strings.Password}"
                                         HasRightIcon="True"
                                         IsPassword="True"
                                         RightIconImageSource="/Resources/Images/remove_red_eye.png"
-                                        BackgroundColor="{StaticResource appcolor_2}"/>
+                                        Text="{Binding Password, Mode=TwoWay}"/>
                 
                 <StackPanel Margin="5, 10">
                     
@@ -66,7 +66,7 @@
                         
                         <CheckBox Margin="0, 5"/>
 
-                        <Label Content="{x:Static loc:Strings.Iagreewiththerules}"
+                        <Label Content="{x:Static loc:Strings.AgreeWithThePersonalData}"
                                Foreground="{StaticResource appcolor_4}"
                                VerticalContentAlignment="Center"
                                FontSize="{StaticResource tsize_i4}"/>
@@ -77,7 +77,7 @@
                         
                         <CheckBox Margin="0, 5"/>
 
-                        <Label Content="{x:Static loc:Strings.Iagreewiththerules}"
+                        <Label Content="{x:Static loc:Strings.AgreeWithTheRules}"
                                Foreground="{StaticResource appcolor_4}"
                                VerticalContentAlignment="Center"
                                FontSize="{StaticResource tsize_i4}"/>

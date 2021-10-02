@@ -1,7 +1,6 @@
 {
   "format": 1,
   "restore": {
-<<<<<<< HEAD
     "C:\\Users\\Alen\\source\\repos\\onyx\\onyx_Client\\Locker\\Locker.csproj": {}
   },
   "projects": {
@@ -13,23 +12,14 @@
         "projectPath": "C:\\Users\\Alen\\source\\repos\\onyx\\onyx_Client\\Locker\\Locker.csproj",
         "packagesPath": "C:\\Users\\Alen\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\Alen\\source\\repos\\onyx\\onyx_Client\\Locker\\obj\\",
-=======
-    "D:\\Projects\\onyx\\onyx\\onyx_Client\\Locker\\Locker.csproj": {}
-  },
-  "projects": {
-    "D:\\Projects\\onyx\\onyx\\onyx_Client\\Locker\\Locker.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "D:\\Projects\\onyx\\onyx\\onyx_Client\\Locker\\Locker.csproj",
-        "projectName": "Locker",
-        "projectPath": "D:\\Projects\\onyx\\onyx\\onyx_Client\\Locker\\Locker.csproj",
-        "packagesPath": "C:\\Users\\any2k\\.nuget\\packages\\",
-        "outputPath": "D:\\Projects\\onyx\\onyx\\onyx_Client\\Locker\\obj\\",
->>>>>>> 54721a52c7003510781a6af808f132208ec2456c
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        ],
         "configFilePaths": [
-          "C:\\Users\\any2k\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\Alen\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0-windows7.0"
@@ -71,7 +61,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     }

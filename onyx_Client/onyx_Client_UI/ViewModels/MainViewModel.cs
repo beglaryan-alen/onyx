@@ -1,21 +1,20 @@
 ﻿using onyx_Client_UI.State.Navigators;
-using onyx_Client_UI.Stores;
 using onyx_Client_UI.ViewModel;
-using System;
 
 namespace onyx_Client_UI.ViewModels
 {
     public class MainViewModel : ViewModelBase
     {
-        private readonly NavigationStore _navigationStore;
-        public ViewModelBase CurrentViewModel => _navigationStore.CurrentViewModel;
+        private readonly INavigator _navigator;
 
-        public MainViewModel(NavigationStore navigationStore)
+        public MainViewModel(INavigator navigator)
         {
-            _navigationStore = navigationStore;
-
-            _navigationStore.CurrentViewModelChanged += OnCurrentViewModelChanged;
+            _navigator = navigator;
+            _navigator.CurrentViewModelChanged += OnCurrentViewModelChanged;
+            _navigator.GoToLogin();
         }
+
+        public ViewModelBase CurrentViewModel => _navigator.CurrentViewModel;
 
         private void OnCurrentViewModelChanged()
         {

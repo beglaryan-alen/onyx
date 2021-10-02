@@ -61,11 +61,29 @@ namespace onyx_Client_UI.Resources.Strings {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to I agree with the personal data processing policy.
+        /// </summary>
+        public static string AgreeWithThePersonalData {
+            get {
+                return ResourceManager.GetString("AgreeWithThePersonalData", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to I agree with the rules of visiting the club complex.
+        /// </summary>
+        public static string AgreeWithTheRules {
+            get {
+                return ResourceManager.GetString("AgreeWithTheRules", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to ASSIGNED TO YOU.
         /// </summary>
-        public static string Assignedtoyou {
+        public static string AssignedToYou {
             get {
-                return ResourceManager.GetString("Assignedtoyou", resourceCulture);
+                return ResourceManager.GetString("AssignedToYou", resourceCulture);
             }
         }
         
@@ -90,9 +108,9 @@ namespace onyx_Client_UI.Resources.Strings {
         /// <summary>
         ///   Looks up a localized string similar to YOUR CARD IS NOW CHARGED $ 1 TO CHECK THE CORRECT BINDING OF THE CARD.
         /// </summary>
-        public static string Cardcorrectbinding {
+        public static string CardCorrectBinding {
             get {
-                return ResourceManager.GetString("Cardcorrectbinding", resourceCulture);
+                return ResourceManager.GetString("CardCorrectBinding", resourceCulture);
             }
         }
         
@@ -117,9 +135,9 @@ namespace onyx_Client_UI.Resources.Strings {
         /// <summary>
         ///   Looks up a localized string similar to Choose security password.
         /// </summary>
-        public static string Choosesecuritypassword {
+        public static string ChooseSecurityPassword {
             get {
-                return ResourceManager.GetString("Choosesecuritypassword", resourceCulture);
+                return ResourceManager.GetString("ChooseSecurityPassword", resourceCulture);
             }
         }
         
@@ -153,18 +171,18 @@ namespace onyx_Client_UI.Resources.Strings {
         /// <summary>
         ///   Looks up a localized string similar to Don&apos;t forget it!.
         /// </summary>
-        public static string Don_tforgetit {
+        public static string DontForget {
             get {
-                return ResourceManager.GetString("Don\'tforgetit", resourceCulture);
+                return ResourceManager.GetString("DontForget", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Do not tell anyone your personal data!.
         /// </summary>
-        public static string Donottellanyoneyourpersonaldata {
+        public static string DontTellAnyOneYourPersonalData {
             get {
-                return ResourceManager.GetString("Donottellanyoneyourpersonaldata", resourceCulture);
+                return ResourceManager.GetString("DontTellAnyOneYourPersonalData", resourceCulture);
             }
         }
         
@@ -216,27 +234,9 @@ namespace onyx_Client_UI.Resources.Strings {
         /// <summary>
         ///   Looks up a localized string similar to Holder name.
         /// </summary>
-        public static string Holdername {
+        public static string HolderName {
             get {
-                return ResourceManager.GetString("Holdername", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to I agree with the personal data processing policy.
-        /// </summary>
-        public static string Iagreewiththepersonaldata {
-            get {
-                return ResourceManager.GetString("Iagreewiththepersonaldata", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to I agree with the rules of visiting the club complex.
-        /// </summary>
-        public static string Iagreewiththerules {
-            get {
-                return ResourceManager.GetString("Iagreewiththerules", resourceCulture);
+                return ResourceManager.GetString("HolderName", resourceCulture);
             }
         }
         
@@ -252,9 +252,9 @@ namespace onyx_Client_UI.Resources.Strings {
         /// <summary>
         ///   Looks up a localized string similar to ID number.
         /// </summary>
-        public static string IDnumber {
+        public static string IDNumber {
             get {
-                return ResourceManager.GetString("IDnumber", resourceCulture);
+                return ResourceManager.GetString("IDNumber", resourceCulture);
             }
         }
         
@@ -270,18 +270,18 @@ namespace onyx_Client_UI.Resources.Strings {
         /// <summary>
         ///   Looks up a localized string similar to Last step!.
         /// </summary>
-        public static string Laststep {
+        public static string LastStep {
             get {
-                return ResourceManager.GetString("Laststep", resourceCulture);
+                return ResourceManager.GetString("LastStep", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Link your card.
         /// </summary>
-        public static string Linkyourcard {
+        public static string LinkCard {
             get {
-                return ResourceManager.GetString("Linkyourcard", resourceCulture);
+                return ResourceManager.GetString("LinkCard", resourceCulture);
             }
         }
         
@@ -306,9 +306,9 @@ namespace onyx_Client_UI.Resources.Strings {
         /// <summary>
         ///   Looks up a localized string similar to Middle name.
         /// </summary>
-        public static string Middlename {
+        public static string MiddleName {
             get {
-                return ResourceManager.GetString("Middlename", resourceCulture);
+                return ResourceManager.GetString("MiddleName", resourceCulture);
             }
         }
         
@@ -360,9 +360,9 @@ namespace onyx_Client_UI.Resources.Strings {
         /// <summary>
         ///   Looks up a localized string similar to Password confirmation.
         /// </summary>
-        public static string Passwordconfirmation {
+        public static string PasswordConfirm {
             get {
-                return ResourceManager.GetString("Passwordconfirmation", resourceCulture);
+                return ResourceManager.GetString("PasswordConfirm", resourceCulture);
             }
         }
         
@@ -387,9 +387,9 @@ namespace onyx_Client_UI.Resources.Strings {
         /// <summary>
         ///   Looks up a localized string similar to Register to get started.
         /// </summary>
-        public static string Registertogetstarted {
+        public static string RegisterToGetStarted {
             get {
-                return ResourceManager.GetString("Registertogetstarted", resourceCulture);
+                return ResourceManager.GetString("RegisterToGetStarted", resourceCulture);
             }
         }
         
@@ -412,11 +412,20 @@ namespace onyx_Client_UI.Resources.Strings {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Search.
+        /// </summary>
+        public static string Search {
+            get {
+                return ResourceManager.GetString("Search", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Sign in to continue.
         /// </summary>
-        public static string Signintocontinue {
+        public static string SigninToContinue {
             get {
-                return ResourceManager.GetString("Signintocontinue", resourceCulture);
+                return ResourceManager.GetString("SigninToContinue", resourceCulture);
             }
         }
         
@@ -459,18 +468,18 @@ namespace onyx_Client_UI.Resources.Strings {
         /// <summary>
         ///   Looks up a localized string similar to Welcome back!.
         /// </summary>
-        public static string Welcomeback {
+        public static string WelcomeBack {
             get {
-                return ResourceManager.GetString("Welcomeback", resourceCulture);
+                return ResourceManager.GetString("WelcomeBack", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Year of birth.
         /// </summary>
-        public static string Yearofbirth {
+        public static string YearOfBirth {
             get {
-                return ResourceManager.GetString("Yearofbirth", resourceCulture);
+                return ResourceManager.GetString("YearOfBirth", resourceCulture);
             }
         }
     }

@@ -27,28 +27,25 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\any2k\\.nuget\\packages\\": {}
+    "C:\\Users\\Alen\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-<<<<<<< HEAD
       "projectUniqueName": "C:\\Users\\Alen\\source\\repos\\onyx\\onyx_Client\\IO\\IO.csproj",
       "projectName": "IO",
       "projectPath": "C:\\Users\\Alen\\source\\repos\\onyx\\onyx_Client\\IO\\IO.csproj",
       "packagesPath": "C:\\Users\\Alen\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\Alen\\source\\repos\\onyx\\onyx_Client\\IO\\obj\\",
-=======
-      "projectUniqueName": "D:\\Projects\\onyx\\onyx\\onyx_Client\\IO\\IO.csproj",
-      "projectName": "IO",
-      "projectPath": "D:\\Projects\\onyx\\onyx\\onyx_Client\\IO\\IO.csproj",
-      "packagesPath": "C:\\Users\\any2k\\.nuget\\packages\\",
-      "outputPath": "D:\\Projects\\onyx\\onyx\\onyx_Client\\IO\\obj\\",
->>>>>>> 54721a52c7003510781a6af808f132208ec2456c
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+      ],
       "configFilePaths": [
-        "C:\\Users\\any2k\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\Alen\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net5.0"
@@ -61,13 +58,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-<<<<<<< HEAD
             "C:\\Users\\Alen\\source\\repos\\onyx\\onyx_Client\\Crypto\\Crypto.csproj": {
               "projectPath": "C:\\Users\\Alen\\source\\repos\\onyx\\onyx_Client\\Crypto\\Crypto.csproj"
-=======
-            "D:\\Projects\\onyx\\onyx\\onyx_Client\\Crypto\\Crypto.csproj": {
-              "projectPath": "D:\\Projects\\onyx\\onyx\\onyx_Client\\Crypto\\Crypto.csproj"
->>>>>>> 54721a52c7003510781a6af808f132208ec2456c
             }
           }
         }
@@ -96,7 +88,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.302\\RuntimeIdentifierGraph.json"
       }
     }
   }

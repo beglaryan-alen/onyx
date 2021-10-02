@@ -6,7 +6,7 @@
              xmlns:resources="clr-namespace:onyx_Client_UI.Resources.Styles"
              mc:Ignorable="d"
              Padding="5"
-             Height="60"
+             Height="50"
              x:Name="customTextBox">
 
     <UserControl.Resources>
@@ -14,33 +14,13 @@
     </UserControl.Resources>
 
     <Border CornerRadius="{Binding CornerRadius, ElementName=customTextBox}"
-            Background="{Binding BackgroundColor, ElementName=customTextBox}">
+            Background="{StaticResource appcolor_2}">
         <Grid>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="Auto"/>
                 <ColumnDefinition Width="*"/>
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
-
-            <Image Source="{Binding LeftIconImageSource, ElementName=customTextBox}"
-                   Grid.Column="0"
-                   VerticalAlignment="Bottom"
-                   Height="20">
-                <Image.Style>
-                    <Style TargetType="Image">
-                        <Setter Property="Visibility"
-                                Value="Hidden"/>
-                        <Style.Triggers>
-                            <DataTrigger Binding="{Binding HasLeftIcon, ElementName=customTextBox}"
-                                         Value="True">
-                                <Setter Property="Visibility"
-                                        Value="Visible"/>
-                            </DataTrigger>
-                        </Style.Triggers>
-                    </Style>
-
-                </Image.Style>
-            </Image>
 
             <Label Grid.Column="1"
                    Content="{Binding Placeholder, ElementName=customTextBox}"
@@ -55,7 +35,7 @@
                      GotFocus="TextBox_GotFocus"
                      LostFocus="TextBox_LostFocus"
                      Grid.ColumnSpan="2"
-                     Text="{Binding Text, IsAsync=True, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay, ElementName=customTextBox}"
+                     Text="{Binding Text, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay, ElementName=customTextBox}"
                      Foreground="White"
                      Background="Transparent"
                      BorderBrush="Transparent"/>

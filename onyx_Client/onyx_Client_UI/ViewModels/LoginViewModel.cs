@@ -1,6 +1,6 @@
 ﻿using MvvmHelpers.Commands;
-using onyx_Client_UI.Commands;
-using onyx_Client_UI.Stores;
+using onyx_Client_UI.State.Authenticators;
+using onyx_Client_UI.State.Navigators;
 using System.Threading.Tasks;
 using System.Windows.Input;
 
@@ -8,15 +8,19 @@ namespace onyx_Client_UI.ViewModel
 {
     public class LoginViewModel : ViewModelBase
     {
-        public LoginViewModel(NavigationStore navigationStore)
+        private readonly INavigator _navigator;
+        private readonly IAuthenticator _authenticator;
+        public LoginViewModel(INavigator navigator, 
+                              IAuthenticator authenticator)
         {
-            LoginCommand = new NavigateCommand<HomeViewModel>(navigationStore, () => new HomeViewModel(navigationStore));
+            _navigator = navigator;
+            _authenticator = authenticator;
         }
         #region Public Properties
 
         public ViewModelBase CurrentViewModel { get; }
 
-        public ICommand LoginCommand { get; set; }
+        public ICommand LoginCommand => new AsyncCommand(OnLoginCommand);
         public ICommand Register => new AsyncCommand(OnRegisterCommand);
 
         private string _id;
@@ -39,6 +43,8 @@ namespace onyx_Client_UI.ViewModel
 
         private async Task OnLoginCommand()
         {
+            //var response = await _authenticator.LoginAsync(Id, Password);
+            _navigator.GoToHome();
         }
 
         private async Task OnRegisterCommand()

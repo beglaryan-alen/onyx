@@ -1,0 +1,49 @@
+﻿<UserControl x:Class="onyx_Client_UI.Controls.CustomSearchBox"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:resources="clr-namespace:onyx_Client_UI.Resources.Styles"
+             mc:Ignorable="d"
+             x:Name="customSearchBox"
+             >
+
+    <UserControl.Resources>
+        <resources:DefaultResources/>
+    </UserControl.Resources>
+
+    <UserControl.Style>
+        <Style TargetType="UserControl">
+            <Setter Property="Background" Value="{StaticResource appcolor_1}"/>
+        </Style>
+    </UserControl.Style>
+    
+    <Border Padding="5">
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Image Source="/Resources/Images/search.png"
+                   HorizontalAlignment="Left"
+                   Height="20"/>
+
+            <Label Content="{Binding Placeholder, ElementName=customSearchBox}"
+                   Foreground="{StaticResource appcolor_4}"
+                   Grid.Column="1"
+                   />
+            
+            <TextBox Grid.Column="1"
+                     Background="Transparent"
+                     BorderBrush="Transparent"
+                     SelectionTextBrush="Transparent"
+                     GotFocus="TextBox_GotFocus"
+                     Text="{Binding Text, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay, ElementName=customSearchBox}"
+                     LostFocus="TextBox_LostFocus"
+                     Foreground="{StaticResource appcolor_5}"
+                     VerticalContentAlignment="Center"
+                     FontSize="15"/>
+        </Grid>
+        
+    </Border>
+</UserControl>

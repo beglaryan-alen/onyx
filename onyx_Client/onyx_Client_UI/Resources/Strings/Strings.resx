@@ -117,7 +117,13 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="Assignedtoyou" xml:space="preserve">
+  <data name="AgreeWithThePersonalData" xml:space="preserve">
+    <value>I agree with the personal data processing policy</value>
+  </data>
+  <data name="AgreeWithTheRules" xml:space="preserve">
+    <value>I agree with the rules of visiting the club complex</value>
+  </data>
+  <data name="AssignedToYou" xml:space="preserve">
     <value>ASSIGNED TO YOU</value>
   </data>
   <data name="Bar" xml:space="preserve">
@@ -126,7 +132,7 @@
   <data name="Bind" xml:space="preserve">
     <value>BIND</value>
   </data>
-  <data name="Cardcorrectbinding" xml:space="preserve">
+  <data name="CardCorrectBinding" xml:space="preserve">
     <value>YOUR CARD IS NOW CHARGED $ 1 TO CHECK THE CORRECT BINDING OF THE CARD</value>
   </data>
   <data name="Cardnumber" xml:space="preserve">
@@ -135,7 +141,7 @@
   <data name="CCV" xml:space="preserve">
     <value>CCV</value>
   </data>
-  <data name="Choosesecuritypassword" xml:space="preserve">
+  <data name="ChooseSecurityPassword" xml:space="preserve">
     <value>Choose security password</value>
   </data>
   <data name="Close" xml:space="preserve">
@@ -147,10 +153,10 @@
   <data name="Cybershoke" xml:space="preserve">
     <value>Cybershoke</value>
   </data>
-  <data name="Don'tforgetit" xml:space="preserve">
+  <data name="DontForget" xml:space="preserve">
     <value>Don't forget it!</value>
   </data>
-  <data name="Donottellanyoneyourpersonaldata" xml:space="preserve">
+  <data name="DontTellAnyOneYourPersonalData" xml:space="preserve">
     <value>Do not tell anyone your personal data!</value>
   </data>
   <data name="Email" xml:space="preserve">
@@ -168,28 +174,22 @@
   <data name="Hello" xml:space="preserve">
     <value>Hello!</value>
   </data>
-  <data name="Holdername" xml:space="preserve">
+  <data name="HolderName" xml:space="preserve">
     <value>Holder name</value>
-  </data>
-  <data name="Iagreewiththepersonaldata" xml:space="preserve">
-    <value>I agree with the personal data processing policy</value>
-  </data>
-  <data name="Iagreewiththerules" xml:space="preserve">
-    <value>I agree with the rules of visiting the club complex</value>
   </data>
   <data name="ID" xml:space="preserve">
     <value>ID</value>
   </data>
-  <data name="IDnumber" xml:space="preserve">
+  <data name="IDNumber" xml:space="preserve">
     <value>ID number</value>
   </data>
   <data name="IIN" xml:space="preserve">
     <value>IIN</value>
   </data>
-  <data name="Laststep" xml:space="preserve">
+  <data name="LastStep" xml:space="preserve">
     <value>Last step!</value>
   </data>
-  <data name="Linkyourcard" xml:space="preserve">
+  <data name="LinkCard" xml:space="preserve">
     <value>Link your card</value>
   </data>
   <data name="Login" xml:space="preserve">
@@ -198,7 +198,7 @@
   <data name="Male" xml:space="preserve">
     <value>Male</value>
   </data>
-  <data name="Middlename" xml:space="preserve">
+  <data name="MiddleName" xml:space="preserve">
     <value>Middle name</value>
   </data>
   <data name="Name" xml:space="preserve">
@@ -216,7 +216,7 @@
   <data name="Password" xml:space="preserve">
     <value>Password</value>
   </data>
-  <data name="Passwordconfirmation" xml:space="preserve">
+  <data name="PasswordConfirm" xml:space="preserve">
     <value>Password confirmation</value>
   </data>
   <data name="Phonenumber" xml:space="preserve">
@@ -225,7 +225,7 @@
   <data name="Promocode" xml:space="preserve">
     <value>Promocode</value>
   </data>
-  <data name="Registertogetstarted" xml:space="preserve">
+  <data name="RegisterToGetStarted" xml:space="preserve">
     <value>Register to get started</value>
   </data>
   <data name="Registration" xml:space="preserve">
@@ -234,7 +234,10 @@
   <data name="Reservation" xml:space="preserve">
     <value>Reservation</value>
   </data>
-  <data name="Signintocontinue" xml:space="preserve">
+  <data name="Search" xml:space="preserve">
+    <value>Search</value>
+  </data>
+  <data name="SigninToContinue" xml:space="preserve">
     <value>Sign in to continue</value>
   </data>
   <data name="Signup" xml:space="preserve">
@@ -249,10 +252,10 @@
   <data name="Surname" xml:space="preserve">
     <value>Surname</value>
   </data>
-  <data name="Welcomeback" xml:space="preserve">
+  <data name="WelcomeBack" xml:space="preserve">
     <value>Welcome back!</value>
   </data>
-  <data name="Yearofbirth" xml:space="preserve">
+  <data name="YearOfBirth" xml:space="preserve">
     <value>Year of birth</value>
   </data>
 </root>

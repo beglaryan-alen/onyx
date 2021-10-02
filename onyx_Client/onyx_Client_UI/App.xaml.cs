@@ -1,8 +1,10 @@
-﻿using Onyx.Config;
-using onyx_Client_UI.Stores;
-using onyx_Client_UI.ViewModel;
+﻿using Microsoft.Extensions.DependencyInjection;
+using Onyx.Config;
+using onyx_Client_UI.State.Authenticators;
+using onyx_Client_UI.State.Navigators;
 using onyx_Client_UI.ViewModels;
 using onyx_Client_UI.Views;
+using System;
 using System.Windows;
 
 namespace onyx_Client_UI
@@ -22,17 +24,25 @@ namespace onyx_Client_UI
 
         protected override void OnStartup(StartupEventArgs e)
         {
-            NavigationStore navigationStore = new NavigationStore();
+            IServiceProvider serviceProvider = CreateServiceProvider();
+            var _navigator = serviceProvider.GetRequiredService<INavigator>();
 
-            navigationStore.CurrentViewModel = new LoginViewModel(navigationStore);
-
-            MainWindow = new MainWindow()
-            {
-                DataContext = new MainViewModel(navigationStore)
-            };
-            MainWindow.Show();
+            Window window = new MainWindow();
+            window.DataContext = new MainViewModel(_navigator);
+            window.Show();
 
             base.OnStartup(e);
+        }
+
+        private IServiceProvider CreateServiceProvider()
+        {
+            IServiceCollection services = new ServiceCollection();
+
+            services.AddSingleton<INavigator, Navigator>();
+
+            services.AddScoped<IAuthenticator, Authenticator>();
+
+            return services.BuildServiceProvider();
         }
     }
 }

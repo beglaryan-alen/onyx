@@ -10,9 +10,9 @@ namespace onyx_Client_UI.State.Authenticators
 
         bool IsLoggedIn { get; }
         
-        Task<Response> Register(User User);
+        Task<Response> RegisterAsync(User User);
         
-        Task<Response> Login(string username, string password);
+        Task<Response> LoginAsync(string username, string password);
 
         Task Logout();
     }

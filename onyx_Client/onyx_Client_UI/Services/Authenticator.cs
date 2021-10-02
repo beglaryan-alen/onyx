@@ -19,7 +19,7 @@ namespace onyx_Client_UI.Services
         /// <returns>Register result</returns>
         public Task<Response> Register(User user)
         {
-            return Task.Run(() =>HttpBroker.Client.Post<User, Response>(user, $"{App.config.BaseUrl}/authorize/register"));
+            return Task.Run(() =>App.HttpClient.Post<User, Response>(user, $"{App.Config.BaseUrl}/authorize/register"));
         }
 
         /// <summary>
@@ -30,7 +30,7 @@ namespace onyx_Client_UI.Services
         /// <returns>If user exists.</returns>
         public async Task<Response> Login(string username, string password)
         {
-            var response = HttpBroker.Client.Post<LoginRequest, DataResponse<LoginResponse>>(new LoginRequest() { Login = username, Password = password },$"{App.config.BaseUrl}/authorize/login");
+            var response = App.HttpClient.Post<LoginRequest, DataResponse<LoginResponse>>(new LoginRequest() { Login = username, Password = password },$"{App.Config.BaseUrl}/authorize/login");
             if (response.IsOk)
                 CurrentUser = response.Data.User;
             return response;

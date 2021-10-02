@@ -1,8 +1,14 @@
 {
   "version": 2,
+<<<<<<< HEAD
   "dgSpecHash": "Gas4eyF8121EZLy6q+3M1Z5SxZPxf1+oBCQo9AzHKa9a+Utw7wSxTLrf9py6mR5ydLImahnyCYmVId3XRj3Ycw==",
   "success": true,
   "projectFilePath": "C:\\Users\\Alen\\source\\repos\\onyx\\onyx_Client\\IO\\IO.csproj",
+=======
+  "dgSpecHash": "yqgI7SKTVtjWiVTv05qFNKCTZxPT3lDEiUpOvPNUqdF3GOHeb1vtnnSpB/QuQ1XnCymSVL2FEUP35WBJP0r8oQ==",
+  "success": true,
+  "projectFilePath": "D:\\Projects\\onyx\\onyx\\onyx_Client\\IO\\IO.csproj",
+>>>>>>> 54721a52c7003510781a6af808f132208ec2456c
   "expectedPackageFiles": [],
   "logs": []
 }

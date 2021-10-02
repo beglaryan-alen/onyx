@@ -12,10 +12,12 @@ namespace onyx_Client_UI
     /// </summary>
     public partial class App : Application
     {
-        public static Config config;
+        public static Config Config;
+        public static HttpBroker.Client HttpClient;
         public App()
         {
-            config = Config.getConfig();           
+            Config = Config.getConfig();
+            HttpClient = HttpBroker.Client.getClient();
         }
 
         protected override void OnStartup(StartupEventArgs e)

@@ -1,8 +1,14 @@
 {
   "version": 2,
+<<<<<<< HEAD
   "dgSpecHash": "arQeCJ27k9Q7/PZTyzCWe01bRyjFNUrEaSaVI/FD+O9ge9ZWGBcaGv77+96Y5OI0QiXwF6EM2y2Xk9TV8v5OBA==",
   "success": true,
   "projectFilePath": "C:\\Users\\Alen\\source\\repos\\onyx\\onyx_Client\\Crypto\\Crypto.csproj",
+=======
+  "dgSpecHash": "VTMJ09g00WVzhf5rUDCYMXox29gZHEGH1djEmtAeEn9BNdiau+aq8sjFFgpmVOSpEbOgLPyn+Q5/SRJ4RDQ5OA==",
+  "success": true,
+  "projectFilePath": "D:\\Projects\\onyx\\onyx\\onyx_Client\\Crypto\\Crypto.csproj",
+>>>>>>> 54721a52c7003510781a6af808f132208ec2456c
   "expectedPackageFiles": [],
   "logs": []
 }

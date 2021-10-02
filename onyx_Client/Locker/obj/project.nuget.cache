@@ -1,8 +1,14 @@
 {
   "version": 2,
+<<<<<<< HEAD
   "dgSpecHash": "9R54ohS+pMZr0dXunUuQI+pOU1lNwBfWu5QvEn0Q4sYq3oTcvOVxxya6BXrn0LRLvcHuZqv0oa4fx2qAC74V6Q==",
   "success": true,
   "projectFilePath": "C:\\Users\\Alen\\source\\repos\\onyx\\onyx_Client\\Locker\\Locker.csproj",
+=======
+  "dgSpecHash": "9L0kdXaoT6fAR2OO0UE6CMvEyvOitiNFldpKhOx7gLr4ykMe/7rQArLrN+cmC/zyAufpHTlWZuJaOenET0msUQ==",
+  "success": true,
+  "projectFilePath": "D:\\Projects\\onyx\\onyx\\onyx_Client\\Locker\\Locker.csproj",
+>>>>>>> 54721a52c7003510781a6af808f132208ec2456c
   "expectedPackageFiles": [],
   "logs": []
 }

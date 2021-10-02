@@ -61,7 +61,7 @@ namespace onyx_Client_UI.Controls {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/onyx_Client_UI;component/controls/customtextbox.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/onyx_Client_UI;V1.0.0.0;component/controls/customtextbox.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\Controls\CustomTextbox.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

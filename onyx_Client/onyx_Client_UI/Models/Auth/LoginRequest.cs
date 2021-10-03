@@ -10,5 +10,6 @@ namespace onyx_Client_UI.Models.Auth
     {
         public string Login { get; set; }
         public string Password { get; set; }
+        public string Grant_type { get; set; }
     }
 }

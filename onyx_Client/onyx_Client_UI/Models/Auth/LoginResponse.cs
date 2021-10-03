@@ -8,9 +8,9 @@ namespace onyx_Client_UI.Models.Auth
 {
     class LoginResponse
     {
-        public string Token { get; set; }
-        public string RefreshToken { get; set; }
-        public string Role { get; set; }
-        public User User { get; set; }
+        public string Access_token { get; set; }
+        public string Refresh_token { get; set; }
+        public string Id_token { get; set; }
+        public DateTime Expires_at { get; set; }
     }
 }

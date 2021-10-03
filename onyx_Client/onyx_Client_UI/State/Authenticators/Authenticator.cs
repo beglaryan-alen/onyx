@@ -30,8 +30,9 @@ namespace onyx_Client_UI.State.Authenticators
         public async Task<Response> LoginAsync(string username, string password)
         {
             var response = App.HttpClient.Post<LoginRequest, DataResponse<LoginResponse>>(new LoginRequest() { Login = username, Password = password }, $"{App.Config.BaseUrl}/authorize/login");
-            if (response.IsOk)
-                CurrentUser = response.Data.User;
+            if (!response.IsOk)
+                throw new System.Exception(response.Message);
+            App.AuthorizeData = new AuthorizeData() { Refresh = response.Data.Refresh_token, Token = response.Data.Access_token };
             return response;
         }
 

@@ -1,7 +1,6 @@
-﻿using onyx_Client_UI.ViewModels;
-using System.Windows.Controls;
+﻿using System.Windows.Controls;
 
-namespace onyx_Client_UI.Views
+namespace onyx_Client_UI.Views.Home
 {
     /// <summary>
     /// Interaction logic for SoftsView.xaml
@@ -11,7 +10,6 @@ namespace onyx_Client_UI.Views
         public SoftView()
         {
             InitializeComponent();
-            DataContext = new SoftViewModel();
         }
     }
 }

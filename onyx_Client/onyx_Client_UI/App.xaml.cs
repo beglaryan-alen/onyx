@@ -3,6 +3,7 @@ using Onyx.Config;
 using onyx_Client_UI.State.Authenticators;
 using onyx_Client_UI.State.Navigators;
 using onyx_Client_UI.ViewModels;
+using onyx_Client_UI.ViewModels.HomeDetails;
 using onyx_Client_UI.Views;
 using System;
 using System.Windows;

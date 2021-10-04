@@ -9,14 +9,21 @@
         Height="900"
         Width="1440"
         >
+    
     <ContentControl Content="{Binding CurrentViewModel}">
+        
         <ContentControl.Resources>
+            
             <DataTemplate DataType="{x:Type viewmodels:LoginViewModel}">
                 <views:LoginView />
             </DataTemplate>
+            
             <DataTemplate DataType="{x:Type viewmodels:HomeViewModel}">
                 <views:HomeView />
             </DataTemplate>
+            
         </ContentControl.Resources>
+        
     </ContentControl>
+    
 </Window>

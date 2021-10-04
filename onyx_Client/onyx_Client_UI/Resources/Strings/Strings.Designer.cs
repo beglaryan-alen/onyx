@@ -88,6 +88,15 @@ namespace onyx_Client_UI.Resources.Strings {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to BALANCE.
+        /// </summary>
+        public static string Balance {
+            get {
+                return ResourceManager.GetString("Balance", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Bar.
         /// </summary>
         public static string Bar {
@@ -106,6 +115,15 @@ namespace onyx_Client_UI.Resources.Strings {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to BONUS.
+        /// </summary>
+        public static string Bonus {
+            get {
+                return ResourceManager.GetString("Bonus", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to YOUR CARD IS NOW CHARGED $ 1 TO CHECK THE CORRECT BINDING OF THE CARD.
         /// </summary>
         public static string CardCorrectBinding {
@@ -120,6 +138,15 @@ namespace onyx_Client_UI.Resources.Strings {
         public static string Cardnumber {
             get {
                 return ResourceManager.GetString("Cardnumber", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to CASHBACK.
+        /// </summary>
+        public static string Cashback {
+            get {
+                return ResourceManager.GetString("Cashback", resourceCulture);
             }
         }
         
@@ -156,6 +183,15 @@ namespace onyx_Client_UI.Resources.Strings {
         public static string Congratulations {
             get {
                 return ResourceManager.GetString("Congratulations", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to CURRENT RATE.
+        /// </summary>
+        public static string CurrentRate {
+            get {
+                return ResourceManager.GetString("CurrentRate", resourceCulture);
             }
         }
         
@@ -201,6 +237,15 @@ namespace onyx_Client_UI.Resources.Strings {
         public static string Female {
             get {
                 return ResourceManager.GetString("Female", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Friday.
+        /// </summary>
+        public static string Friday {
+            get {
+                return ResourceManager.GetString("Friday", resourceCulture);
             }
         }
         
@@ -313,6 +358,15 @@ namespace onyx_Client_UI.Resources.Strings {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Monday.
+        /// </summary>
+        public static string Monday {
+            get {
+                return ResourceManager.GetString("Monday", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Name.
         /// </summary>
         public static string Name {
@@ -412,6 +466,15 @@ namespace onyx_Client_UI.Resources.Strings {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Saturday.
+        /// </summary>
+        public static string Saturday {
+            get {
+                return ResourceManager.GetString("Saturday", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Search.
         /// </summary>
         public static string Search {
@@ -457,11 +520,56 @@ namespace onyx_Client_UI.Resources.Strings {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Sunday.
+        /// </summary>
+        public static string Sunday {
+            get {
+                return ResourceManager.GetString("Sunday", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Surname.
         /// </summary>
         public static string Surname {
             get {
                 return ResourceManager.GetString("Surname", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Thursday.
+        /// </summary>
+        public static string Thursday {
+            get {
+                return ResourceManager.GetString("Thursday", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Tuesday.
+        /// </summary>
+        public static string Tuesday {
+            get {
+                return ResourceManager.GetString("Tuesday", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to HISTORY OF VISITS.
+        /// </summary>
+        public static string VisitsHistory {
+            get {
+                return ResourceManager.GetString("VisitsHistory", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Wednesday.
+        /// </summary>
+        public static string Wednesday {
+            get {
+                return ResourceManager.GetString("Wednesday", resourceCulture);
             }
         }
         

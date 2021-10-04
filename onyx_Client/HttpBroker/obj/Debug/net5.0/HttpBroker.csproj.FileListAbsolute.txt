@@ -9,11 +9,11 @@ D:\Projects\Onyx\onyx\onyx_Client\HttpBroker\obj\Debug\net5.0\HttpBroker.csproj.
 D:\Projects\Onyx\onyx\onyx_Client\HttpBroker\obj\Debug\net5.0\HttpBroker.dll
 D:\Projects\Onyx\onyx\onyx_Client\HttpBroker\obj\Debug\net5.0\ref\HttpBroker.dll
 D:\Projects\Onyx\onyx\onyx_Client\HttpBroker\obj\Debug\net5.0\HttpBroker.pdb
+D:\Projects\onyx\onyx\onyx_Client\HttpBroker\obj\Debug\net5.0\HttpBroker.csprojAssemblyReference.cache
 C:\Users\Alen\source\repos\onyx\onyx_Client\HttpBroker\bin\Debug\net5.0\HttpBroker.deps.json
 C:\Users\Alen\source\repos\onyx\onyx_Client\HttpBroker\bin\Debug\net5.0\HttpBroker.dll
 C:\Users\Alen\source\repos\onyx\onyx_Client\HttpBroker\bin\Debug\net5.0\ref\HttpBroker.dll
 C:\Users\Alen\source\repos\onyx\onyx_Client\HttpBroker\bin\Debug\net5.0\HttpBroker.pdb
-C:\Users\Alen\source\repos\onyx\onyx_Client\HttpBroker\obj\Debug\net5.0\HttpBroker.csproj.AssemblyReference.cache
 C:\Users\Alen\source\repos\onyx\onyx_Client\HttpBroker\obj\Debug\net5.0\HttpBroker.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\Alen\source\repos\onyx\onyx_Client\HttpBroker\obj\Debug\net5.0\HttpBroker.AssemblyInfoInputs.cache
 C:\Users\Alen\source\repos\onyx\onyx_Client\HttpBroker\obj\Debug\net5.0\HttpBroker.AssemblyInfo.cs
@@ -21,4 +21,4 @@ C:\Users\Alen\source\repos\onyx\onyx_Client\HttpBroker\obj\Debug\net5.0\HttpBrok
 C:\Users\Alen\source\repos\onyx\onyx_Client\HttpBroker\obj\Debug\net5.0\HttpBroker.dll
 C:\Users\Alen\source\repos\onyx\onyx_Client\HttpBroker\obj\Debug\net5.0\ref\HttpBroker.dll
 C:\Users\Alen\source\repos\onyx\onyx_Client\HttpBroker\obj\Debug\net5.0\HttpBroker.pdb
-D:\Projects\onyx\onyx\onyx_Client\HttpBroker\obj\Debug\net5.0\HttpBroker.csprojAssemblyReference.cache
+C:\Users\Alen\source\repos\onyx\onyx_Client\HttpBroker\obj\Debug\net5.0\HttpBroker.csproj.AssemblyReference.cache

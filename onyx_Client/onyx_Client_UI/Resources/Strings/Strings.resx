@@ -126,17 +126,26 @@
   <data name="AssignedToYou" xml:space="preserve">
     <value>ASSIGNED TO YOU</value>
   </data>
+  <data name="Balance" xml:space="preserve">
+    <value>BALANCE</value>
+  </data>
   <data name="Bar" xml:space="preserve">
     <value>Bar</value>
   </data>
   <data name="Bind" xml:space="preserve">
     <value>BIND</value>
   </data>
+  <data name="Bonus" xml:space="preserve">
+    <value>BONUS</value>
+  </data>
   <data name="CardCorrectBinding" xml:space="preserve">
     <value>YOUR CARD IS NOW CHARGED $ 1 TO CHECK THE CORRECT BINDING OF THE CARD</value>
   </data>
   <data name="Cardnumber" xml:space="preserve">
     <value>Card number</value>
+  </data>
+  <data name="Cashback" xml:space="preserve">
+    <value>CASHBACK</value>
   </data>
   <data name="CCV" xml:space="preserve">
     <value>CCV</value>
@@ -149,6 +158,9 @@
   </data>
   <data name="Congratulations" xml:space="preserve">
     <value>CONGRATULATIONS ON SUCCESSFUL REGISTRATION</value>
+  </data>
+  <data name="CurrentRate" xml:space="preserve">
+    <value>CURRENT RATE</value>
   </data>
   <data name="Cybershoke" xml:space="preserve">
     <value>Cybershoke</value>
@@ -164,6 +176,9 @@
   </data>
   <data name="Female" xml:space="preserve">
     <value>Female</value>
+  </data>
+  <data name="Friday" xml:space="preserve">
+    <value>Friday</value>
   </data>
   <data name="Games" xml:space="preserve">
     <value>Games</value>
@@ -201,6 +216,9 @@
   <data name="MiddleName" xml:space="preserve">
     <value>Middle name</value>
   </data>
+  <data name="Monday" xml:space="preserve">
+    <value>Monday</value>
+  </data>
   <data name="Name" xml:space="preserve">
     <value>Name</value>
   </data>
@@ -234,6 +252,9 @@
   <data name="Reservation" xml:space="preserve">
     <value>Reservation</value>
   </data>
+  <data name="Saturday" xml:space="preserve">
+    <value>Saturday</value>
+  </data>
   <data name="Search" xml:space="preserve">
     <value>Search</value>
   </data>
@@ -249,8 +270,23 @@
   <data name="Standart75" xml:space="preserve">
     <value>STANDART 75</value>
   </data>
+  <data name="Sunday" xml:space="preserve">
+    <value>Sunday</value>
+  </data>
   <data name="Surname" xml:space="preserve">
     <value>Surname</value>
+  </data>
+  <data name="Thursday" xml:space="preserve">
+    <value>Thursday</value>
+  </data>
+  <data name="Tuesday" xml:space="preserve">
+    <value>Tuesday</value>
+  </data>
+  <data name="VisitsHistory" xml:space="preserve">
+    <value>HISTORY OF VISITS</value>
+  </data>
+  <data name="Wednesday" xml:space="preserve">
+    <value>Wednesday</value>
   </data>
   <data name="WelcomeBack" xml:space="preserve">
     <value>Welcome back!</value>

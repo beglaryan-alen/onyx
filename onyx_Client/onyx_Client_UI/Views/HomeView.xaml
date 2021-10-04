@@ -3,11 +3,11 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-             xmlns:resources="clr-namespace:onyx_Client_UI.Resources.Styles"
-             xmlns:viewmodels="clr-namespace:onyx_Client_UI.ViewModels"
-             xmlns:views="clr-namespace:onyx_Client_UI.Views"
-             xmlns:loc="clr-namespace:onyx_Client_UI.Resources.Strings"
              xmlns:controls="clr-namespace:onyx_Client_UI.Controls"
+             xmlns:loc="clr-namespace:onyx_Client_UI.Resources.Strings"
+             xmlns:resources="clr-namespace:onyx_Client_UI.Resources.Styles"
+             xmlns:viewmodels="clr-namespace:onyx_Client_UI.ViewModels.HomeDetails"
+             xmlns:views="clr-namespace:onyx_Client_UI.Views.Home"
              Padding="20"
              mc:Ignorable="d">
 
@@ -25,8 +25,8 @@
 
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="0.15*"/>
-            <ColumnDefinition Width="0.7*"/>
-            <ColumnDefinition Width="0.15*"/>
+            <ColumnDefinition Width="0.65*"/>
+            <ColumnDefinition Width="0.2*"/>
         </Grid.ColumnDefinitions>
 
         <Grid.RowDefinitions>
@@ -34,6 +34,8 @@
             <RowDefinition Height="0.9*"/>
         </Grid.RowDefinitions>
 
+        <!--#region Navigation Bar -->
+        
         <Grid Grid.Column="0"
               Grid.ColumnSpan="2"
               Grid.Row="0"
@@ -62,18 +64,47 @@
                                       Grid.Column="2"/>
         </Grid>
 
-        <Grid Grid.Column="2"
-              Grid.Row="0"
-              Grid.RowSpan="2"
-              Background="Green"/>
+        <!--#endregion-->
 
+        <!--#region Profile Button -->
+
+        <Grid Grid.Row="0"
+              Grid.Column="2"/>
+
+        <!--#endregion-->
+        
+        <!--#region Right Column Details Page -->
+        
+        <ContentControl Content="{Binding HomeDetailsView}"
+                        Grid.Column="2"
+                        Grid.Row="1">
+
+            <ContentControl.Resources>
+
+                <DataTemplate DataType="{x:Type viewmodels:HomeDetailsViewModel}">
+                    <views:HomeDetailsView />
+                </DataTemplate>
+
+            </ContentControl.Resources>
+
+        </ContentControl>
+
+        <!--#endregion-->
+
+        <!--#region Favorites page -->
+        
         <Grid Grid.Column="0"
               Grid.Row="1"
               Background="Yellow"/>
 
+        <!--#endregion-->
+
+        <!--#region Main page -->
+        
         <ContentControl Content="{Binding CurrentViewModel}"
-                            Grid.Column="1"
-                            Grid.Row="1">
+                        Grid.Column="1"
+                        Grid.Row="1"
+                        >
 
             <ContentControl.Resources>
 
@@ -92,15 +123,8 @@
             </ContentControl.Resources>
 
         </ContentControl>
+
+        <!--#endregion-->
+        
     </Grid>
-    <!--<ContentControl Content="{Binding CurrentViewModel}">
-        <ContentControl.Resources>
-            <DataTemplate DataType="{x:Type viewmodels:GamesViewModel}">
-                <views:GamesView />
-            </DataTemplate>
-            <DataTemplate DataType="{x:Type viewmodels:SoftsViewModel}">
-                <views:SoftsView />
-            </DataTemplate>
-        </ContentControl.Resources>
-    </ContentControl>-->
 </UserControl>

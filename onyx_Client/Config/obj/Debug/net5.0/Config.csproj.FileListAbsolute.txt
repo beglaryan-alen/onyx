@@ -13,6 +13,8 @@ D:\Projects\Onyx\onyx\onyx_Client\Config\bin\Debug\net5.0\Crypto.pdb
 D:\Projects\Onyx\onyx\onyx_Client\Config\obj\Debug\net5.0\Config.dll
 D:\Projects\Onyx\onyx\onyx_Client\Config\obj\Debug\net5.0\ref\Config.dll
 D:\Projects\Onyx\onyx\onyx_Client\Config\obj\Debug\net5.0\Config.pdb
+D:\Projects\onyx\onyx\onyx_Client\Config\obj\Debug\net5.0\Config.csprojAssemblyReference.cache
+D:\Projects\onyx\onyx\onyx_Client\Config\obj\Debug\net5.0\Config.csproj.CopyComplete
 C:\Users\Alen\source\repos\onyx\onyx_Client\Config\bin\Debug\net5.0\Config.deps.json
 C:\Users\Alen\source\repos\onyx\onyx_Client\Config\bin\Debug\net5.0\Config.dll
 C:\Users\Alen\source\repos\onyx\onyx_Client\Config\bin\Debug\net5.0\ref\Config.dll
@@ -30,5 +32,3 @@ C:\Users\Alen\source\repos\onyx\onyx_Client\Config\obj\Debug\net5.0\Config.cspro
 C:\Users\Alen\source\repos\onyx\onyx_Client\Config\obj\Debug\net5.0\Config.dll
 C:\Users\Alen\source\repos\onyx\onyx_Client\Config\obj\Debug\net5.0\ref\Config.dll
 C:\Users\Alen\source\repos\onyx\onyx_Client\Config\obj\Debug\net5.0\Config.pdb
-D:\Projects\onyx\onyx\onyx_Client\Config\obj\Debug\net5.0\Config.csprojAssemblyReference.cache
-D:\Projects\onyx\onyx\onyx_Client\Config\obj\Debug\net5.0\Config.csproj.CopyComplete

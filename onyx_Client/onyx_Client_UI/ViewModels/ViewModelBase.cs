@@ -1,18 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.ComponentModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace onyx_Client_UI.ViewModel
 {
-    public delegate TViewModel CreateViewModel<TViewModel>() where TViewModel : ViewModelBase;
-
     public class ViewModelBase : INotifyPropertyChanged
     {
-        public virtual void Dispose() { }
-
         public event PropertyChangedEventHandler PropertyChanged;
 
         protected void OnPropertyChanged(string propertyName)
@@ -25,7 +17,7 @@ namespace onyx_Client_UI.ViewModel
             if (!EqualityComparer<T>.Default.Equals(field, newValue))
             {
                 field = newValue;
-                PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+                OnPropertyChanged(propertyName);
             }
         }
     }

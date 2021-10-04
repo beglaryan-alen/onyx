@@ -6,12 +6,10 @@ namespace onyx_Client_UI.State.Navigators
 {
     public class Navigator : INavigator
     {
-        private readonly HomeViewModel homeView;
-        private readonly LoginViewModel loginView;
+        private readonly IAuthenticator _authenticator;
         public Navigator(IAuthenticator authenticator)
         {
-            loginView = new LoginViewModel(this, authenticator);
-            homeView = new HomeViewModel(this);
+            _authenticator = authenticator;
         }
 
         private ViewModelBase _currentViewModel;
@@ -32,12 +30,12 @@ namespace onyx_Client_UI.State.Navigators
 
         public void GoToHome()
         {
-            CurrentViewModel = homeView;
+            CurrentViewModel = new HomeViewModel(this, _authenticator);
         }
 
         public void GoToLogin()
         {
-            CurrentViewModel = loginView;
+            CurrentViewModel = new LoginViewModel(this, _authenticator);
         }
 
     }

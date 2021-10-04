@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace onyx_Client_UI.Models
 {
@@ -20,5 +21,9 @@ namespace onyx_Client_UI.Models
         public string IdentificationNumber { get; set; }
         public DateTime DateOfBirth { get; set; }
         public Gender Gender { get; set; }
+        public List<DateTime> Visits { get; set; }
+        public decimal Balance { get; set; }
+        public decimal Cashback { get; set; }
+        public decimal Bonus { get; set; }
     }
 }

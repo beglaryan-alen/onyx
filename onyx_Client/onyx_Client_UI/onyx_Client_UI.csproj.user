@@ -16,13 +16,16 @@
     <Compile Update="Controls\NavigationBar.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="Views\GamesView.xaml.cs">
+    <Compile Update="Views\HomeDetails\GamesView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="Views\PromocodeView.xaml.cs">
+    <Compile Update="Views\HomeDetails\PromocodeView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="Views\SoftView.xaml.cs">
+    <Compile Update="Views\HomeDetails\SoftView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\HomeDetails\HomeDetailsView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
@@ -39,16 +42,19 @@
     <Page Update="Resources\Styles\DefaultResources.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Views\GamesView.xaml">
+    <Page Update="Views\HomeDetails\GamesView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\HomeDetails\PromocodeView.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Views\LoginView.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Views\PromocodeView.xaml">
+    <Page Update="Views\HomeDetails\SoftView.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Views\SoftView.xaml">
+    <Page Update="Views\HomeDetails\HomeDetailsView.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

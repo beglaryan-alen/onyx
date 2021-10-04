@@ -8,14 +8,24 @@ namespace onyx_Client_UI.ViewModel
 {
     public class LoginViewModel : ViewModelBase
     {
+        #region Private Properties
+
         private readonly INavigator _navigator;
         private readonly IAuthenticator _authenticator;
+
+        #endregion
+
+        #region Constructor
+
         public LoginViewModel(INavigator navigator, 
                               IAuthenticator authenticator)
         {
             _navigator = navigator;
             _authenticator = authenticator;
         }
+
+        #endregion
+
         #region Public Properties
 
         public ViewModelBase CurrentViewModel { get; }
@@ -43,7 +53,7 @@ namespace onyx_Client_UI.ViewModel
 
         private async Task OnLoginCommand()
         {
-            //var response = await _authenticator.LoginAsync(Id, Password);
+            var response = await _authenticator.LoginAsync(Id, Password);
             _navigator.GoToHome();
         }
 

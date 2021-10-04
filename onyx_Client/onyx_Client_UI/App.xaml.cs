@@ -17,6 +17,7 @@ namespace onyx_Client_UI
     {
         public static Config Config;
         public static HttpBroker.Client HttpClient;
+        public static HttpBroker.Models.AuthorizeData AuthorizeData;
         public App()
         {
             Config = Config.getConfig();

@@ -14,6 +14,11 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Remove="Resources\Images\access_time.png" />
+    <None Remove="Resources\Images\logout.png" />
+    <None Remove="Resources\Images\money-bag.png" />
+    <None Remove="Resources\Images\operator.png" />
+    <None Remove="Resources\Images\refresh.png" />
     <None Remove="Resources\Images\remove_red_eye.png" />
     <None Remove="Resources\Images\search.png" />
   </ItemGroup>
@@ -29,6 +34,11 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="Resources\Images\access_time.png" />
+    <Resource Include="Resources\Images\logout.png" />
+    <Resource Include="Resources\Images\money-bag.png" />
+    <Resource Include="Resources\Images\operator.png" />
+    <Resource Include="Resources\Images\refresh.png" />
     <Resource Include="Resources\Images\remove_red_eye.png" />
     <Resource Include="Resources\Images\search.png" />
   </ItemGroup>

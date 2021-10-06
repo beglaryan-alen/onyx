@@ -1,6 +1,7 @@
 ﻿using HttpBroker.Models;
 using onyx_Client_UI.Models;
 using onyx_Client_UI.Models.Auth;
+using onyx_Client_UI.State.Navigators;
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
@@ -29,22 +30,21 @@ namespace onyx_Client_UI.State.Authenticators
         /// <param name="username">username</param>
         /// <param name="password">password</param>
         /// <returns>If user exists.</returns>
-        public async Task<Response> LoginAsync(string ID, string password)
+        public async Task<Response> LoginAsync(string username, string password)
         {
-<<<<<<< HEAD
-            DataResponse<LoginResponse> response;
             try
             {
-                response = App.HttpClient.Post<LoginRequest, DataResponse<LoginResponse>>(new LoginRequest() { Login = ID, Password = password }, $"{App.Config.BaseUrl}/authorize/login");
-                if (response.IsOk)
-                    CurrentUser = response.Data.User;
+                var response = App.HttpClient.Post<LoginRequest, DataResponse<LoginResponse>>(new LoginRequest() { Login = username, Password = password }, $"{App.Config.BaseUrl}/authorize/login");
+                if (!response.IsOk)
+                    throw new System.Exception(response.Message);
+                App.AuthorizeData = new AuthorizeData() { Refresh = response.Data.Refresh_token, Token = response.Data.Access_token };
                 return response;
             }
             catch (Exception)
             {
                 CurrentUser = new User()
                 {
-                    Id = int.Parse(ID),
+                    Id = 24455,
                     DateOfBirth = DateTime.Now,
                     Email = "alen@alen.com",
                     Gender = Gender.Man,
@@ -57,11 +57,11 @@ namespace onyx_Client_UI.State.Authenticators
                     SurName = "Surname",
                     Visits = new List<DateTime>()
                     {
-                        new DateTime(2021, 04, 30),
-                        new DateTime(2021, 04, 29),
                         new DateTime(2021, 04, 28),
-                        new DateTime(2021, 04, 26),
-                        new DateTime(2021, 04, 22),
+                        new DateTime(2021, 04, 30),
+                        new DateTime(2021, 03, 31),
+                        new DateTime(2000, 04, 20),
+                        new DateTime(2020, 04, 22),
                     },
                     Balance = 23450,
                     Cashback = 200,
@@ -72,19 +72,14 @@ namespace onyx_Client_UI.State.Authenticators
                     IsOk = true,
                 };
             }
-=======
-            var response = App.HttpClient.Post<LoginRequest, DataResponse<LoginResponse>>(new LoginRequest() { Login = username, Password = password }, $"{App.Config.BaseUrl}/authorize/login");
-            if (!response.IsOk)
-                throw new System.Exception(response.Message);
-            App.AuthorizeData = new AuthorizeData() { Refresh = response.Data.Refresh_token, Token = response.Data.Access_token };
-            return response;
->>>>>>> d09a5e1cfe4462bb643739827af253b80d20a34f
+
         }
 
-        public Task Logout()
+        public async Task Logout()
         {
-            throw new System.NotImplementedException();
+            await Task.Run(() =>
+            {
+            });
         }
-
     }
 }

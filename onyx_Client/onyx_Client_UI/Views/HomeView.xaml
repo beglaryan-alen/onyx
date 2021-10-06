@@ -8,7 +8,6 @@
              xmlns:resources="clr-namespace:onyx_Client_UI.Resources.Styles"
              xmlns:viewmodels="clr-namespace:onyx_Client_UI.ViewModels.HomeDetails"
              xmlns:views="clr-namespace:onyx_Client_UI.Views.Home"
-             Padding="20"
              mc:Ignorable="d">
 
     <UserControl.Resources>
@@ -25,8 +24,8 @@
 
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="0.15*"/>
-            <ColumnDefinition Width="0.65*"/>
-            <ColumnDefinition Width="0.2*"/>
+            <ColumnDefinition Width="0.7*"/>
+            <ColumnDefinition Width="0.15*"/>
         </Grid.ColumnDefinitions>
 
         <Grid.RowDefinitions>
@@ -68,8 +67,46 @@
 
         <!--#region Profile Button -->
 
-        <Grid Grid.Row="0"
-              Grid.Column="2"/>
+        <Border Grid.Row="0"
+                Margin="10, 15, 10, 0"
+                Padding="15"
+                Background="{StaticResource appcolor_2}"
+                Grid.Column="2">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="0.25*"/>
+                    <ColumnDefinition Width="0.75*"/>
+                </Grid.ColumnDefinitions>
+                <Border Grid.Column="0"
+                        BorderBrush="{StaticResource appcolor_5}"
+                        BorderThickness="2"
+                        VerticalAlignment="Top">
+                    <Image Stretch="Fill"
+                           VerticalAlignment="Top"
+                           Source="https://www.meme-arsenal.com/memes/49071e21f0cb7d1090b8820fbb37f925.jpg"/>
+                </Border>
+
+                <Grid VerticalAlignment="Center"
+                      Grid.Column="1">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+
+                    <Label Content="ID 223344"
+                           FontSize="{StaticResource tsize_i3}"
+                           FontFamily="/Resources/Fonts/Montserrat-Medium.ttf"
+                           FontWeight="Bold"
+                           Foreground="{StaticResource appcolor_5}"/>
+
+                    <Label Content="21 place"
+                           Grid.Row="1"
+                           FontSize="{StaticResource tsize_i3}"
+                           FontFamily="/Resources/Fonts/Montserrat-Medium.ttf"
+                           Foreground="{StaticResource appcolor_5}"/>
+                </Grid>
+            </Grid>
+        </Border>
 
         <!--#endregion-->
         

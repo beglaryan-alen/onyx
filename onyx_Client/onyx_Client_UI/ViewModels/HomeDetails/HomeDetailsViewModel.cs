@@ -1,32 +1,36 @@
-﻿using onyx_Client_UI.Models;
+﻿using MvvmHelpers.Commands;
+using onyx_Client_UI.Models;
 using onyx_Client_UI.Resources.Strings;
 using onyx_Client_UI.State.Authenticators;
+using onyx_Client_UI.State.Navigators;
 using onyx_Client_UI.ViewModel;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Windows;
+using System.Threading.Tasks;
+using System.Windows.Input;
 
 namespace onyx_Client_UI.ViewModels.HomeDetails
 {
     public class HomeDetailsViewModel : ViewModelBase
     {
-        private readonly User CurrentUser;
+        private readonly IAuthenticator _authenticator;
+        private readonly INavigator _navigator;
 
-        public HomeDetailsViewModel(User currentUser)
+        public HomeDetailsViewModel(INavigator navigator, IAuthenticator authenticator)
         {
-            CurrentUser = currentUser;
+            _authenticator = authenticator;
+            _navigator = navigator;
             SetDates();
-
-            Balance = currentUser.Balance;
-            Cashback = currentUser.Cashback;
-            Bonus = currentUser.Bonus;
+            Balance = authenticator.CurrentUser.Balance;
+            Cashback = authenticator.CurrentUser.Cashback;
+            Bonus = authenticator.CurrentUser.Bonus;
         }
 
         #region Public Properties
 
-        private Dictionary<string, DateTime> _dates;
-        public Dictionary<string, DateTime> Dates
+        private Dictionary<DateTime, string> _dates;
+        public Dictionary<DateTime, string> Dates
         {
             get => _dates;
             set => SetPropertyChanged(nameof(Dates), ref _dates, value);
@@ -53,19 +57,21 @@ namespace onyx_Client_UI.ViewModels.HomeDetails
             set => SetPropertyChanged(nameof(Bonus), ref _bonus, value);
         }
 
+        public ICommand ExitCommand => new AsyncCommand(OnExitCommand);
+        
         #endregion
 
         #region Private Helpers
 
         private void SetDates()
         {
-            var visits = CurrentUser.Visits;
-            var closestDates = visits.Where(x => x <= DateTime.Now).ToList();
+            var visits = _authenticator.CurrentUser.Visits;
+            var closestDates = visits.OrderByDescending(x => x.Date).ToList();
 
-            Dates = new Dictionary<string, DateTime>();
-            Dates.Add(GetWeekNameFromDate(closestDates[0].DayOfWeek), closestDates[0]);
-            Dates.Add(GetWeekNameFromDate(closestDates[1].DayOfWeek), closestDates[1]);
-            Dates.Add(GetWeekNameFromDate(closestDates[2].DayOfWeek), closestDates[2]);
+            Dates = new Dictionary<DateTime, string>();
+            Dates.Add(closestDates[0], GetWeekNameFromDate(closestDates[0].DayOfWeek));
+            Dates.Add(closestDates[1], GetWeekNameFromDate(closestDates[1].DayOfWeek));
+            Dates.Add(closestDates[2], GetWeekNameFromDate(closestDates[2].DayOfWeek));
         }
 
         private string GetWeekNameFromDate(DayOfWeek dayOfWeek)
@@ -91,6 +97,11 @@ namespace onyx_Client_UI.ViewModels.HomeDetails
             throw new Exception("OOh fuck...");
         }
 
+        private async Task OnExitCommand()
+        {
+            await _authenticator.Logout();
+            _navigator.GoToLogin();
+        }
         #endregion
     }
 }

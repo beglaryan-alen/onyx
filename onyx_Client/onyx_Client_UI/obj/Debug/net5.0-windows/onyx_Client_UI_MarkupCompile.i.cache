@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\Alen\source\repos\onyx\onyx_Client\onyx_Client_UI\obj\Debug\net5.0-windows\
+D:\Projects\My\Onyx\onyx\onyx_Client\onyx_Client_UI\obj\Debug\net5.0-windows\
 onyx_Client_UI
 none
 false
 TRACE;DEBUG;NET;NET5_0;NETCOREAPP
-C:\Users\Alen\source\repos\onyx\onyx_Client\onyx_Client_UI\App.xaml
-11-1699137811
+D:\Projects\My\Onyx\onyx\onyx_Client\onyx_Client_UI\App.xaml
+12-807558100
 
-42244290694
-195392708071
-Controls\CustomSearchBox.xaml;Controls\CustomTextbox.xaml;Controls\NavigationBar.xaml;Resources\Styles\DefaultResources.xaml;Views\HomeDetails\GamesView.xaml;Views\HomeDetails\HomeDetailsView.xaml;Views\HomeDetails\PromocodeView.xaml;Views\HomeDetails\SoftView.xaml;Views\HomeView.xaml;Views\LoginView.xaml;Views\MainWindow.xaml;
+43-1500249182
+201-529949352
+Controls\CustomSearchBox.xaml;Controls\CustomTextbox.xaml;Controls\GameSoftButton.xaml;Controls\NavigationBar.xaml;Resources\Styles\DefaultResources.xaml;Views\HomeDetails\GamesView.xaml;Views\HomeDetails\HomeDetailsView.xaml;Views\HomeDetails\PromocodeView.xaml;Views\HomeDetails\SoftView.xaml;Views\HomeView.xaml;Views\LoginView.xaml;Views\MainWindow.xaml;
 
-True
+False
 

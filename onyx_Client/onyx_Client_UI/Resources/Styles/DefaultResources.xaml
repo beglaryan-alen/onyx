@@ -23,5 +23,6 @@
     <sys:Double x:Key="tsize_i2">20</sys:Double>
     <sys:Double x:Key="tsize_i3">16</sys:Double>
     <sys:Double x:Key="tsize_i4">11</sys:Double>
-    
+
+
 </ResourceDictionary>

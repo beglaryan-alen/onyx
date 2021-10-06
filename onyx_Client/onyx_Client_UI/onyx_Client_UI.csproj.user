@@ -13,6 +13,9 @@
     <Compile Update="Controls\CustomTextBox.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Controls\GameSoftButton.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Controls\NavigationBar.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -34,6 +37,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Controls\CustomTextBox.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Controls\GameSoftButton.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Controls\NavigationBar.xaml">

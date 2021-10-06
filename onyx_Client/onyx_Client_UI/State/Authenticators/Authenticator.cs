@@ -31,13 +31,12 @@ namespace onyx_Client_UI.State.Authenticators
         /// <returns>If user exists.</returns>
         public async Task<Response> LoginAsync(string ID, string password)
         {
-<<<<<<< HEAD
             DataResponse<LoginResponse> response;
             try
             {
                 response = App.HttpClient.Post<LoginRequest, DataResponse<LoginResponse>>(new LoginRequest() { Login = ID, Password = password }, $"{App.Config.BaseUrl}/authorize/login");
                 if (response.IsOk)
-                    CurrentUser = response.Data.User;
+                    App.AuthorizeData.Token = response.Data.Access_token;
                 return response;
             }
             catch (Exception)
@@ -72,13 +71,11 @@ namespace onyx_Client_UI.State.Authenticators
                     IsOk = true,
                 };
             }
-=======
-            var response = App.HttpClient.Post<LoginRequest, DataResponse<LoginResponse>>(new LoginRequest() { Login = username, Password = password }, $"{App.Config.BaseUrl}/authorize/login");
-            if (!response.IsOk)
-                throw new System.Exception(response.Message);
-            App.AuthorizeData = new AuthorizeData() { Refresh = response.Data.Refresh_token, Token = response.Data.Access_token };
-            return response;
->>>>>>> d09a5e1cfe4462bb643739827af253b80d20a34f
+            //var response = App.HttpClient.Post<LoginRequest, DataResponse<LoginResponse>>(new LoginRequest() { Login = username, Password = password }, $"{App.Config.BaseUrl}/authorize/login");
+            //if (!response.IsOk)
+            //    throw new System.Exception(response.Message);
+            //App.AuthorizeData = new AuthorizeData() { Refresh = response.Data.Refresh_token, Token = response.Data.Access_token };
+            //return response;
         }
 
         public Task Logout()

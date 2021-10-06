@@ -3,10 +3,14 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+              xmlns:resources="clr-namespace:onyx_Client_UI.Resources.Styles"
              mc:Ignorable="d" 
-             Background="Blue"
              >
-    <Grid>
-            
+    <UserControl.Resources>
+        <resources:DefaultResources/>
+    </UserControl.Resources>
+    <Grid Margin="24,24" Background="{StaticResource appcolor_2}">
+        <WrapPanel ItemHeight="262" ItemWidth="200" x:Name="WP_Games" Orientation="Horizontal" Margin="24,24">
+        </WrapPanel>
     </Grid>
 </UserControl>

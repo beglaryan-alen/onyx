@@ -8,20 +8,28 @@
     "net5.0-windows7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\any2k\\.nuget\\packages\\": {}
+    "C:\\Users\\Gladun\\.nuget\\packages\\": {},
+    "D:\\VisualStudio\\Shared\\NuGetPackages": {},
+    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Projects\\onyx\\onyx\\onyx_Client\\Locker\\Locker.csproj",
+      "projectUniqueName": "D:\\Projects\\My\\Onyx\\onyx\\onyx_Client\\Locker\\Locker.csproj",
       "projectName": "Locker",
-      "projectPath": "D:\\Projects\\onyx\\onyx\\onyx_Client\\Locker\\Locker.csproj",
-      "packagesPath": "C:\\Users\\any2k\\.nuget\\packages\\",
-      "outputPath": "D:\\Projects\\onyx\\onyx\\onyx_Client\\Locker\\obj\\",
+      "projectPath": "D:\\Projects\\My\\Onyx\\onyx\\onyx_Client\\Locker\\Locker.csproj",
+      "packagesPath": "C:\\Users\\Gladun\\.nuget\\packages\\",
+      "outputPath": "D:\\Projects\\My\\Onyx\\onyx\\onyx_Client\\Locker\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "D:\\VisualStudio\\Shared\\NuGetPackages",
+        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+      ],
       "configFilePaths": [
-        "C:\\Users\\any2k\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\Gladun\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net5.0-windows7.0"
@@ -63,7 +71,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
       }
     }
   }

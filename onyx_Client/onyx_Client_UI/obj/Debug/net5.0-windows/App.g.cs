@@ -46,7 +46,7 @@ namespace onyx_Client_UI {
         /// </summary>
         [System.STAThreadAttribute()]
         [System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [System.CodeDom.Compiler.GeneratedCodeAttribute("PresentationBuildTasks", "5.0.5.0")]
+        [System.CodeDom.Compiler.GeneratedCodeAttribute("PresentationBuildTasks", "5.0.10.0")]
         public static void Main() {
             onyx_Client_UI.App app = new onyx_Client_UI.App();
             app.Run();

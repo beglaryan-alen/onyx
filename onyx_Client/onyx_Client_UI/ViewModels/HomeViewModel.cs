@@ -27,7 +27,7 @@ namespace onyx_Client_UI.ViewModel
             _gamesViewModel = new GamesViewModel();
             _softViewModel = new SoftViewModel();
             _promocodeViewModel = new PromocodeViewModel();
-            HomeDetailsView = new HomeDetailsViewModel(authenticator.CurrentUser);
+            HomeDetailsView = new HomeDetailsViewModel(navigator, authenticator);
             CurrentViewModel = _gamesViewModel;
         }
 

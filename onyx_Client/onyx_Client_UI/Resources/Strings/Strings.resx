@@ -138,6 +138,9 @@
   <data name="Bonus" xml:space="preserve">
     <value>BONUS</value>
   </data>
+  <data name="CallOperator" xml:space="preserve">
+    <value>Call operator</value>
+  </data>
   <data name="CardCorrectBinding" xml:space="preserve">
     <value>YOUR CARD IS NOW CHARGED $ 1 TO CHECK THE CORRECT BINDING OF THE CARD</value>
   </data>
@@ -152,6 +155,9 @@
   </data>
   <data name="ChooseSecurityPassword" xml:space="preserve">
     <value>Choose security password</value>
+  </data>
+  <data name="ChooseTariff" xml:space="preserve">
+    <value>Choose a tariff</value>
   </data>
   <data name="Close" xml:space="preserve">
     <value>CLOSE</value>
@@ -173,6 +179,9 @@
   </data>
   <data name="Email" xml:space="preserve">
     <value>E-mail</value>
+  </data>
+  <data name="Exit" xml:space="preserve">
+    <value>EXIT</value>
   </data>
   <data name="Female" xml:space="preserve">
     <value>Female</value>
@@ -252,6 +261,9 @@
   <data name="Reservation" xml:space="preserve">
     <value>Reservation</value>
   </data>
+  <data name="Reset" xml:space="preserve">
+    <value>RESET</value>
+  </data>
   <data name="Saturday" xml:space="preserve">
     <value>Saturday</value>
   </data>
@@ -266,6 +278,9 @@
   </data>
   <data name="Soft" xml:space="preserve">
     <value>Soft</value>
+  </data>
+  <data name="Standart" xml:space="preserve">
+    <value>Standart</value>
   </data>
   <data name="Standart75" xml:space="preserve">
     <value>STANDART 75</value>

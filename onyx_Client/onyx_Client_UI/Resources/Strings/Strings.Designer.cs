@@ -124,6 +124,15 @@ namespace onyx_Client_UI.Resources.Strings {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Call operator.
+        /// </summary>
+        public static string CallOperator {
+            get {
+                return ResourceManager.GetString("CallOperator", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to YOUR CARD IS NOW CHARGED $ 1 TO CHECK THE CORRECT BINDING OF THE CARD.
         /// </summary>
         public static string CardCorrectBinding {
@@ -165,6 +174,15 @@ namespace onyx_Client_UI.Resources.Strings {
         public static string ChooseSecurityPassword {
             get {
                 return ResourceManager.GetString("ChooseSecurityPassword", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Choose a tariff.
+        /// </summary>
+        public static string ChooseTariff {
+            get {
+                return ResourceManager.GetString("ChooseTariff", resourceCulture);
             }
         }
         
@@ -228,6 +246,15 @@ namespace onyx_Client_UI.Resources.Strings {
         public static string Email {
             get {
                 return ResourceManager.GetString("Email", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to EXIT.
+        /// </summary>
+        public static string Exit {
+            get {
+                return ResourceManager.GetString("Exit", resourceCulture);
             }
         }
         
@@ -466,6 +493,15 @@ namespace onyx_Client_UI.Resources.Strings {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to RESET.
+        /// </summary>
+        public static string Reset {
+            get {
+                return ResourceManager.GetString("Reset", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Saturday.
         /// </summary>
         public static string Saturday {
@@ -507,6 +543,15 @@ namespace onyx_Client_UI.Resources.Strings {
         public static string Soft {
             get {
                 return ResourceManager.GetString("Soft", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Standart.
+        /// </summary>
+        public static string Standart {
+            get {
+                return ResourceManager.GetString("Standart", resourceCulture);
             }
         }
         

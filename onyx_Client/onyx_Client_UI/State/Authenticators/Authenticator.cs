@@ -30,25 +30,24 @@ namespace onyx_Client_UI.State.Authenticators
         /// <param name="username">username</param>
         /// <param name="password">password</param>
         /// <returns>If user exists.</returns>
-        public async Task<Response> LoginAsync(string username, string password)
+        public async Task<Response> LoginAsync(string ID, string password)
         {
-<<<<<<< HEAD
             DataResponse<LoginResponse> response;
             try
             {
                 response = App.HttpClient.Post<LoginRequest, DataResponse<LoginResponse>>(new LoginRequest() { Login = ID, Password = password }, $"{App.Config.BaseUrl}/authorize/login");
                 if (response.IsOk)
                     App.AuthorizeData.Token = response.Data.Access_token;
-=======
-            try
-            {
-                var response = App.HttpClient.Post<LoginRequest, DataResponse<LoginResponse>>(new LoginRequest() { Login = username, Password = password }, $"{App.Config.BaseUrl}/authorize/login");
-                if (!response.IsOk)
-                    throw new System.Exception(response.Message);
-                App.AuthorizeData = new AuthorizeData() { Refresh = response.Data.Refresh_token, Token = response.Data.Access_token };
->>>>>>> 9db9e315218f39aad5344d0b25ba259d27dc6ca9
                 return response;
             }
+            //try
+            //{
+            //    var response = App.HttpClient.Post<LoginRequest, DataResponse<LoginResponse>>(new LoginRequest() { Login = username, Password = password }, $"{App.Config.BaseUrl}/authorize/login");
+            //    if (!response.IsOk)
+            //        throw new System.Exception(response.Message);
+            //    App.AuthorizeData = new AuthorizeData() { Refresh = response.Data.Refresh_token, Token = response.Data.Access_token };
+            //    return response;
+            //}
             catch (Exception)
             {
                 CurrentUser = new User()
@@ -81,15 +80,7 @@ namespace onyx_Client_UI.State.Authenticators
                     IsOk = true,
                 };
             }
-<<<<<<< HEAD
-            //var response = App.HttpClient.Post<LoginRequest, DataResponse<LoginResponse>>(new LoginRequest() { Login = username, Password = password }, $"{App.Config.BaseUrl}/authorize/login");
-            //if (!response.IsOk)
-            //    throw new System.Exception(response.Message);
-            //App.AuthorizeData = new AuthorizeData() { Refresh = response.Data.Refresh_token, Token = response.Data.Access_token };
-            //return response;
-=======
 
->>>>>>> 9db9e315218f39aad5344d0b25ba259d27dc6ca9
         }
 
         public async Task Logout()

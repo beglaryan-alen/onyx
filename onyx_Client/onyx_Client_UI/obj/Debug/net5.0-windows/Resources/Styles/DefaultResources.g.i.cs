@@ -52,7 +52,7 @@ namespace onyx_Client_UI.Resources.Styles {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/onyx_Client_UI;V1.0.0.0;component/resources/styles/defaultresources.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/onyx_Client_UI;component/resources/styles/defaultresources.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\..\Resources\Styles\DefaultResources.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

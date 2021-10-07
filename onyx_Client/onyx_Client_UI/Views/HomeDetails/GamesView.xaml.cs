@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Windows.Controls;
+using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 
@@ -18,11 +19,12 @@ namespace onyx_Client_UI.Views.Home
         public GamesView()
         {
             InitializeComponent();
-            var btns = DefaultButtons();
-            foreach (var b in btns)
-            {
-                WP_Games.Children.Add(b);
-            }
+
+            //var btns = DefaultButtons();
+            //foreach (var b in btns)
+            //{
+            //    WP_Games.Children.Add(b);
+            //}
         }
 
 
@@ -43,6 +45,8 @@ namespace onyx_Client_UI.Views.Home
             return btns;
         }
 
+       
+
 
         ImageBrush ConvertBase64ToImageBrush(string value)
         {
@@ -60,10 +64,28 @@ namespace onyx_Client_UI.Views.Home
         GameSoftButton GetButton(string uri, string label = "")
         {
             var b = new GameSoftButton();
-            b.Label.Content = label;
-            b.Btn.Background = new ImageBrush(new BitmapImage(new Uri(uri)));
+            //b.Label.Content = label;
+            b.Background = new ImageBrush(new BitmapImage(new Uri(uri)));
             return b;
 
+        }
+
+        private void Border_MouseEnter(object sender, MouseEventArgs e)
+        {
+            var border = sender as Border;
+            var label =(Label)border.FindName("OpenLabel");
+            var b = (Border)border.FindName("Btn");
+            b.Background.Opacity = 0.2;
+            label.Visibility = System.Windows.Visibility.Visible;
+        }
+
+        private void Border_MouseLeave(object sender, MouseEventArgs e)
+        {
+            var border = sender as Border;
+            var label = (Label)border.FindName("OpenLabel");
+            var b = (Border)border.FindName("Btn");
+            b.Background.Opacity = 1;
+            label.Visibility = System.Windows.Visibility.Hidden;
         }
     }
 }

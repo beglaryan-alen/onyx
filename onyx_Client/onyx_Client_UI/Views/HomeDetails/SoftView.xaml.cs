@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Windows.Controls;
+using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 
@@ -15,31 +16,23 @@ namespace onyx_Client_UI.Views.Home
         public SoftView()
         {
             InitializeComponent();
-            var btns = DefaultButtons();
-            foreach (var b in btns)
-            {
-                WP_Soft.Children.Add(b);
-            }
         }
-        IEnumerable<GameSoftButton> DefaultButtons()
+        private void Border_MouseEnter(object sender, MouseEventArgs e)
         {
-            List<GameSoftButton> btns = new List<GameSoftButton>();
-
-            var cod = new GameSoftButton();
-            btns.Add(GetButton(@"https://img.wallpapersafari.com/tablet/768/1024/25/21/UPTWvw.png","Discord"));
-            btns.Add(GetButton(@"https://sun9-29.userapi.com/c851016/v851016918/103470/Ae3j5rAM430.jpg"));
-            btns.Add(GetButton(@"https://i.ytimg.com/vi/T8GIX7D6zDE/maxresdefault.jpg"));
-            btns.Add(GetButton(@"https://f.vividscreen.info/soft/0db32198a6dd6c59244ab4e7153a136b/Google-Chrome-1080x1920.jpg"));
-            btns.Add(GetButton(@"https://brit03.ru/wp-content/uploads/kak-uznat-versiyu-opery0.jpg"));
-            return btns;
+            var border = sender as Border;
+            var label = (Label)border.FindName("OpenLabel");
+            var b = (Border)border.FindName("Btn");
+            b.Background.Opacity = 0.2;
+            label.Visibility = System.Windows.Visibility.Visible;
         }
-        GameSoftButton GetButton(string uri, string label = "")
-        {
-            var b = new GameSoftButton();
-            b.Label.Content = label;
-            b.Btn.Background = new ImageBrush(new BitmapImage(new Uri(uri)));
-            return b;
 
+        private void Border_MouseLeave(object sender, MouseEventArgs e)
+        {
+            var border = sender as Border;
+            var label = (Label)border.FindName("OpenLabel");
+            var b = (Border)border.FindName("Btn");
+            b.Background.Opacity = 1;
+            label.Visibility = System.Windows.Visibility.Hidden;
         }
     }
 

@@ -21,11 +21,11 @@ namespace onyx_Client_UI.ViewModel
         #region Constructor
 
         public HomeViewModel(INavigator navigator,
-                             IAuthenticator authenticator)
+                             IAuthenticator authenticator,Services.ICatalogInteraction catalog)
         {
             _navigator = navigator;
-            _gamesViewModel = new GamesViewModel();
-            _softViewModel = new SoftViewModel();
+            _gamesViewModel = new GamesViewModel(catalog);
+            _softViewModel = new SoftViewModel(catalog);
             _promocodeViewModel = new PromocodeViewModel();
             HomeDetailsView = new HomeDetailsViewModel(navigator, authenticator);
             CurrentViewModel = _gamesViewModel;

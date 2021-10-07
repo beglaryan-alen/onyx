@@ -3,14 +3,56 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-              xmlns:resources="clr-namespace:onyx_Client_UI.Resources.Styles"
+              xmlns:resources="clr-namespace:onyx_Client_UI.Resources.Styles" xmlns:homedetails="clr-namespace:onyx_Client_UI.ViewModels.HomeDetails" xmlns:controls="clr-namespace:onyx_Client_UI.Controls" d:DataContext="{d:DesignInstance Type=homedetails:GamesViewModel}"
              mc:Ignorable="d" 
              >
     <UserControl.Resources>
         <resources:DefaultResources/>
     </UserControl.Resources>
     <Grid Margin="24,24" Background="{StaticResource appcolor_2}">
-        <WrapPanel ItemHeight="262" ItemWidth="200" x:Name="WP_Games" Orientation="Horizontal" Margin="24,24">
-        </WrapPanel>
+       
+
+        <ItemsControl ItemsSource="{Binding Games}">
+            <ItemsControl.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <WrapPanel ItemHeight="262" ItemWidth="200" x:Name="WP_Games" Orientation="Horizontal" Margin="24,24">
+                    </WrapPanel>
+                </ItemsPanelTemplate>
+            </ItemsControl.ItemsPanel>
+
+            <ItemsControl.ItemTemplate>
+                <DataTemplate>
+                    <Border MouseEnter="Border_MouseEnter" MouseLeave="Border_MouseLeave" Background="{StaticResource appcolor_1}" Margin="8,8">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="1.5*"/>
+                                <RowDefinition Height="1*"/>
+                                <RowDefinition Height="8.5*"/>
+                                <RowDefinition Height="80"/>
+                            </Grid.RowDefinitions>
+                            <Border  x:Name="Btn" Grid.Column="0" Grid.ColumnSpan="4" Grid.RowSpan="4" Margin="5,5" Background="{Binding BackGround}">
+                            </Border>
+                            <Label x:Name="OpenLabel" Grid.Column="1" Grid.Row="2"
+                   Content="Открыть"
+                   Foreground="{StaticResource appcolor_5}"
+                   FontSize="{StaticResource tsize_i3}"
+                   VerticalContentAlignment="Center"
+                   FontWeight="Bold"
+                   Visibility="Hidden"/>
+
+                        </Grid>
+                    </Border>
+
+                </DataTemplate>
+            </ItemsControl.ItemTemplate>
+
+        </ItemsControl>
+
     </Grid>
 </UserControl>

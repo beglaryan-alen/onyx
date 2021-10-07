@@ -14,7 +14,7 @@ namespace onyx_Client_UI.Services
         {
             return Task.Run(()=> 
             {
-                var response = App.HttpClient.Get<IEnumerable<ApplicationCatalogResponse>>($"{App.Config.BaseUrl}/api/{version}/Catalog/Games/anyId",App.AuthorizeData);
+                var response = App.HttpClient.Get<IEnumerable<ApplicationCatalogResponse>>($"{App.Config.BaseUrl}/Catalog/Games/anyId",App.AuthorizeData);
                 if (!response.IsOk)
                     throw new Exception(response.Message);
                 return response.Data;
@@ -25,7 +25,7 @@ namespace onyx_Client_UI.Services
         {
             return Task.Run(() =>
             {
-                var response = App.HttpClient.Get<IEnumerable<ApplicationCatalogResponse>>($"{App.Config.BaseUrl}/api/{version}/Catalog/Soft/anyId",App.AuthorizeData);
+                var response = App.HttpClient.Get<IEnumerable<ApplicationCatalogResponse>>($"{App.Config.BaseUrl}/Catalog/Soft/anyId",App.AuthorizeData);
                 if (!response.IsOk)
                     throw new Exception(response.Message);
                 return response.Data;

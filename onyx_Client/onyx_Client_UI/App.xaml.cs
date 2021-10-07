@@ -2,6 +2,7 @@
 using Onyx.Config;
 using onyx_Client_UI.State.Authenticators;
 using onyx_Client_UI.State.Navigators;
+using onyx_Client_UI.Services;
 using onyx_Client_UI.ViewModels;
 using onyx_Client_UI.ViewModels.HomeDetails;
 using onyx_Client_UI.Views;
@@ -44,6 +45,7 @@ namespace onyx_Client_UI
             services.AddSingleton<INavigator, Navigator>();
 
             services.AddScoped<IAuthenticator, Authenticator>();
+            services.AddScoped<ICatalogInteraction, CatalogInteraction>();
 
             return services.BuildServiceProvider();
         }

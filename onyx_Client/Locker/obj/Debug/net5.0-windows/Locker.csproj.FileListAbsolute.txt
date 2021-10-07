@@ -22,3 +22,15 @@ D:\Projects\My\Onyx\onyx\onyx_Client\Locker\obj\Debug\net5.0-windows\Locker.cspr
 D:\Projects\My\Onyx\onyx\onyx_Client\Locker\obj\Debug\net5.0-windows\Locker.dll
 D:\Projects\My\Onyx\onyx\onyx_Client\Locker\obj\Debug\net5.0-windows\ref\Locker.dll
 D:\Projects\My\Onyx\onyx\onyx_Client\Locker\obj\Debug\net5.0-windows\Locker.pdb
+D:\Onyx\onyx\onyx_Client\Locker\obj\Debug\net5.0-windows\Locker.csproj.AssemblyReference.cache
+D:\Onyx\onyx\onyx_Client\Locker\obj\Debug\net5.0-windows\Locker.GeneratedMSBuildEditorConfig.editorconfig
+D:\Onyx\onyx\onyx_Client\Locker\obj\Debug\net5.0-windows\Locker.AssemblyInfoInputs.cache
+D:\Onyx\onyx\onyx_Client\Locker\obj\Debug\net5.0-windows\Locker.AssemblyInfo.cs
+D:\Onyx\onyx\onyx_Client\Locker\obj\Debug\net5.0-windows\Locker.csproj.CoreCompileInputs.cache
+D:\Onyx\onyx\onyx_Client\Locker\obj\Debug\net5.0-windows\Locker.dll
+D:\Onyx\onyx\onyx_Client\Locker\obj\Debug\net5.0-windows\ref\Locker.dll
+D:\Onyx\onyx\onyx_Client\Locker\obj\Debug\net5.0-windows\Locker.pdb
+D:\Onyx\onyx\onyx_Client\Locker\bin\Debug\net5.0-windows\Locker.deps.json
+D:\Onyx\onyx\onyx_Client\Locker\bin\Debug\net5.0-windows\Locker.dll
+D:\Onyx\onyx\onyx_Client\Locker\bin\Debug\net5.0-windows\ref\Locker.dll
+D:\Onyx\onyx\onyx_Client\Locker\bin\Debug\net5.0-windows\Locker.pdb

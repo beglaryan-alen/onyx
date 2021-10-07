@@ -34,3 +34,15 @@ D:\Projects\My\Onyx\onyx\onyx_Client\HttpBroker\obj\Debug\net5.0\HttpBroker.cspr
 D:\Projects\My\Onyx\onyx\onyx_Client\HttpBroker\obj\Debug\net5.0\HttpBroker.dll
 D:\Projects\My\Onyx\onyx\onyx_Client\HttpBroker\obj\Debug\net5.0\ref\HttpBroker.dll
 D:\Projects\My\Onyx\onyx\onyx_Client\HttpBroker\obj\Debug\net5.0\HttpBroker.pdb
+D:\Onyx\onyx\onyx_Client\HttpBroker\obj\Debug\net5.0\HttpBroker.csproj.AssemblyReference.cache
+D:\Onyx\onyx\onyx_Client\HttpBroker\obj\Debug\net5.0\HttpBroker.GeneratedMSBuildEditorConfig.editorconfig
+D:\Onyx\onyx\onyx_Client\HttpBroker\obj\Debug\net5.0\HttpBroker.AssemblyInfoInputs.cache
+D:\Onyx\onyx\onyx_Client\HttpBroker\obj\Debug\net5.0\HttpBroker.AssemblyInfo.cs
+D:\Onyx\onyx\onyx_Client\HttpBroker\obj\Debug\net5.0\HttpBroker.csproj.CoreCompileInputs.cache
+D:\Onyx\onyx\onyx_Client\HttpBroker\obj\Debug\net5.0\HttpBroker.dll
+D:\Onyx\onyx\onyx_Client\HttpBroker\obj\Debug\net5.0\ref\HttpBroker.dll
+D:\Onyx\onyx\onyx_Client\HttpBroker\obj\Debug\net5.0\HttpBroker.pdb
+D:\Onyx\onyx\onyx_Client\HttpBroker\bin\Debug\net5.0\HttpBroker.deps.json
+D:\Onyx\onyx\onyx_Client\HttpBroker\bin\Debug\net5.0\HttpBroker.dll
+D:\Onyx\onyx\onyx_Client\HttpBroker\bin\Debug\net5.0\ref\HttpBroker.dll
+D:\Onyx\onyx\onyx_Client\HttpBroker\bin\Debug\net5.0\HttpBroker.pdb

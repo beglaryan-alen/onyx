@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "zRo5YQv1JMKeZn7ULMEE4WzMCS10zuiAGaONOg1sAEh7MOr+1vL0MNlIpNT6PMuQY2GsovH77GEKS6HtptBwsw==",
+  "dgSpecHash": "pE6fC+yxax0SGq9g38sLCVYOC24lk1GQgYrl6zRTNrGSfO6kpAXlJpjjGAo6xOUGxKu8SPOpSvmAOimh7ljEOw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Alen\\source\\repos\\onyx\\onyx_Client\\HttpBroker\\HttpBroker.csproj",
+  "projectFilePath": "D:\\Onyx\\onyx\\onyx_Client\\HttpBroker\\HttpBroker.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Alen\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
+    "C:\\Users\\Gladun\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
   ],
   "logs": []
 }

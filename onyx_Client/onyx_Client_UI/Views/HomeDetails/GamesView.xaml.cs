@@ -19,14 +19,7 @@ namespace onyx_Client_UI.Views.Home
         public GamesView()
         {
             InitializeComponent();
-<<<<<<< HEAD
-=======
 
-            //var btns = DefaultButtons();
-            //foreach (var b in btns)
-            //{
-            //    WP_Games.Children.Add(b);
-            //}
         }
 
 
@@ -70,7 +63,6 @@ namespace onyx_Client_UI.Views.Home
             b.Background = new ImageBrush(new BitmapImage(new Uri(uri)));
             return b;
 
->>>>>>> 293a9faa17276849bbd97725b0679c2aa76084cf
         }
 
         private void Border_MouseEnter(object sender, MouseEventArgs e)

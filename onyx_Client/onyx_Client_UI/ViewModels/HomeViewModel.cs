@@ -24,7 +24,6 @@ namespace onyx_Client_UI.ViewModel
         #region Constructor
 
         public HomeViewModel(INavigator navigator,
-<<<<<<< HEAD
                              IAuthenticator authenticator,
                              ICatalogInteraction catalogInteraction)
         {
@@ -32,13 +31,6 @@ namespace onyx_Client_UI.ViewModel
             _catalogInteraction = catalogInteraction; 
             _gamesViewModel = new GamesViewModel(catalogInteraction);
             _softViewModel = new SoftViewModel(catalogInteraction);
-=======
-                             IAuthenticator authenticator,Services.ICatalogInteraction catalog)
-        {
-            _navigator = navigator;
-            _gamesViewModel = new GamesViewModel(catalog);
-            _softViewModel = new SoftViewModel(catalog);
->>>>>>> 293a9faa17276849bbd97725b0679c2aa76084cf
             _promocodeViewModel = new PromocodeViewModel();
             HomeDetailsView = new HomeDetailsViewModel(navigator, authenticator);
             CurrentViewModel = _gamesViewModel;

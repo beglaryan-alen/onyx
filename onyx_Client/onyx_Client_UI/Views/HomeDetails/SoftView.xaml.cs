@@ -16,8 +16,7 @@ namespace onyx_Client_UI.Views.Home
         public SoftView()
         {
             InitializeComponent();
-<<<<<<< HEAD
-=======
+
         }
         private void Border_MouseEnter(object sender, MouseEventArgs e)
         {
@@ -35,7 +34,6 @@ namespace onyx_Client_UI.Views.Home
             var b = (Border)border.FindName("Btn");
             b.Background.Opacity = 1;
             label.Visibility = System.Windows.Visibility.Hidden;
->>>>>>> 293a9faa17276849bbd97725b0679c2aa76084cf
         }
     }
 

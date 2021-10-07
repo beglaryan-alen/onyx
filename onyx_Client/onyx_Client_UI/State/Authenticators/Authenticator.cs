@@ -78,7 +78,7 @@ namespace onyx_Client_UI.State.Authenticators
             //    App.AuthorizeData = new AuthorizeData() { Refresh = response.Data.Refresh_token, Token = response.Data.Access_token };
             //    return response;
             //}
-            catch (Exception)
+            catch (Exception ex)
             {
                 CurrentUser = new User()
                 {

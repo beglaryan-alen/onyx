@@ -22,6 +22,7 @@ namespace onyx_Client_UI
         {
             Config = Config.getConfig();
             HttpClient = HttpBroker.Client.getClient();
+            AuthorizeData = new HttpBroker.Models.AuthorizeData();
         }
 
         protected override void OnStartup(StartupEventArgs e)

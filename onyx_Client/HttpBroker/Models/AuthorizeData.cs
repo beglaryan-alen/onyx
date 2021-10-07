@@ -11,4 +11,10 @@ namespace HttpBroker.Models
         public string Token { get; set; }
         public string Refresh { get; set; }
     }
+    public class LoginRequest
+    {
+        public string Login { get; set; }
+        public string Password { get; set; }
+        public string Grant_type { get; set; }
+    }
 }

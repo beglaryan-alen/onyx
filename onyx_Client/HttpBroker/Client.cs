@@ -1,6 +1,7 @@
 ﻿using HttpBroker.Models;
 using Newtonsoft.Json;
 using System;
+using System.Collections.Generic;
 using System.Net.Http;
 using System.Text;
 
@@ -47,6 +48,26 @@ namespace HttpBroker
             if (result.StatusCode != System.Net.HttpStatusCode.OK)
                 return new DataResponse<T>() { IsOk = false, Message = $"Error. Status code: {result.StatusCode}" };
             return JsonConvert.DeserializeObject<DataResponse<T>>(result.Content.ReadAsStringAsync().Result);
+        }
+
+
+        public DataResponse<LoginResponse> PostAuth(LoginRequest body, string url = "http://localhost:8002/connect/token")
+        {
+            var nvc = new List<KeyValuePair<string, string>>();
+            nvc.Add(new KeyValuePair<string, string>("username", body.Login));
+            nvc.Add(new KeyValuePair<string, string>("password", body.Password));
+            nvc.Add(new KeyValuePair<string, string>("grant_type", "password"));
+            nvc.Add(new KeyValuePair<string, string>("scope", "offline_access"));
+            var client = new HttpClient();
+            var req = new HttpRequestMessage(HttpMethod.Post, url) { Content = new FormUrlEncodedContent(nvc) };
+            var res = client.SendAsync(req).Result;
+            if (res.StatusCode != System.Net.HttpStatusCode.OK)
+                return new DataResponse<LoginResponse>() { IsOk = false };
+            var ret = new DataResponse<LoginResponse>() { IsOk = true };
+
+            ret.Data = JsonConvert.DeserializeObject<LoginResponse>(res.Content.ReadAsStringAsync().Result);
+
+            return ret;
         }
 
 

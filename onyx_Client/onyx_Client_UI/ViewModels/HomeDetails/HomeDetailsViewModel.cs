@@ -1,7 +1,7 @@
 ﻿using MvvmHelpers.Commands;
 using onyx_Client_UI.Resources.Strings;
+using onyx_Client_UI.Services;
 using onyx_Client_UI.State.Authenticators;
-using onyx_Client_UI.State.Navigators;
 using onyx_Client_UI.ViewModel;
 using System;
 using System.Collections.Generic;
@@ -13,16 +13,24 @@ namespace onyx_Client_UI.ViewModels.HomeDetails
 {
     public class HomeDetailsViewModel : ViewModelBase
     {
+        #region Intarfaces
+
+        private readonly IUserProfile _userProfile;
         private readonly IAuthenticator _authenticator;
+
+        #endregion
+
+        #region Constructor
 
         public HomeDetailsViewModel()
         {
+            _userProfile = DependencyService.Get<IUserProfile>();
             _authenticator = DependencyService.Get<IAuthenticator>();
             SetDates();
-            Balance = _authenticator.CurrentUser.Balance;
-            Cashback = _authenticator.CurrentUser.Cashback;
-            Bonus = _authenticator.CurrentUser.Bonus;
+            SetDetails();
         }
+
+        #endregion
 
         #region Public Properties
 
@@ -55,14 +63,22 @@ namespace onyx_Client_UI.ViewModels.HomeDetails
         }
 
         public ICommand ExitCommand => new AsyncCommand(OnExitCommand);
-        
+
         #endregion
 
         #region Private Helpers
 
+        private void SetDetails()
+        {
+            var details = _userProfile.FetchBalance().Result;
+            Balance = details.Current;
+            Cashback = details.Cashback;
+            Bonus = details.Bonus;
+        }
+
         private void SetDates()
         {
-            var visits = _authenticator.CurrentUser.Visits;
+            var visits = _userProfile.FetchVisitHistory().Result;
             var closestDates = visits.OrderByDescending(x => x.Date).ToList();
 
             Dates = new Dictionary<DateTime, string>();

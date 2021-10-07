@@ -12,14 +12,23 @@ namespace onyx_Client_UI.ViewModels.HomeDetails
 {
     public class SoftViewModel : ViewModelBase
     {
+        #region Interfaces
+
         private readonly ICatalogInteraction _catalogInteraction;
+
+        #endregion
+
+        #region Constructor
 
         public SoftViewModel()
         {
             _catalogInteraction = DependencyService.Get<ICatalogInteraction>();
             SoftsCollection = new ObservableCollection<ApplicationCatalogResponse>(_catalogInteraction.FetchSoft().Result);
         }
-        
+
+        #endregion
+
+        #region Public Properties
 
         public ICommand SoftCommand => new AsyncCommand<ApplicationCatalogResponse>(OnSoftCommandAsync);
 
@@ -30,11 +39,17 @@ namespace onyx_Client_UI.ViewModels.HomeDetails
             set => SetPropertyChanged(nameof(SoftsCollection), ref _softsCollection, value);
         }
 
+        #endregion
+
+        #region Private Helpers
 
         private async Task OnSoftCommandAsync(ApplicationCatalogResponse application)
         {
             var p = Process.Start(application.AppUrl);
             p.Start();
         }
+
+        #endregion
+
     }
 }

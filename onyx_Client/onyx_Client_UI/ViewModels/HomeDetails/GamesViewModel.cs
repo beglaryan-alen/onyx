@@ -14,13 +14,23 @@ namespace onyx_Client_UI.ViewModels.HomeDetails
 {
     public class GamesViewModel : ViewModelBase
     {
+        #region Interfaces
+
         private readonly ICatalogInteraction _catalogInteraction;
+
+        #endregion
+
+        #region Constructor
 
         public GamesViewModel()
         {
             _catalogInteraction = DependencyService.Get<ICatalogInteraction>();
             GamesCollection = new ObservableCollection<ApplicationCatalogResponse>(_catalogInteraction.FetchGames().Result);
         }
+
+        #endregion
+
+        #region Public Properties
 
         public ICommand GameCommand => new AsyncCommand<ApplicationCatalogResponse>(OnGameCommandAsync);
 
@@ -32,10 +42,15 @@ namespace onyx_Client_UI.ViewModels.HomeDetails
             set => SetPropertyChanged(nameof(GamesCollection), ref _gamesCollection, value);
         }
 
+        #endregion
+
+        #region Private Helpers
 
         private async Task OnGameCommandAsync(ApplicationCatalogResponse application)
         {
             var p = Process.Start(application.AppUrl);
         }
+
+        #endregion
     }
 }

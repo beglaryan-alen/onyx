@@ -6,10 +6,6 @@ namespace onyx_Client_UI.ViewModel
 {
     public class ViewModelBase : INotifyPropertyChanged
     {
-
-
-
-
         public event PropertyChangedEventHandler PropertyChanged;
         protected void OnPropertyChanged(string propertyName)
         {

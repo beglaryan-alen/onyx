@@ -50,7 +50,7 @@
                        FontWeight="Bold"/>
 
                 <controls:CustomTextBox CornerRadius="12"
-                                        Placeholder="{x:Static loc:Strings.ID}"
+                                        Placeholder="{x:Static loc:Strings.Email}"
                                         Text="{Binding Id, Mode=TwoWay}"/>
 
                 <controls:CustomTextBox CornerRadius="12"

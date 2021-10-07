@@ -1,0 +1,49 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "Config/1.0.0": {
+        "dependencies": {
+          "IO": "1.0.0"
+        },
+        "runtime": {
+          "Config.dll": {}
+        }
+      },
+      "Crypto/1.0.0": {
+        "runtime": {
+          "Crypto.dll": {}
+        }
+      },
+      "IO/1.0.0": {
+        "dependencies": {
+          "Crypto": "1.0.0"
+        },
+        "runtime": {
+          "IO.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Config/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Crypto/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "IO/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

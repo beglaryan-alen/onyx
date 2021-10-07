@@ -1,0 +1,26 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "bfa216ed-e6c0-4eb3-a3f4-9ea979d78f3a": {
+      "ProjectGuid": "bfa216ed-e6c0-4eb3-a3f4-9ea979d78f3a",
+      "DisplayName": "onyx_Client_UI",
+      "ColorIndex": 0
+    },
+    "c06f9232-96b1-4bf4-8847-dd6eb8a8c49b": {
+      "ProjectGuid": "c06f9232-96b1-4bf4-8847-dd6eb8a8c49b",
+      "DisplayName": "HttpBroker",
+      "ColorIndex": 1
+    },
+    "ea83a4a3-6f77-4d0f-a7e4-c2a3abaebec6": {
+      "ProjectGuid": "ea83a4a3-6f77-4d0f-a7e4-c2a3abaebec6",
+      "DisplayName": "Crypto",
+      "ColorIndex": 2
+    },
+    "410232c7-79ef-4eb6-b703-f84b41e0a06c": {
+      "ProjectGuid": "410232c7-79ef-4eb6-b703-f84b41e0a06c",
+      "DisplayName": "Config",
+      "ColorIndex": 3
+    }
+  },
+  "NextColorIndex": 4
+}

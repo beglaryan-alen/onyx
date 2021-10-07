@@ -113,9 +113,6 @@ namespace onyx_Client_UI.State.Authenticators
 
         }
 
-      
-
-
         public async Task Logout()
         {
             await Task.Run(() =>

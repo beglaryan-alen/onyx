@@ -1,5 +1,4 @@
 ﻿using MvvmHelpers.Commands;
-using onyx_Client_UI.Models;
 using onyx_Client_UI.Resources.Strings;
 using onyx_Client_UI.State.Authenticators;
 using onyx_Client_UI.State.Navigators;

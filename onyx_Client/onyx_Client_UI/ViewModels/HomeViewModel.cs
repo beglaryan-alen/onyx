@@ -1,4 +1,5 @@
 ﻿using MvvmHelpers.Commands;
+using onyx_Client_UI.Services;
 using onyx_Client_UI.State.Authenticators;
 using onyx_Client_UI.State.Navigators;
 using onyx_Client_UI.ViewModels.HomeDetails;
@@ -12,6 +13,8 @@ namespace onyx_Client_UI.ViewModel
         #region Private Properties
 
         private readonly INavigator _navigator;
+        private readonly ICatalogInteraction _catalogInteraction;
+
         private readonly ViewModelBase _gamesViewModel;
         private readonly ViewModelBase _softViewModel;
         private readonly ViewModelBase _promocodeViewModel;
@@ -21,11 +24,13 @@ namespace onyx_Client_UI.ViewModel
         #region Constructor
 
         public HomeViewModel(INavigator navigator,
-                             IAuthenticator authenticator)
+                             IAuthenticator authenticator,
+                             ICatalogInteraction catalogInteraction)
         {
             _navigator = navigator;
-            _gamesViewModel = new GamesViewModel();
-            _softViewModel = new SoftViewModel();
+            _catalogInteraction = catalogInteraction; 
+            _gamesViewModel = new GamesViewModel(catalogInteraction);
+            _softViewModel = new SoftViewModel(catalogInteraction);
             _promocodeViewModel = new PromocodeViewModel();
             HomeDetailsView = new HomeDetailsViewModel(navigator, authenticator);
             CurrentViewModel = _gamesViewModel;

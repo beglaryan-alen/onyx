@@ -3,14 +3,38 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-              xmlns:resources="clr-namespace:onyx_Client_UI.Resources.Styles"
+             xmlns:resources="clr-namespace:onyx_Client_UI.Resources.Styles"
              mc:Ignorable="d" 
+             x:Name="gamesViewModel"
              >
+    
     <UserControl.Resources>
         <resources:DefaultResources/>
     </UserControl.Resources>
     <Grid Margin="24,24" Background="{StaticResource appcolor_2}">
-        <WrapPanel ItemHeight="262" ItemWidth="200" x:Name="WP_Games" Orientation="Horizontal" Margin="24,24">
-        </WrapPanel>
+        <ItemsControl ItemsSource="{Binding GamesCollection}">
+            <ItemsControl.ItemTemplate>
+                <DataTemplate>
+                    <Border Margin="15"
+                            Background="{StaticResource appcolor_1}"
+                            >
+                        <Image Source="{Binding ImageUrl}"/>
+
+                        <Border.InputBindings>
+                            <MouseBinding MouseAction="LeftClick" 
+                                          Command="{Binding ElementName=gamesViewModel,  Path=DataContext.GameCommand}"
+                                          CommandParameter="{Binding }"/>
+                        </Border.InputBindings>
+                    </Border>
+                </DataTemplate>
+            </ItemsControl.ItemTemplate>
+            <ItemsControl.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <WrapPanel ItemHeight="250"
+                               ItemWidth="250"
+                               />
+                </ItemsPanelTemplate>
+            </ItemsControl.ItemsPanel>
+        </ItemsControl>
     </Grid>
 </UserControl>

@@ -6,6 +6,7 @@
         xmlns:views="clr-namespace:onyx_Client_UI.Views"
         xmlns:viewmodels="clr-namespace:onyx_Client_UI.ViewModel"
         mc:Ignorable="d"
+        WindowStyle="None"
         WindowState="Maximized"
         WindowStartupLocation="CenterScreen"
         >

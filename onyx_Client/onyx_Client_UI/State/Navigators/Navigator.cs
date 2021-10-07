@@ -1,4 +1,5 @@
-﻿using onyx_Client_UI.State.Authenticators;
+﻿using onyx_Client_UI.Services;
+using onyx_Client_UI.State.Authenticators;
 using onyx_Client_UI.ViewModel;
 using System;
 
@@ -7,8 +8,11 @@ namespace onyx_Client_UI.State.Navigators
     public class Navigator : INavigator
     {
         private readonly IAuthenticator _authenticator;
-        public Navigator(IAuthenticator authenticator)
+        private readonly ICatalogInteraction _catalogInteraction;
+        public Navigator(IAuthenticator authenticator, 
+                         ICatalogInteraction catalogInteraction)
         {
+            _catalogInteraction = catalogInteraction;
             _authenticator = authenticator;
         }
 
@@ -30,7 +34,7 @@ namespace onyx_Client_UI.State.Navigators
 
         public void GoToHome()
         {
-            CurrentViewModel = new HomeViewModel(this, _authenticator);
+            CurrentViewModel = new HomeViewModel(this, _authenticator, _catalogInteraction);
         }
 
         public void GoToLogin()

@@ -4,13 +4,37 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              mc:Ignorable="d" 
+             x:Name="softsViewModel"
               xmlns:resources="clr-namespace:onyx_Client_UI.Resources.Styles"
              >
     <UserControl.Resources>
         <resources:DefaultResources/>
     </UserControl.Resources>
+    
     <Grid Margin="24,24" Background="{StaticResource appcolor_2}">
-        <WrapPanel ItemHeight="262" ItemWidth="200" x:Name="WP_Soft" Orientation="Horizontal" Margin="24,24">
-        </WrapPanel>
+        <ItemsControl ItemsSource="{Binding SoftsCollection}">
+            <ItemsControl.ItemTemplate>
+                <DataTemplate>
+                    <Border Margin="15"
+                            Background="{StaticResource appcolor_1}"
+                            >
+                        <Image Source="{Binding ImageUrl}"/>
+
+                        <Border.InputBindings>
+                            <MouseBinding MouseAction="LeftClick" 
+                                          Command="{Binding ElementName=softsViewModel,  Path=DataContext.SoftCommand}"
+                                          CommandParameter="{Binding }"/>
+                        </Border.InputBindings>
+                    </Border>
+                </DataTemplate>
+            </ItemsControl.ItemTemplate>
+            <ItemsControl.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <WrapPanel ItemHeight="250"
+                               ItemWidth="250"
+                               />
+                </ItemsPanelTemplate>
+            </ItemsControl.ItemsPanel>
+        </ItemsControl>
     </Grid>
 </UserControl>

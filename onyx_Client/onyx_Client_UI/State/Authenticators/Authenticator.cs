@@ -4,12 +4,17 @@ using onyx_Client_UI.State.Navigators;
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using LoginRequest = HttpBroker.Models.LoginRequest;
 
 namespace onyx_Client_UI.State.Authenticators
 {
-    public class Authenticator : IAuthenticator
+    class Authenticator : IAuthenticator
     {
+        private readonly INavigator _navigator;
+        public Authenticator(INavigator navigator)
+        {
+            _navigator = navigator;
+        }
+
         public User CurrentUser { get; private set; }
 
         public bool IsLoggedIn => CurrentUser != null;
@@ -66,7 +71,7 @@ namespace onyx_Client_UI.State.Authenticators
                     Bonus = 400,
                 };
 
-
+                _navigator.GoToHome();
 
                 return response;
             }
@@ -105,6 +110,8 @@ namespace onyx_Client_UI.State.Authenticators
                     Cashback = 200,
                     Bonus = 400,
                 };
+                _navigator.GoToHome();
+
                 return new Response()
                 {
                     IsOk = true,
@@ -118,6 +125,9 @@ namespace onyx_Client_UI.State.Authenticators
             await Task.Run(() =>
             {
             });
+            //TODO: Logout Logic
+
+            _navigator.GoToLogin();
         }
     }
 }

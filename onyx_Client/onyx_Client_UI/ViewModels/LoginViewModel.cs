@@ -10,18 +10,15 @@ namespace onyx_Client_UI.ViewModel
     {
         #region Private Properties
 
-        private readonly INavigator _navigator;
         private readonly IAuthenticator _authenticator;
 
         #endregion
 
         #region Constructor
 
-        public LoginViewModel(INavigator navigator,
-                              IAuthenticator authenticator)
+        public LoginViewModel()
         {
-            _navigator = navigator;
-            _authenticator = authenticator;
+            _authenticator = DependencyService.Get<IAuthenticator>();
         }
 
         #endregion
@@ -55,10 +52,7 @@ namespace onyx_Client_UI.ViewModel
         {
             try
             {
-
                 var response = await _authenticator.LoginAsync(Id, Password);
-                if (response.IsOk)
-                    _navigator.GoToHome();
             }
             catch
             {

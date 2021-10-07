@@ -14,16 +14,14 @@ namespace onyx_Client_UI.ViewModels.HomeDetails
     public class HomeDetailsViewModel : ViewModelBase
     {
         private readonly IAuthenticator _authenticator;
-        private readonly INavigator _navigator;
 
-        public HomeDetailsViewModel(INavigator navigator, IAuthenticator authenticator)
+        public HomeDetailsViewModel()
         {
-            _authenticator = authenticator;
-            _navigator = navigator;
+            _authenticator = DependencyService.Get<IAuthenticator>();
             SetDates();
-            Balance = authenticator.CurrentUser.Balance;
-            Cashback = authenticator.CurrentUser.Cashback;
-            Bonus = authenticator.CurrentUser.Bonus;
+            Balance = _authenticator.CurrentUser.Balance;
+            Cashback = _authenticator.CurrentUser.Cashback;
+            Bonus = _authenticator.CurrentUser.Bonus;
         }
 
         #region Public Properties
@@ -99,7 +97,6 @@ namespace onyx_Client_UI.ViewModels.HomeDetails
         private async Task OnExitCommand()
         {
             await _authenticator.Logout();
-            _navigator.GoToLogin();
         }
         #endregion
     }

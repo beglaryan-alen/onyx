@@ -14,12 +14,12 @@ namespace onyx_Client_UI.ViewModels.HomeDetails
     {
         private readonly ICatalogInteraction _catalogInteraction;
 
-
-        public SoftViewModel(ICatalogInteraction catalogInteraction)
+        public SoftViewModel()
         {
-            _catalogInteraction = catalogInteraction;
-            SoftsCollection = new ObservableCollection<ApplicationCatalogResponse>(catalogInteraction.FetchSoft().Result);
+            _catalogInteraction = DependencyService.Get<ICatalogInteraction>();
+            SoftsCollection = new ObservableCollection<ApplicationCatalogResponse>(_catalogInteraction.FetchSoft().Result);
         }
+        
 
         public ICommand SoftCommand => new AsyncCommand<ApplicationCatalogResponse>(OnSoftCommandAsync);
 

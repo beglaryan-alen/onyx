@@ -16,10 +16,10 @@ namespace onyx_Client_UI.ViewModels.HomeDetails
     {
         private readonly ICatalogInteraction _catalogInteraction;
 
-        public GamesViewModel(ICatalogInteraction catalogInteraction)
+        public GamesViewModel()
         {
-            _catalogInteraction = catalogInteraction;
-            GamesCollection = new ObservableCollection<ApplicationCatalogResponse>(catalogInteraction.FetchGames().Result);
+            _catalogInteraction = DependencyService.Get<ICatalogInteraction>();
+            GamesCollection = new ObservableCollection<ApplicationCatalogResponse>(_catalogInteraction.FetchGames().Result);
         }
 
         public ICommand GameCommand => new AsyncCommand<ApplicationCatalogResponse>(OnGameCommandAsync);
@@ -35,8 +35,7 @@ namespace onyx_Client_UI.ViewModels.HomeDetails
 
         private async Task OnGameCommandAsync(ApplicationCatalogResponse application)
         {
-            var p = Process.Start(application.SoftUrl, application.AppUrl);
-            p.Start();
+            var p = Process.Start(application.AppUrl);
         }
     }
 }

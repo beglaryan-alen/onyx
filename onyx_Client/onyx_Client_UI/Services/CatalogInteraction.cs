@@ -12,24 +12,57 @@ namespace onyx_Client_UI.Services
     {
         public Task<IEnumerable<ApplicationCatalogResponse>> FetchGames(string version = "v1")
         {
-            return Task.Run(() =>
+            try
             {
                 var response = App.HttpClient.Get<IEnumerable<ApplicationCatalogResponse>>($"{App.Config.BaseUrl}/Catalog/Games/anyId", App.AuthorizeData);
                 if (!response.IsOk)
                     throw new Exception(response.Message);
-                return response.Data;
-            });
+                return Task.Run(() => response.Data);
+            }
+            catch (Exception)
+            {
+                IEnumerable<ApplicationCatalogResponse> games = new List<ApplicationCatalogResponse>()
+                {
+                    new ApplicationCatalogResponse()
+                    {
+
+                    },
+                    new ApplicationCatalogResponse()
+                    {
+
+                    },
+                };
+
+                return Task.Run(() => games);
+            }
+
         }
 
         public Task<IEnumerable<ApplicationCatalogResponse>> FetchSoft(string version = "v1")
         {
-            return Task.Run(() =>
+            try
             {
                 var response = App.HttpClient.Get<IEnumerable<ApplicationCatalogResponse>>($"{App.Config.BaseUrl}/Catalog/Soft/anyId", App.AuthorizeData);
                 if (!response.IsOk)
                     throw new Exception(response.Message);
-                return response.Data;
-            });
+                return Task.Run(() => response.Data);
+            }
+            catch (Exception)
+            {
+                IEnumerable<ApplicationCatalogResponse> softs = new List<ApplicationCatalogResponse>()
+                {
+                    new ApplicationCatalogResponse()
+                    {
+                        
+                    },
+                    new ApplicationCatalogResponse()
+                    {
+
+                    },
+                };
+                return Task.Run(() => softs);
+            }
+                
         }
     }
 }

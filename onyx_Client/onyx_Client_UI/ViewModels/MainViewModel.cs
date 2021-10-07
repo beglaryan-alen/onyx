@@ -6,10 +6,9 @@ namespace onyx_Client_UI.ViewModels
     public class MainViewModel : ViewModelBase
     {
         private readonly INavigator _navigator;
-
-        public MainViewModel(INavigator navigator)
+        public MainViewModel()
         {
-            _navigator = navigator;
+            _navigator = DependencyService.Get<INavigator>();
             _navigator.CurrentViewModelChanged += OnCurrentViewModelChanged;
             _navigator.GoToLogin();
         }

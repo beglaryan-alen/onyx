@@ -34,11 +34,23 @@ namespace Onyx.Config
                 ConfigChanged?.Invoke();
             }
         }
+        private string _authUrl;
+
+        public string AuthUrl
+        {
+            get => _authUrl; set
+            {
+                _authUrl = value;
+                ConfigChanged?.Invoke();
+            }
+        }
+
 
         private Config()
         {
             Lang = "en";
-            BaseUrl = "http://localhost:9090";
+            BaseUrl = "http://localhost:8010";
+            AuthUrl = "http://localhost:8002";
         }
 
         public static Config getConfig()

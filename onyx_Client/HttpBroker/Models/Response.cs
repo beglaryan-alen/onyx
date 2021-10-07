@@ -36,6 +36,13 @@ namespace HttpBroker.Models
         public T Data { get; set; }
     }
 
+   public class LoginResponse
+    {
+        public string Access_token { get; set; }
+        public string Refresh_token { get; set; }
+        public string Id_token { get; set; }
+        public DateTime Expires_at { get; set; }
+    }
 
-    
+
 }

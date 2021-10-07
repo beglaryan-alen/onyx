@@ -17,7 +17,7 @@ namespace onyx_Client_UI.ViewModel
 
         #region Constructor
 
-        public LoginViewModel(INavigator navigator, 
+        public LoginViewModel(INavigator navigator,
                               IAuthenticator authenticator)
         {
             _navigator = navigator;
@@ -53,8 +53,17 @@ namespace onyx_Client_UI.ViewModel
 
         private async Task OnLoginCommand()
         {
-            var response = await _authenticator.LoginAsync(Id, Password);
-            _navigator.GoToHome();
+            try
+            {
+
+                var response = await _authenticator.LoginAsync(Id, Password);
+                if (response.IsOk)
+                    _navigator.GoToHome();
+            }
+            catch
+            {
+                //stay at login page
+            }
         }
 
         private async Task OnRegisterCommand()

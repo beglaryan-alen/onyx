@@ -14,6 +14,7 @@ namespace onyx_Client_UI.Services
         {
             try
             {
+<<<<<<< HEAD
                     var response = App.HttpClient.Get<IEnumerable<ApplicationCatalogResponse>>($"{App.Config.BaseUrl}/api/{version}/Catalog/Games/anyId", App.AuthorizeData);
                     if (!response.IsOk)
                         throw new Exception(response.Message);
@@ -45,6 +46,13 @@ namespace onyx_Client_UI.Services
                 };
                 return Task.Run(() => games);
             }
+=======
+                var response = App.HttpClient.Get<IEnumerable<ApplicationCatalogResponse>>($"{App.Config.BaseUrl}/Catalog/Games/anyId",App.AuthorizeData);
+                if (!response.IsOk)
+                    throw new Exception(response.Message);
+                return response.Data;
+            });
+>>>>>>> 293a9faa17276849bbd97725b0679c2aa76084cf
         }
 
         public Task<IEnumerable<ApplicationCatalogResponse>> FetchSoft(string version = "v1")
@@ -58,6 +66,7 @@ namespace onyx_Client_UI.Services
             }
             catch (Exception)
             {
+<<<<<<< HEAD
                 IEnumerable<ApplicationCatalogResponse> softs = new List<ApplicationCatalogResponse>()
                 {
                     new ApplicationCatalogResponse()
@@ -74,6 +83,13 @@ namespace onyx_Client_UI.Services
                 return Task.Run(() => softs);
             }
             
+=======
+                var response = App.HttpClient.Get<IEnumerable<ApplicationCatalogResponse>>($"{App.Config.BaseUrl}/Catalog/Soft/anyId",App.AuthorizeData);
+                if (!response.IsOk)
+                    throw new Exception(response.Message);
+                return response.Data;
+            });
+>>>>>>> 293a9faa17276849bbd97725b0679c2aa76084cf
         }
     }
 }

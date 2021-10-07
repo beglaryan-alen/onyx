@@ -4,11 +4,16 @@
 winexe
 C#
 .cs
+<<<<<<< HEAD
 C:\Users\Alen\source\repos\onyx\onyx_Client\onyx_Client_UI\obj\Debug\net5.0-windows\
+=======
+D:\Projects\My\Onyx\onyx\onyx_Client\onyx_Client_UI\obj\Debug\net5.0-windows\
+>>>>>>> 293a9faa17276849bbd97725b0679c2aa76084cf
 onyx_Client_UI
 none
 false
 TRACE;DEBUG;NET;NET5_0;NETCOREAPP
+<<<<<<< HEAD
 C:\Users\Alen\source\repos\onyx\onyx_Client\onyx_Client_UI\App.xaml
 12-807558100
 
@@ -17,4 +22,14 @@ C:\Users\Alen\source\repos\onyx\onyx_Client\onyx_Client_UI\App.xaml
 Controls\CustomSearchBox.xaml;Controls\CustomTextbox.xaml;Controls\GameSoftButton.xaml;Controls\NavigationBar.xaml;Resources\Styles\DefaultResources.xaml;Views\HomeDetails\GamesView.xaml;Views\HomeDetails\HomeDetailsView.xaml;Views\HomeDetails\PromocodeView.xaml;Views\HomeDetails\SoftView.xaml;Views\HomeView.xaml;Views\LoginView.xaml;Views\MainWindow.xaml;
 
 False
+=======
+D:\Projects\My\Onyx\onyx\onyx_Client\onyx_Client_UI\App.xaml
+12-807558100
+
+411568165089
+201-529949352
+Controls\CustomSearchBox.xaml;Controls\CustomTextbox.xaml;Controls\GameSoftButton.xaml;Controls\NavigationBar.xaml;Resources\Styles\DefaultResources.xaml;Views\HomeDetails\GamesView.xaml;Views\HomeDetails\HomeDetailsView.xaml;Views\HomeDetails\PromocodeView.xaml;Views\HomeDetails\SoftView.xaml;Views\HomeView.xaml;Views\LoginView.xaml;Views\MainWindow.xaml;
+
+True
+>>>>>>> 293a9faa17276849bbd97725b0679c2aa76084cf
 

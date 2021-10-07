@@ -27,13 +27,13 @@ namespace onyx_Client_UI.Controls
 
         private void Btn_MouseEnter(object sender, MouseEventArgs e)
         {
-            Btn.Background.Opacity = 0.2;
+            //Border.Background.Opacity = 0.2;
             OpenLabel.Visibility = Visibility.Visible;
         }
 
         private void Btn_MouseLeave(object sender, MouseEventArgs e)
         {
-            Btn.Background.Opacity = 1.0;
+           // Border.Background.Opacity = 1.0;
             OpenLabel.Visibility = Visibility.Hidden;
         }
     }

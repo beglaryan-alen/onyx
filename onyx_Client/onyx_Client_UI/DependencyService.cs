@@ -15,6 +15,7 @@ namespace onyx_Client_UI
             IServiceCollection services = new ServiceCollection();
 
             services.AddScoped<INavigator, Navigator>();
+            services.AddScoped<IUserProfile, UserProfile>();
             services.AddScoped<IAuthenticator, Authenticator>();
             services.AddScoped<ICatalogInteraction, CatalogInteraction>();
 

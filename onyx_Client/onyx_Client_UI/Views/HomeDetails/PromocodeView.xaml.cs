@@ -1,6 +1,6 @@
 ﻿using System.Windows.Controls;
 
-namespace onyx_Client_UI.Views.Home
+namespace onyx_Client_UI.Views.HomeDetails
 {
     /// <summary>
     /// Interaction logic for PromocodeView.xaml

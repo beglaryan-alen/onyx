@@ -10,7 +10,7 @@ namespace onyx_Client_UI.ViewModel
 {
     public class HomeViewModel : ViewModelBase
     {
-        #region Private Properties
+        #region Private ViewModels
 
         private readonly ViewModelBase _gamesViewModel;
         private readonly ViewModelBase _softViewModel;
@@ -25,7 +25,8 @@ namespace onyx_Client_UI.ViewModel
             _gamesViewModel = new GamesViewModel();
             _softViewModel = new SoftViewModel();
             _promocodeViewModel = new PromocodeViewModel();
-            HomeDetailsView = new HomeDetailsViewModel();
+            HomeDetailsViewModel = new HomeDetailsViewModel();
+            ProfileViewModel = new ProfileViewModel();
             CurrentViewModel = _gamesViewModel;
         }
         #endregion
@@ -51,18 +52,18 @@ namespace onyx_Client_UI.ViewModel
         }
 
 
-        private ViewModelBase _homeDetailsView;
-        public ViewModelBase HomeDetailsView
+        private HomeDetailsViewModel _homeDetailsViewModel;
+        public HomeDetailsViewModel HomeDetailsViewModel
         {
-            get => _homeDetailsView;
-            set
-            {
-                if (_homeDetailsView != value)
-                {
-                    _homeDetailsView = value;
-                    OnPropertyChanged(nameof(HomeDetailsView));
-                }
-            }
+            get => _homeDetailsViewModel;
+            set => SetPropertyChanged(nameof(HomeDetailsViewModel), ref _homeDetailsViewModel, value);
+        }
+
+        private ProfileViewModel _profileViewModel;
+        public ProfileViewModel ProfileViewModel
+        {
+            get => _profileViewModel;
+            set => SetPropertyChanged(nameof(ProfileViewModel), ref _profileViewModel, value);
         }
 
         #endregion

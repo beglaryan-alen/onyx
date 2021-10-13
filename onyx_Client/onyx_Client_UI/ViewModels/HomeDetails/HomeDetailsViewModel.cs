@@ -1,4 +1,5 @@
 ﻿using MvvmHelpers.Commands;
+using onyx_Client_UI.Models.UserProfile;
 using onyx_Client_UI.Resources.Strings;
 using onyx_Client_UI.Services;
 using onyx_Client_UI.State.Authenticators;
@@ -26,8 +27,8 @@ namespace onyx_Client_UI.ViewModels.HomeDetails
         {
             _userProfile = DependencyService.Get<IUserProfile>();
             _authenticator = DependencyService.Get<IAuthenticator>();
-            SetDates();
-            SetDetails();
+            Task.Run(async () => await SetDates());
+            Task.Run(async () => await SetBalance());
         }
 
         #endregion
@@ -68,17 +69,17 @@ namespace onyx_Client_UI.ViewModels.HomeDetails
 
         #region Private Helpers
 
-        private void SetDetails()
+        private async Task SetBalance()
         {
-            var details = _userProfile.FetchBalance().Result;
+            var details = await _userProfile.FetchBalance();
             Balance = details.Current;
             Cashback = details.Cashback;
             Bonus = details.Bonus;
         }
 
-        private void SetDates()
+        private async Task SetDates()
         {
-            var visits = _userProfile.FetchVisitHistory().Result;
+            var visits = await _userProfile.FetchVisitHistory();
             var closestDates = visits.OrderByDescending(x => x.Date).ToList();
 
             Dates = new Dictionary<DateTime, string>();
@@ -107,7 +108,7 @@ namespace onyx_Client_UI.ViewModels.HomeDetails
                     return Strings.Sunday;
             }
 
-            throw new Exception("OOh fuck...");
+            throw new Exception("Can't get week day. ");
         }
 
         private async Task OnExitCommand()

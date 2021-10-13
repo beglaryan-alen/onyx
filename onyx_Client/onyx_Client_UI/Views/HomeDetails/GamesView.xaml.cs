@@ -1,15 +1,13 @@
 ﻿using onyx_Client_UI.Controls;
 using System;
-using System.Collections;
 using System.Collections.Generic;
 using System.IO;
-using System.Linq;
 using System.Windows.Controls;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 
-namespace onyx_Client_UI.Views.Home
+namespace onyx_Client_UI.Views.HomeDetails
 {
     /// <summary>
     /// Interaction logic for GamesView.xaml

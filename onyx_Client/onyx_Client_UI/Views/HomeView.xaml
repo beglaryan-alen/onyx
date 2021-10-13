@@ -7,7 +7,7 @@
              xmlns:loc="clr-namespace:onyx_Client_UI.Resources.Strings"
              xmlns:resources="clr-namespace:onyx_Client_UI.Resources.Styles"
              xmlns:viewmodels="clr-namespace:onyx_Client_UI.ViewModels.HomeDetails"
-             xmlns:views="clr-namespace:onyx_Client_UI.Views.Home"
+             xmlns:views="clr-namespace:onyx_Client_UI.Views.HomeDetails"
              mc:Ignorable="d">
 
     <UserControl.Resources>
@@ -37,8 +37,10 @@
         
         <Grid Grid.Column="0"
               Grid.ColumnSpan="2"
+              Margin="10, 15, 10, 0"
               Grid.Row="0"
               Background="{StaticResource appcolor_2}">
+            
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="0.2*"/>
                 <ColumnDefinition Width="0.5*"/>
@@ -67,52 +69,26 @@
 
         <!--#region Profile Button -->
 
-        <Border Grid.Row="0"
-                Margin="10, 15, 10, 0"
-                Padding="15"
-                Background="{StaticResource appcolor_2}"
-                Grid.Column="2">
-            <Grid>
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="0.25*"/>
-                    <ColumnDefinition Width="0.75*"/>
-                </Grid.ColumnDefinitions>
-                <Border Grid.Column="0"
-                        BorderBrush="{StaticResource appcolor_5}"
-                        BorderThickness="2"
-                        VerticalAlignment="Top">
-                    <Image Stretch="Fill"
-                           VerticalAlignment="Top"
-                           Source="https://www.meme-arsenal.com/memes/49071e21f0cb7d1090b8820fbb37f925.jpg"/>
-                </Border>
+        <ContentControl Content="{Binding ProfileViewModel}"
+                        Grid.Column="2"
+                        Margin="10, 15, 10, 0"
+                        Grid.Row="0">
 
-                <Grid VerticalAlignment="Center"
-                      Grid.Column="1">
-                    <Grid.RowDefinitions>
-                        <RowDefinition Height="*"/>
-                        <RowDefinition Height="*"/>
-                    </Grid.RowDefinitions>
+            <ContentControl.Resources>
 
-                    <Label Content="ID 223344"
-                           FontSize="{StaticResource tsize_i3}"
-                           FontFamily="/Resources/Fonts/Montserrat-Medium.ttf"
-                           FontWeight="Bold"
-                           Foreground="{StaticResource appcolor_5}"/>
+                <DataTemplate DataType="{x:Type viewmodels:ProfileViewModel}">
+                    <views:ProfileView />
+                </DataTemplate>
 
-                    <Label Content="21 place"
-                           Grid.Row="1"
-                           FontSize="{StaticResource tsize_i3}"
-                           FontFamily="/Resources/Fonts/Montserrat-Medium.ttf"
-                           Foreground="{StaticResource appcolor_5}"/>
-                </Grid>
-            </Grid>
-        </Border>
+            </ContentControl.Resources>
+
+        </ContentControl>
 
         <!--#endregion-->
         
         <!--#region Right Column Details Page -->
         
-        <ContentControl Content="{Binding HomeDetailsView}"
+        <ContentControl Content="{Binding HomeDetailsViewModel}"
                         Grid.Column="2"
                         Grid.Row="1">
 

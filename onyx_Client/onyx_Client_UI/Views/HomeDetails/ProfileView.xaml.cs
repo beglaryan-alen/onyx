@@ -3,11 +3,11 @@
 namespace onyx_Client_UI.Views.HomeDetails
 {
     /// <summary>
-    /// Interaction logic for VisitsPage.xaml
+    /// Interaction logic for ProfileView.xaml
     /// </summary>
-    public partial class HomeDetailsView : UserControl
+    public partial class ProfileView : UserControl
     {
-        public HomeDetailsView()
+        public ProfileView()
         {
             InitializeComponent();
         }

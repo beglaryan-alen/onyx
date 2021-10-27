@@ -1,6 +1,6 @@
 ﻿using System.Windows.Controls;
 
-namespace onyx_Client_UI.Views.HomeDetails
+namespace onyx_Client_UI.Views
 {
     /// <summary>
     /// Interaction logic for ProfileView.xaml

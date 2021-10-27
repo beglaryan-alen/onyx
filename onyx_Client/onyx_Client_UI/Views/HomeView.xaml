@@ -6,8 +6,10 @@
              xmlns:controls="clr-namespace:onyx_Client_UI.Controls"
              xmlns:loc="clr-namespace:onyx_Client_UI.Resources.Strings"
              xmlns:resources="clr-namespace:onyx_Client_UI.Resources.Styles"
-             xmlns:viewmodels="clr-namespace:onyx_Client_UI.ViewModels.HomeDetails"
-             xmlns:views="clr-namespace:onyx_Client_UI.Views.HomeDetails"
+             xmlns:homeDetailsviewmodels="clr-namespace:onyx_Client_UI.ViewModels.HomeDetails"
+             xmlns:viewmodels="clr-namespace:onyx_Client_UI.ViewModels"
+             xmlns:homeDetails="clr-namespace:onyx_Client_UI.Views.HomeDetails"
+             xmlns:views="clr-namespace:onyx_Client_UI.Views"
              mc:Ignorable="d">
 
     <UserControl.Resources>
@@ -56,7 +58,7 @@
 
             <controls:NavigationBar Grid.Column="1"
                                     VerticalAlignment="Center"
-                                    MenuCommand="{Binding MenuCommand}"/>
+                                    PageIndex="{Binding PageIndex, Mode=TwoWay}"/>
 
             <controls:CustomSearchBox Placeholder="{x:Static loc:Strings.Search}"
                                       VerticalAlignment="Center"
@@ -121,16 +123,16 @@
 
             <ContentControl.Resources>
 
-                <DataTemplate DataType="{x:Type viewmodels:SoftViewModel}">
-                    <views:SoftView />
+                <DataTemplate DataType="{x:Type homeDetailsviewmodels:SoftViewModel}">
+                    <homeDetails:SoftView />
                 </DataTemplate>
 
-                <DataTemplate DataType="{x:Type viewmodels:GamesViewModel}">
-                    <views:GamesView />
+                <DataTemplate DataType="{x:Type homeDetailsviewmodels:GamesViewModel}">
+                    <homeDetails:GamesView />
                 </DataTemplate>
 
-                <DataTemplate DataType="{x:Type viewmodels:PromocodeViewModel}">
-                    <views:PromocodeView />
+                <DataTemplate DataType="{x:Type homeDetailsviewmodels:PromocodeViewModel}">
+                    <homeDetails:PromocodeView />
                 </DataTemplate>
 
             </ContentControl.Resources>

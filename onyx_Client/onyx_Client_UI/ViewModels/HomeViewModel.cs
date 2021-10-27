@@ -1,7 +1,6 @@
 ﻿using MvvmHelpers.Commands;
-using onyx_Client_UI.Services;
-using onyx_Client_UI.State.Authenticators;
-using onyx_Client_UI.State.Navigators;
+using onyx_Client_UI.Controls;
+using onyx_Client_UI.ViewModels;
 using onyx_Client_UI.ViewModels.HomeDetails;
 using System;
 using System.Windows.Input;
@@ -35,8 +34,6 @@ namespace onyx_Client_UI.ViewModel
 
         public ICommand LogoutCommand => new Command(OnLogoutCommand);
 
-        public ICommand MenuCommand => new Command<string>(OnMenuCommand);
-
         private ViewModelBase _currentViewModel;
         public ViewModelBase CurrentViewModel
         {
@@ -60,24 +57,39 @@ namespace onyx_Client_UI.ViewModel
         }
 
         private ProfileViewModel _profileViewModel;
+
         public ProfileViewModel ProfileViewModel
         {
             get => _profileViewModel;
             set => SetPropertyChanged(nameof(ProfileViewModel), ref _profileViewModel, value);
         }
 
+        private Pages _pageIndex;
+        public Pages PageIndex
+        {
+            get => _pageIndex;
+            set 
+            {
+                SetPropertyChanged(nameof(PageIndex), ref _pageIndex, value);
+                OnPageIndexChanged();
+            } 
+        }
         #endregion
 
         #region Private Helpers
 
-        private void OnMenuCommand(string pageName)
+        private void OnPageIndexChanged()
         {
-            if (pageName == "Games")
+            if (PageIndex == Pages.Games)
                 CurrentViewModel = _gamesViewModel;
-            else if (pageName == "Soft")
+            else if (PageIndex == Pages.Soft)
                 CurrentViewModel = _softViewModel;
-            else if (pageName == "Promocode")
+            else if (PageIndex == Pages.Promocode)
                 CurrentViewModel = _promocodeViewModel;
+            else
+            {
+
+            }
         }
 
         private void OnLogoutCommand()

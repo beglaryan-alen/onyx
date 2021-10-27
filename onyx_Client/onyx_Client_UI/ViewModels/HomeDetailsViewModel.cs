@@ -10,7 +10,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Input;
 
-namespace onyx_Client_UI.ViewModels.HomeDetails
+namespace onyx_Client_UI.ViewModels
 {
     public class HomeDetailsViewModel : ViewModelBase
     {

@@ -1,10 +1,8 @@
-﻿using onyx_Client_UI.Models.UserProfile;
-using onyx_Client_UI.Services;
+﻿using onyx_Client_UI.Services;
 using onyx_Client_UI.ViewModel;
-using System;
 using System.Threading.Tasks;
 
-namespace onyx_Client_UI.ViewModels.HomeDetails
+namespace onyx_Client_UI.ViewModels
 {
     public class ProfileViewModel : ViewModelBase
     {

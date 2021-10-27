@@ -1,35 +1,71 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows;
+﻿using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
 using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace onyx_Client_UI.Controls
 {
-    /// <summary>
-    /// Interaction logic for NavigationBar.xaml
-    /// </summary>
+    public enum Pages
+    {
+        Games,
+        Soft,
+        Promocode,
+        Bar,
+        Reservation,
+        Cybershoke,
+    }
+
     public partial class NavigationBar : UserControl
     {
         public NavigationBar()
         {
             InitializeComponent();
         }
-        public static readonly DependencyProperty MenuCommandProperty =
-            DependencyProperty.Register(nameof(MenuCommand), typeof(ICommand), typeof(NavigationBar));
-        public ICommand MenuCommand
+
+        #region Public Properties
+
+        public static readonly DependencyProperty PageIndexProperty =
+            DependencyProperty.Register(nameof(PageIndex), typeof(Pages), typeof(NavigationBar));
+        public Pages PageIndex
         {
-            get { return (ICommand)GetValue(MenuCommandProperty); }
-            set { SetValue(MenuCommandProperty, value); }
+            get { return (Pages)GetValue(PageIndexProperty); }
+            set { SetValue(PageIndexProperty, value); }
         }
+
+        #endregion
+
+        #region Private Helpers
+
+        private void GamesButton_Clicked(object sender, RoutedEventArgs e)
+        {
+            PageIndex = Pages.Games;
+        }
+
+        private void SoftButton_Clicked(object sender, MouseButtonEventArgs e)
+        {
+            PageIndex = Pages.Soft;
+        }
+
+        private void PromocodeButton_Clicked(object sender, MouseButtonEventArgs e)
+        {
+            PageIndex = Pages.Promocode;
+        }
+
+        private void BarButton_Clicked(object sender, RoutedEventArgs e)
+        {
+            PageIndex = Pages.Bar;
+        }
+
+        private void ReservationButton_Clicked(object sender, MouseButtonEventArgs e)
+        {
+            PageIndex = Pages.Reservation;
+        }
+
+        private void CybershokeButton_Clicked(object sender, MouseButtonEventArgs e)
+        {
+            PageIndex = Pages.Cybershoke;
+        }
+
+        #endregion
+
     }
 }

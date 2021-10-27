@@ -22,40 +22,131 @@
             <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
-        <Button Grid.Column="0"
-                Content="{x:Static loc:Strings.Games}"
-                Foreground="{StaticResource appcolor_1}"
-                Command="{Binding MenuCommand, ElementName=navigationBar}"
-                CommandParameter="Games"/>
+        
+        <TextBlock Grid.Column="0"
+                   HorizontalAlignment="Center"
+                   Text="{x:Static loc:Strings.Games}"
+                   FontSize="{StaticResource tsize_i2}"
+                   MouseDown="GamesButton_Clicked">
+            <TextBlock.Style>
+                <Style TargetType="TextBlock">
+                    <Setter Property="Foreground"
+                            Value="{StaticResource appcolor_5}"/>
+                    <Style.Triggers>
+                        <DataTrigger Binding="{Binding PageIndex, ElementName=navigationBar}"
+                                     Value="0">
+                            <Setter Property="Foreground"
+                                    Value="{StaticResource appcolor_3}"/>
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </TextBlock.Style>
+        </TextBlock>
 
-        <Button Grid.Column="1"
-                Content="{x:Static loc:Strings.Soft}"
-                Foreground="{StaticResource appcolor_1}"
-                Command="{Binding MenuCommand, ElementName=navigationBar}"
-                CommandParameter="Soft"/>
+        <TextBlock Grid.Column="1"
+                   HorizontalAlignment="Center"
+                   Text="{x:Static loc:Strings.Soft}"
+                   FontSize="{StaticResource tsize_i2}"
+                   MouseDown="SoftButton_Clicked">
 
-        <Button Grid.Column="2"
-                Content="{x:Static loc:Strings.Promocode}"
-                Foreground="{StaticResource appcolor_1}"
-                Command="{Binding MenuCommand, ElementName=navigationBar}"
-                CommandParameter="Promocode"/>
+            <TextBlock.Style>
+                <Style TargetType="TextBlock">
+                    <Setter Property="Foreground"
+                            Value="{StaticResource appcolor_5}"/>
+                    <Style.Triggers>
+                        <DataTrigger Binding="{Binding PageIndex, ElementName=navigationBar}"
+                                     Value="1">
+                            <Setter Property="Foreground"
+                                    Value="{StaticResource appcolor_3}"/>
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </TextBlock.Style>
 
-        <Button Grid.Column="3"
-                Content="{x:Static loc:Strings.Bar}"
-                Foreground="{StaticResource appcolor_1}"
-                Command="{Binding MenuCommand, ElementName=navigationBar}"
-                CommandParameter="Bar"/>
+        </TextBlock>
 
-        <Button Grid.Column="4"
-                Content="{x:Static loc:Strings.Reservation}"
-                Foreground="{StaticResource appcolor_1}"
-                Command="{Binding MenuCommand, ElementName=navigationBar}"
-                CommandParameter="Reservation"/>
+        <TextBlock Grid.Column="2"
+                   HorizontalAlignment="Center"
+                   Text="{x:Static loc:Strings.Promocode}"
+                   FontSize="{StaticResource tsize_i2}"
+                   MouseDown="PromocodeButton_Clicked">
+            <TextBlock.Style>
+                <Style TargetType="TextBlock">
+                    <Setter Property="Foreground"
+                            Value="{StaticResource appcolor_5}"/>
+                    <Style.Triggers>
+                        <DataTrigger Binding="{Binding PageIndex, ElementName=navigationBar}"
+                                     Value="2">
+                            <Setter Property="Foreground"
+                                    Value="{StaticResource appcolor_3}"/>
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </TextBlock.Style>
+        </TextBlock>
 
-        <Button Grid.Column="5"
-                Content="{x:Static loc:Strings.Cybershoke}"
-                Foreground="{StaticResource appcolor_1}"
-                Command="{Binding MenuCommand, ElementName=navigationBar}"
-                CommandParameter="Cybershoke"/>
+        <TextBlock Grid.Column="3"
+                   HorizontalAlignment="Center"
+                   Text="{x:Static loc:Strings.Bar}"
+                   FontSize="{StaticResource tsize_i2}"
+                   MouseDown="BarButton_Clicked">
+            <TextBlock.Style>
+                <Style TargetType="TextBlock">
+                    <Setter Property="Foreground"
+                            Value="{StaticResource appcolor_5}"/>
+                    <Style.Triggers>
+                        <DataTrigger Binding="{Binding PageIndex, ElementName=navigationBar}"
+                                     Value="3">
+                            <Setter Property="Foreground"
+                                    Value="{StaticResource appcolor_3}"/>
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </TextBlock.Style>
+        </TextBlock>
+
+        <TextBlock Grid.Column="4"
+                   HorizontalAlignment="Center"
+                   Text="{x:Static loc:Strings.Reservation}"
+                   FontSize="{StaticResource tsize_i2}"
+                   MouseDown="ReservationButton_Clicked">
+
+            <TextBlock.Style>
+                <Style TargetType="TextBlock">
+                    <Setter Property="Foreground"
+                            Value="{StaticResource appcolor_5}"/>
+                    <Style.Triggers>
+                        <DataTrigger Binding="{Binding PageIndex, ElementName=navigationBar}"
+                                     Value="4">
+                            <Setter Property="Foreground"
+                                    Value="{StaticResource appcolor_3}"/>
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </TextBlock.Style>
+
+        </TextBlock>
+
+        <TextBlock Grid.Column="5"
+                   HorizontalAlignment="Center"
+                   FontSize="{StaticResource tsize_i2}"
+                   MouseDown="CybershokeButton_Clicked"
+                   Text="{x:Static loc:Strings.Cybershoke}">
+            <TextBlock.Style>
+                <Style TargetType="TextBlock">
+                    <Setter Property="Foreground"
+                            Value="{StaticResource appcolor_5}"/>
+                    <Style.Triggers>
+                        <DataTrigger Binding="{Binding PageIndex, ElementName=navigationBar}"
+                                     Value="5">
+                            <Setter Property="Foreground"
+                                    Value="{StaticResource appcolor_3}"/>
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </TextBlock.Style>
+
+        </TextBlock>
+        
     </Grid>
 </UserControl>

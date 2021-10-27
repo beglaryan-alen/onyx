@@ -3,6 +3,8 @@
                     xmlns:sys="clr-namespace:System;assembly=mscorlib"
                     x:Class="onyx_Client_UI.Resources.Styles.DefaultResources">
 
+    <BooleanToVisibilityConverter x:Key="BoolToVis" />
+    
     <SolidColorBrush x:Key="appcolor_1"
                      Color="#15181D"/>
     

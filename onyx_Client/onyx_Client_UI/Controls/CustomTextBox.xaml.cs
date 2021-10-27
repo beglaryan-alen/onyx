@@ -42,22 +42,6 @@ namespace onyx_Client_UI.Controls
             set { SetValue(TextProperty, value); }
         }
 
-        public static readonly DependencyProperty HasRightIconProperty =
-            DependencyProperty.Register(nameof(HasRightIcon), typeof(bool), typeof(CustomTextBox));
-        public bool HasRightIcon
-        {
-            get { return (bool)GetValue(HasRightIconProperty); }
-            set { SetValue(HasRightIconProperty, value); }
-        }
-
-        public static readonly DependencyProperty RightIconImageSourceProperty =
-            DependencyProperty.Register(nameof(RightIconImageSource), typeof(string), typeof(CustomTextBox));
-        public string RightIconImageSource
-        {
-            get { return (string)GetValue(RightIconImageSourceProperty); }
-            set { SetValue(RightIconImageSourceProperty, value); }
-        }
-
         public static readonly DependencyProperty IsPasswordProperty =
             DependencyProperty.Register(nameof(IsPassword), typeof(bool), typeof(CustomTextBox));
         public bool IsPassword
@@ -85,7 +69,11 @@ namespace onyx_Client_UI.Controls
             }
         }
 
+        private void passwordBox_PasswordChanged(object sender, RoutedEventArgs e)
+        {
+            Text = passwordBox.Password;
+        }
+
         #endregion
-        
     }
 }

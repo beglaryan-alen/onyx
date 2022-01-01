@@ -9,6 +9,7 @@ namespace onyx_Client_UI.Services
 {
     public interface IUserProfile
     {
+
         public Task<BalanceResponse> FetchBalance(string version="v1");
         public Task<IEnumerable<DateTime>> FetchVisitHistory(string version = "v1");
 
